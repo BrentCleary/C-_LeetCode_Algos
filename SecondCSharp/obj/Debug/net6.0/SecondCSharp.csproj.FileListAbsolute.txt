@@ -1,0 +1,15 @@
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\SecondCSharp\bin\Debug\net6.0\SecondCSharp.exe
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\SecondCSharp\bin\Debug\net6.0\SecondCSharp.deps.json
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\SecondCSharp\bin\Debug\net6.0\SecondCSharp.runtimeconfig.json
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\SecondCSharp\bin\Debug\net6.0\SecondCSharp.dll
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\SecondCSharp\bin\Debug\net6.0\SecondCSharp.pdb
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\SecondCSharp\obj\Debug\net6.0\SecondCSharp.csproj.AssemblyReference.cache
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\SecondCSharp\obj\Debug\net6.0\SecondCSharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\SecondCSharp\obj\Debug\net6.0\SecondCSharp.AssemblyInfoInputs.cache
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\SecondCSharp\obj\Debug\net6.0\SecondCSharp.AssemblyInfo.cs
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\SecondCSharp\obj\Debug\net6.0\SecondCSharp.csproj.CoreCompileInputs.cache
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\SecondCSharp\obj\Debug\net6.0\SecondCSharp.dll
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\SecondCSharp\obj\Debug\net6.0\refint\SecondCSharp.dll
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\SecondCSharp\obj\Debug\net6.0\SecondCSharp.pdb
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\SecondCSharp\obj\Debug\net6.0\SecondCSharp.genruntimeconfig.cache
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\SecondCSharp\obj\Debug\net6.0\ref\SecondCSharp.dll
