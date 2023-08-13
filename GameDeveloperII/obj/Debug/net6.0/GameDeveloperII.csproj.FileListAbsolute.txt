@@ -1,0 +1,15 @@
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\GameDeveloperII\bin\Debug\net6.0\GameDeveloperII.exe
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\GameDeveloperII\bin\Debug\net6.0\GameDeveloperII.deps.json
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\GameDeveloperII\bin\Debug\net6.0\GameDeveloperII.runtimeconfig.json
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\GameDeveloperII\bin\Debug\net6.0\GameDeveloperII.dll
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\GameDeveloperII\bin\Debug\net6.0\GameDeveloperII.pdb
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\GameDeveloperII\obj\Debug\net6.0\GameDeveloperII.csproj.AssemblyReference.cache
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\GameDeveloperII\obj\Debug\net6.0\GameDeveloperII.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\GameDeveloperII\obj\Debug\net6.0\GameDeveloperII.AssemblyInfoInputs.cache
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\GameDeveloperII\obj\Debug\net6.0\GameDeveloperII.AssemblyInfo.cs
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\GameDeveloperII\obj\Debug\net6.0\GameDeveloperII.csproj.CoreCompileInputs.cache
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\GameDeveloperII\obj\Debug\net6.0\GameDeveloperII.dll
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\GameDeveloperII\obj\Debug\net6.0\refint\GameDeveloperII.dll
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\GameDeveloperII\obj\Debug\net6.0\GameDeveloperII.pdb
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\GameDeveloperII\obj\Debug\net6.0\GameDeveloperII.genruntimeconfig.cache
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\GameDeveloperII\obj\Debug\net6.0\ref\GameDeveloperII.dll
