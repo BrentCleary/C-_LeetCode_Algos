@@ -1,26 +1,29 @@
-﻿// // Bandit Attacks
+﻿// // MagicCaster Attacks
 
 // Attack Fireball = new Attack("Fireball", 100);
 // Attack Punch = new Attack("Punch", 50);
 // Attack Wind = new Attack("Wind", 25);
 
-// List<Attack> BanditAttacks = new List<Attack>() {Fireball, Punch, Wind};
-// // BanditAttacks.Add(Fireball);
-// // BanditAttacks.Add(Punch);
-// // BanditAttacks.Add(Wind);
+MagicCaster firstMagicCaster = new MagicCaster("Maggie");
+Melee meleeFighter = new Melee("Fighto");
+Ranged firstRange = new Ranged("Shooter");
 
-// foreach (Attack item in BanditAttacks)
-// {
-//   System.Console.WriteLine(item.Name);
-// }
 
-Bandit newBandit = new Bandit("Draggar");
+firstMagicCaster.PerformAttack(meleeFighter, firstMagicCaster.AttackList[0]);
 
-System.Console.WriteLine(newBandit.Name);
+firstRange.PerformAttack(firstMagicCaster, firstRange.AttackList[0]);
+firstRange.Dash();
+firstRange.PerformAttack(firstMagicCaster, firstRange.AttackList[0]);
 
-foreach(Attack att in newBandit.AttackList)
-{
-  System.Console.WriteLine(att.Name);
-}
 
-newBandit.RandomAttack();
+meleeFighter.Rage(firstMagicCaster);
+meleeFighter.Rage(firstMagicCaster);
+meleeFighter.Rage(firstMagicCaster);
+meleeFighter.Rage(firstMagicCaster);
+
+firstMagicCaster.Heal(meleeFighter);
+firstMagicCaster.Heal(meleeFighter);
+firstMagicCaster.Heal(meleeFighter);
+firstMagicCaster.Heal(meleeFighter);
+
+firstMagicCaster.Heal(firstMagicCaster);
