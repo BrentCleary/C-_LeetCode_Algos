@@ -1,0 +1,15 @@
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\Fundamental1\bin\Debug\net6.0\Fundamental1.exe
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\Fundamental1\bin\Debug\net6.0\Fundamental1.deps.json
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\Fundamental1\bin\Debug\net6.0\Fundamental1.runtimeconfig.json
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\Fundamental1\bin\Debug\net6.0\Fundamental1.dll
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\Fundamental1\bin\Debug\net6.0\Fundamental1.pdb
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\Fundamental1\obj\Debug\net6.0\Fundamental1.csproj.AssemblyReference.cache
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\Fundamental1\obj\Debug\net6.0\Fundamental1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\Fundamental1\obj\Debug\net6.0\Fundamental1.AssemblyInfoInputs.cache
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\Fundamental1\obj\Debug\net6.0\Fundamental1.AssemblyInfo.cs
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\Fundamental1\obj\Debug\net6.0\Fundamental1.csproj.CoreCompileInputs.cache
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\Fundamental1\obj\Debug\net6.0\Fundamental1.dll
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\Fundamental1\obj\Debug\net6.0\refint\Fundamental1.dll
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\Fundamental1\obj\Debug\net6.0\Fundamental1.pdb
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\Fundamental1\obj\Debug\net6.0\Fundamental1.genruntimeconfig.cache
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\Fundamental1\obj\Debug\net6.0\ref\Fundamental1.dll
