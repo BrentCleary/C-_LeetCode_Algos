@@ -5,15 +5,15 @@ public class HelloController : Controller   // Remember inheritance?
 {      
     [HttpGet] // We will go over this in more detail on the next page    
     [Route("")] // We will go over this in more detail on the next page
-    public string Index()        
+    public ViewResult Index()        
     {            
-    	return "Hello World from HelloController!";        
+    	return View("Index");        
     }
 
-    [HttpGet("user/{name}")]
-    public string GetName(string name)
+    [HttpGet("testing")]
+    public ViewResult Testing()
     {
-      return $"Hello {name}, nice to meet you.";
+      return View("TestTest");
     }
 
   [HttpGet("numbers/{nums}")]

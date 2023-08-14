@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1>Here are some delicious foods!</h1>
+
+@{
+    List<string> foods = new List<string>();
+    foods.Add("Apple Pie");
+    foods.Add("Pizza");
+    foods.Add("Broccoli");
+    foods.Add("Chicken");
+    foods.Add("Apples");
+}
+@foreach(string f in foods)
+{
+    <div> 
+        
+        @if(f.Length > 6)
+        {
+            <p style="color: red"> @f </p>;
+        }
+        else
+        {
+            <p>@f</p>;
+        }
+
+    </div>
+}
+

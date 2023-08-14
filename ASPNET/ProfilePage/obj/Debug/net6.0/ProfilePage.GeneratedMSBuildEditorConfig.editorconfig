@@ -14,3 +14,11 @@ build_property.SupportLocalizedComponentNames =
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = c:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\ProfilePage
 build_property._RazorSourceGeneratorDebug = 
+
+[c:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/ProfilePage/Views/Hello/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVsbG9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/ProfilePage/Views/Hello/TestTest.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVsbG9cVGVzdFRlc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 

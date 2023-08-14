@@ -19,3 +19,5 @@ C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\ProfilePage\obj\Debug\net6.0\ref
 C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\ProfilePage\obj\Debug\net6.0\ProfilePage.pdb
 C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\ProfilePage\obj\Debug\net6.0\ProfilePage.genruntimeconfig.cache
 C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\ProfilePage\obj\Debug\net6.0\ref\ProfilePage.dll
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\ProfilePage\obj\Debug\net6.0\ProfilePage.RazorAssemblyInfo.cache
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\ProfilePage\obj\Debug\net6.0\ProfilePage.RazorAssemblyInfo.cs
