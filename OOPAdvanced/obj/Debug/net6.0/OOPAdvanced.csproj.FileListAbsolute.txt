@@ -1,0 +1,15 @@
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\OOPAdvanced\bin\Debug\net6.0\OOPAdvanced.exe
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\OOPAdvanced\bin\Debug\net6.0\OOPAdvanced.deps.json
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\OOPAdvanced\bin\Debug\net6.0\OOPAdvanced.runtimeconfig.json
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\OOPAdvanced\bin\Debug\net6.0\OOPAdvanced.dll
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\OOPAdvanced\bin\Debug\net6.0\OOPAdvanced.pdb
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\OOPAdvanced\obj\Debug\net6.0\OOPAdvanced.csproj.AssemblyReference.cache
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\OOPAdvanced\obj\Debug\net6.0\OOPAdvanced.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\OOPAdvanced\obj\Debug\net6.0\OOPAdvanced.AssemblyInfoInputs.cache
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\OOPAdvanced\obj\Debug\net6.0\OOPAdvanced.AssemblyInfo.cs
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\OOPAdvanced\obj\Debug\net6.0\OOPAdvanced.csproj.CoreCompileInputs.cache
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\OOPAdvanced\obj\Debug\net6.0\OOPAdvanced.dll
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\OOPAdvanced\obj\Debug\net6.0\refint\OOPAdvanced.dll
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\OOPAdvanced\obj\Debug\net6.0\OOPAdvanced.pdb
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\OOPAdvanced\obj\Debug\net6.0\OOPAdvanced.genruntimeconfig.cache
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\OOPAdvanced\obj\Debug\net6.0\ref\OOPAdvanced.dll

@@ -1,0 +1,15 @@
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\GameDeveloperIII\bin\Debug\net6.0\GameDeveloperIII.exe
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\GameDeveloperIII\bin\Debug\net6.0\GameDeveloperIII.deps.json
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\GameDeveloperIII\bin\Debug\net6.0\GameDeveloperIII.runtimeconfig.json
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\GameDeveloperIII\bin\Debug\net6.0\GameDeveloperIII.dll
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\GameDeveloperIII\bin\Debug\net6.0\GameDeveloperIII.pdb
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\GameDeveloperIII\obj\Debug\net6.0\GameDeveloperIII.csproj.AssemblyReference.cache
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\GameDeveloperIII\obj\Debug\net6.0\GameDeveloperIII.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\GameDeveloperIII\obj\Debug\net6.0\GameDeveloperIII.AssemblyInfoInputs.cache
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\GameDeveloperIII\obj\Debug\net6.0\GameDeveloperIII.AssemblyInfo.cs
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\GameDeveloperIII\obj\Debug\net6.0\GameDeveloperIII.csproj.CoreCompileInputs.cache
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\GameDeveloperIII\obj\Debug\net6.0\GameDeveloperIII.dll
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\GameDeveloperIII\obj\Debug\net6.0\refint\GameDeveloperIII.dll
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\GameDeveloperIII\obj\Debug\net6.0\GameDeveloperIII.pdb
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\GameDeveloperIII\obj\Debug\net6.0\GameDeveloperIII.genruntimeconfig.cache
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\GameDeveloperIII\obj\Debug\net6.0\ref\GameDeveloperIII.dll
