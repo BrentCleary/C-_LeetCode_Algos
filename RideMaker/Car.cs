@@ -5,8 +5,8 @@ class Car : Ride, INeedFuel
 
   public Car(string fuelType, int fuelTotal) : base("Honda", 4, "Red", true, 50000)
   {
-    FuelType = fuelType;
-    FuelTotal = fuelTotal;
+    FuelType = "Gas";
+    FuelTotal = 10;
 
   }
 

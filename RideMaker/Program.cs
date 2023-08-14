@@ -1,9 +1,8 @@
 ﻿
 
-Ride Honda = new Ride("Honda", 4, "blue", true, 100);
-Ride MountainBike = new Ride("Bike", 1, "white", false, 50);
-Ride Plane = new Ride("Skates", 2, "green", true, 1000);
-Ride Unicycle = new Ride("Unicycle", 1, "red", true, 100);
+Ride Honda = new Car("Gas", 10);
+Ride MountainBike = new Bicycle("Legs", 10);
+Ride Horse = new Horse("Hay", 10);
 
 // Honda
 Honda.ShowInfo();
@@ -12,11 +11,26 @@ Honda.Travel(50);
 MountainBike.ShowInfo();
 MountainBike.Travel(100);
 
+Horse.ShowInfo();
+Horse.Travel(200);
+
 List<Ride> rideList = new List<Ride>();
 rideList.Add(Honda);
 rideList.Add(MountainBike);
-rideList.Add(Plane);
-rideList.Add(Unicycle);
+rideList.Add(Horse);
+
+List<INeedFuel> HungryVehicles = new List<INeedFuel>();
+
+foreach(Ride ride in rideList)
+{
+  if(ride is INeedFuel needFuel)
+  {
+    HungryVehicles.Add(needFuel);
+    needFuel.GiveFuel(10);
+  }
+}
+
+
 
 foreach(Ride vehicle in rideList)
 {

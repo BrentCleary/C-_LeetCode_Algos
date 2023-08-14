@@ -5,8 +5,8 @@ class Horse : Ride, INeedFuel
 
   public Horse(string fuelType, int fuelTotal) : base("Mr. Ed", 1, "Brown", false, 1000)
   {
-    FuelType = fuelType;
-    FuelTotal = fuelTotal;
+    FuelType = "Hay";
+    FuelTotal = 10;
   }
 
   public void GiveFuel(int amount)

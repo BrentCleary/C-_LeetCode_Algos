@@ -1,4 +1,4 @@
-class Ride
+abstract class Ride
 {
   public string Name;
   public int Passengers;
@@ -27,14 +27,16 @@ class Ride
 
   public void ShowInfo()
   {
+    System.Console.WriteLine("----------");
     System.Console.WriteLine($"{Name}, {Passengers}, {Color}, {Engine}, {MilesTraveled}");
   }
 
   public void Travel(int milesToAdd)
   {
-    System.Console.WriteLine("Current miles are " + MilesTraveled);
+    System.Console.WriteLine("-----------------");
+    System.Console.WriteLine($"{Name}'s current miles are " + MilesTraveled);
     MilesTraveled = MilesTraveled + milesToAdd;
-    System.Console.WriteLine("New miles are " + MilesTraveled);
+    System.Console.WriteLine($"{Name}'s new miles are " + MilesTraveled);
   }
 
 }
