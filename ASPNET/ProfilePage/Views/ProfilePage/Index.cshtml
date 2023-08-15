@@ -8,23 +8,35 @@
 
 </head>
 <body>
+  @* Navigation Bar *@
+  <div class="nav-bar">
+    <a href="/">Home</a>
+    <a href="projects">Projects</a>
+    <a href="contact">Contact</a>
+  </div>
+
+  <div class="title-bar">
+    <h1>About Me</h1>
+  </div>
+
+  @* Content *@
   <div class="container">
 
-    <div class="NavBar">
-      <a href="/">Home</a>
-      <a href="projects">Projects</a>
-      <a href="contact">Contact</a>
+    <div class="col-1 img-top">
+      <img class="img-size" src="~/images/0do5ur52kmg81.jpg" alt="Carnival_Picture">
     </div>
 
-    <h1>Hello from our first csHTML file</h1>
+    <div class="col-2">
+      <h1>Hello from our first csHTML file</h1>
 
-    <img class="img-size" src="~/images/0do5ur52kmg81.jpg" alt="Carnival_Picture">
+      @for(int i = 0; i < 5; i++)
+      {
+        <p>The number is: @i</p>
+      }z
+    </div>
 
-    @for(int i = 0; i < 5; i++)
-    {
-      <p>The number is: @i</p>
-    }
   </div>
+
 </body>
 
 </html>

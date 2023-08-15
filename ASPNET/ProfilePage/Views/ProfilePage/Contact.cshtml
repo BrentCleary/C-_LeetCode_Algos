@@ -5,13 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="~/css/style.css">
-</head>
 
+</head>
 <body>
-  <a href="/">Home</a>
-  <a href="projects">Projects</a>
-  <a href="contact">Contact</a>
-  <h1>Contacts</h1>
+  @* Navigation Bar *@
+  <div class="nav-bar">
+    <a href="/">Home</a>
+    <a href="projects">Projects</a>
+    <a href="contact">Contact</a>
+  </div>
+
+  <div class="title-bar">
+    <h1>My Projects</h1>
+  </div>
+
+  @* Content *@
+  <div class="container">
+
+    <div class="col-1 img-top">
+      <img class="img-size" src="~/images/0do5ur52kmg81.jpg" alt="Carnival_Picture">
+    </div>
+
+    <div class="col-2">
+      <h1>Hello from our first csHTML file</h1>
+
+      @for(int i = 0; i < 5; i++)
+      {
+        <p>The number is: @i</p>
+      }z
+    </div>
+
+  </div>
+
 </body>
 
 </html>
