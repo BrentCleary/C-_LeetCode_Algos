@@ -21,3 +21,4 @@ C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\ProfilePage\obj\Debug\net6.0\Pro
 C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\ProfilePage\obj\Debug\net6.0\ref\ProfilePage.dll
 C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\ProfilePage\obj\Debug\net6.0\ProfilePage.RazorAssemblyInfo.cache
 C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\ProfilePage\obj\Debug\net6.0\ProfilePage.RazorAssemblyInfo.cs
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\ProfilePage\bin\Debug\net6.0\ProfilePage.staticwebassets.runtime.json

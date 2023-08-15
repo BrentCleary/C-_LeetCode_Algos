@@ -1,11 +1,37 @@
 {
   "Version": 1,
-  "Hash": "JWfjRLrGqxCKRTch8oE34M5wviCqWVP7E0m2J1PdynI=",
+  "Hash": "VPiIlnSnKiqvOIJaLykQFML7hstRH7+few6oHJmzqN4=",
   "Source": "ProfilePage",
   "BasePath": "_content/ProfilePage",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "ProfilePage\\wwwroot",
+      "Source": "ProfilePage",
+      "ContentRoot": "C:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\ProfilePage\\wwwroot\\",
+      "BasePath": "_content/ProfilePage",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\ProfilePage\\wwwroot\\css\\style.css",
+      "SourceId": "ProfilePage",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\ProfilePage\\wwwroot\\",
+      "BasePath": "_content/ProfilePage",
+      "RelativePath": "css/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\style.css"
+    }
+  ]
 }

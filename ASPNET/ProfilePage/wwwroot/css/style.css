@@ -1,0 +1,35 @@
+* {
+  margin: auto 0;
+}
+
+.container {
+
+  justify-content: center;
+
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+body {
+  background-color: aqua;
+}
+
+.img-size {
+  height: 300px;
+  width: 300px;
+
+}
+
+.NavBar {
+  width: 1000px;
+  height: 100px;
+  font-size: large;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
