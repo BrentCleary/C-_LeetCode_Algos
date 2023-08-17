@@ -1,0 +1,18 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model List<User>
+
+<div>
+    <a href="/">Message</a>
+    <a href="/numbers">Numbers</a>
+    <a href="/singleuser">Single User</a>
+    <a href="/users">Users</a>
+</div>
+
+@foreach(User person in @Model)
+{
+    <h1>@person.UserName</h1>
+    <h1>@person.Password</h1>
+}

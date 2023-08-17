@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "VPiIlnSnKiqvOIJaLykQFML7hstRH7+few6oHJmzqN4=",
+  "Hash": "3MhNlNSqBYcSlpeQUvw0y6ULrWXtb0gCZgf+XlSNOMU=",
   "Source": "ProfilePage",
   "BasePath": "_content/ProfilePage",
   "Mode": "Default",
@@ -32,6 +32,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\style.css"
+    },
+    {
+      "Identity": "C:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\ProfilePage\\wwwroot\\images\\0do5ur52kmg81.jpg",
+      "SourceId": "ProfilePage",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\ProfilePage\\wwwroot\\",
+      "BasePath": "_content/ProfilePage",
+      "RelativePath": "images/0do5ur52kmg81.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\0do5ur52kmg81.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\ProfilePage\\wwwroot\\images\\577-5774824_it-is-wednesday-my-dudes-its-wednesday-my.png",
+      "SourceId": "ProfilePage",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\ProfilePage\\wwwroot\\",
+      "BasePath": "_content/ProfilePage",
+      "RelativePath": "images/577-5774824_it-is-wednesday-my-dudes-its-wednesday-my.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\577-5774824_it-is-wednesday-my-dudes-its-wednesday-my.png"
     }
   ]
 }

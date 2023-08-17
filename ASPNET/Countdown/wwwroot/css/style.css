@@ -1,0 +1,26 @@
+* {
+  margin: auto 0;
+  background-color: antiquewhite;
+}
+
+.centered-container {
+  width: 50%;
+  padding: 20px;
+  background-color: aquamarine;
+  box-shadow: 0 4px 8px rgb(red, green, blue);
+  display: flex;
+}
+
+.col-1 {
+  height: 500px;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.col-2 {
+  height: 500px;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}

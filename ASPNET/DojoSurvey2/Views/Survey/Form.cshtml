@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="~/css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <form action="submit" method="post">
+      <div>
+        <label for="name">Your Name:</label>
+        <input type="text" name="name">
+      </div>
+      <div>
+        <label for="location">Dojo Location:</label>
+        <select name="location" id="location">
+          <option value="Seattle">Seattle</option>
+          <option value="San Jose">San Jose</option>
+        </select>
+      </div>
+      <div>
+        <label for="language">Favorite Language:</label>
+        <select name="language" id="language">
+          <option value="c#">C#</option>
+          <option value="java">JAVA</option>
+        </select>
+      </div>
+      <div>
+        <label for="name">Comment (optional):</label>
+        <Textarea name="message"></Textarea>
+      </div>
+      <div>
+        <button>Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

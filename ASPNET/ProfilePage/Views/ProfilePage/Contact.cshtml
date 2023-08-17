@@ -16,25 +16,27 @@
   </div>
 
   <div class="title-bar">
-    <h1>My Projects</h1>
+    <h1>Contact Me</h1>
   </div>
 
   @* Content *@
   <div class="container">
-
-    <div class="col-1 img-top">
-      <img class="img-size" src="~/images/0do5ur52kmg81.jpg" alt="Carnival_Picture">
-    </div>
-
-    <div class="col-2">
-      <h1>Hello from our first csHTML file</h1>
-
-      @for(int i = 0; i < 5; i++)
-      {
-        <p>The number is: @i</p>
-      }z
-    </div>
-
+    <form class="form" action="post">
+      <div>
+        <label for="name">Name: </label>
+        <input type="text" name="name">
+      </div>
+      <div>
+        <label for="email">Email: </label>
+        <input type="text" name="email" id="email">
+      </div>
+      <div>
+        <textarea name="message" id="message" cols="30" rows="10">Write your message here:</textarea>
+      </div>
+      <div>
+        <button>Submit</button>
+      </div>
+    </form>
   </div>
 
 </body>
