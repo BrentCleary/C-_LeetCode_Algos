@@ -6,10 +6,13 @@ public class DojoModelsSurvey
 {
   [Required(ErrorMessage ="Name is Required")]
   [MinLength(2, ErrorMessage ="Name must be at least 2 char")]
+  [NoZNames]
   public string Name {get;set;}
+
   [Required(ErrorMessage = "Location is Required")]
   [MinLength(2)]
   public string Location {get;set;}
+  
   [Required]
   [MinLength(2)]
   public string Language {get;set;}
@@ -17,13 +20,15 @@ public class DojoModelsSurvey
   
 }
 
-public class CustomValidations : ValidationAttribute
+// Custom Validations
+
+public class NoZNamesAttribute : ValidationAttribute
 {
   protected override ValidationResult IsValid(object value, ValidationContext validationContext)
   {
-    if (LogicToBreakValidation)
+    if(((string)value).ToLower()[0] == 'z')
     {
-      return new ValidationResult("Custom error message");
+      return new ValidationResult("Name can't start with Z");
     }
     else
     {
