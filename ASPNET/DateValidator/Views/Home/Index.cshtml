@@ -2,6 +2,8 @@
     ViewData["Title"] = "Home Page";
 }
 
+@model Date
+
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
@@ -10,7 +12,15 @@
 <div>
     <form action="submitdate" method="post">
         <div>
-            <input type="date" name="Date" id="">
+            <label asp-for="CurrentDate"></label>
+            <input asp-for="CurrentDate">
+            <span asp-validation-for="CurrentDate"></span>
+        </div>
+        <div>
+            <label asp-for="TestVar"></label>
+            <input asp-for="TestVar">
+            <span asp-validation-for="TestVar"></span>
+
         </div>
         <input type="submit" value="Submit">
     </form>

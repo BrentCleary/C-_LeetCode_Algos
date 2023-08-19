@@ -19,13 +19,24 @@ public class HomeController : Controller
     }
 
     [HttpPost("/submitdate")]
-    public IActionResult SubmitDate(CurrentDate currentdate)
+    public IActionResult SubmitDate(Date date)
     {
-        return View("Result", currentdate);
+        if(ModelState.IsValid)
+        {
+            Console.WriteLine(date.CurrentDate);
+            Console.WriteLine(date.TestVar);
+
+            return View("Results", date);
+        }
+        else
+        {
+            Console.WriteLine("---------- Model state is Invalid -------");
+            return View("Index");
+        }
     }
 
     [HttpGet("/dateresult")]
-    public IActionResult Result()
+    public IActionResult Results()
     {
         return View();
     }
