@@ -2,11 +2,20 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <form action="process" method="post">
+@model DojoModelsSurvey
+
+<div class="text-center container bs-primary border-subtle">
+
+    <div>
+        <h1>Person Form</h1>
+    </div>
+
+    <form action="process" method="post" class="bg-primary border-subtle">
         <div>
-            <label for="Name">Your Name: </label>
-            <input type="text" name="Name">
+            <label asp-for="Name"></label>
+            <input asp-for="Name">
+            <span asp-validation-for="Name" class="text-danger"></span>
+
         </div>
         <div>
             <label for="Location">Location: </label>
@@ -25,6 +34,35 @@
         <div>
             <label for="Message">Leave a message: </label>
             <textarea name="Message" id="message" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+
+    <div>
+        <br>
+    </div>
+
+    <div>
+        <h1>Dog Form</h1>
+    </div>
+
+    <form action="processdog" method="post" class="bg-success">
+        <div>
+            <label for="DogName">Dog Name: </label>
+            <input type="text" name="DogName">
+        </div>
+        <div>
+            <label for="DogAge">Age: </label>
+            <select name="DogAge" id="DogAge">
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+        </div>
+        <div>
+            <label for="DogGoodBoy">DogGoodBoy?: </label>
+            <input type="radio" name="DogGoodBoy" value="true">
         </div>
         <div>
             <input type="submit" value="Submit">

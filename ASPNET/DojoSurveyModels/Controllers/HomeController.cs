@@ -1,6 +1,7 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using DojoSurveyModels.Models;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
 
 namespace DojoSurveyModels.Controllers;
 
@@ -28,12 +29,21 @@ public class HomeController : Controller
     public IActionResult Process(DojoModelsSurvey survey)
     {
 
-        System.Console.WriteLine(survey.Name);
-        System.Console.WriteLine(survey.Location);
-        System.Console.WriteLine(survey.Language);
-        System.Console.WriteLine(survey.Message);
+        if(ModelState.IsValid)
+        {
+            System.Console.WriteLine(survey.Name);
+            System.Console.WriteLine(survey.Location);
+            System.Console.WriteLine(survey.Language);
+            System.Console.WriteLine(survey.Message);
+            
+            return View("Results", survey);
+        }
+        else
+        {
+            return View("Index");
+        }
 
-        return View("Results", survey);
+
     }
 
 
