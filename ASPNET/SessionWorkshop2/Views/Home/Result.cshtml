@@ -18,20 +18,39 @@
 @* Calculator Buttons *@
 
 <div>
+
     <div>
-        <button class="bg-warning" onclick=""> +1 </button>
+        <a href="/process/plus/1">
+            <button class="bg-warning"> +1 </button>
+        </a>
     </div>
     <div>
-        <button class="bg-primary"> -1 </button>
+        <a href="/process/minus/1">
+            <button class="bg-primary"> -1 </button>
+        </a>
     </div>
 </div>
 
 <div>
     <div>
-        <button class="bg-danger"> x2 </button>
+        <a href="/process/times/2">
+            <button class="bg-danger"> x2 </button>
+        </a>
     </div>
     <div>
-        <button class="bg-success"> +Random </button>
+        <a href="/process/random/11">
+            <button class="bg-success"> +Random </button>
+        </a>
+    </div>
+    <div>
+        <a href="/process/clear">
+            <button class="bg-success"> clear </button>
+        </a>
+    </div>
+    <div>
+        <form action="/logout" method="post">
+            <button class="bg-success"> LogOut </button>
+        </form>
     </div>
 </div>
 

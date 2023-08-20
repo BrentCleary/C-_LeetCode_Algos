@@ -9,7 +9,7 @@ function UpdateResult(action)
     .then(response => response.json())
     .then(data => 
       {
-        const resultValueElement = document.getElementById('resultValue');
+        const resultValueElement = document.getElementById('ResultValue');
         resultValueElement.textContent = data.resultValue;
       });
 }
