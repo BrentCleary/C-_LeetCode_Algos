@@ -1,0 +1,15 @@
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\LinqEruption2\bin\Debug\net6.0\LinqEruption2.exe
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\LinqEruption2\bin\Debug\net6.0\LinqEruption2.deps.json
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\LinqEruption2\bin\Debug\net6.0\LinqEruption2.runtimeconfig.json
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\LinqEruption2\bin\Debug\net6.0\LinqEruption2.dll
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\LinqEruption2\bin\Debug\net6.0\LinqEruption2.pdb
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\LinqEruption2\obj\Debug\net6.0\LinqEruption2.csproj.AssemblyReference.cache
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\LinqEruption2\obj\Debug\net6.0\LinqEruption2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\LinqEruption2\obj\Debug\net6.0\LinqEruption2.AssemblyInfoInputs.cache
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\LinqEruption2\obj\Debug\net6.0\LinqEruption2.AssemblyInfo.cs
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\LinqEruption2\obj\Debug\net6.0\LinqEruption2.csproj.CoreCompileInputs.cache
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\LinqEruption2\obj\Debug\net6.0\LinqEruption2.dll
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\LinqEruption2\obj\Debug\net6.0\refint\LinqEruption2.dll
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\LinqEruption2\obj\Debug\net6.0\LinqEruption2.pdb
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\LinqEruption2\obj\Debug\net6.0\LinqEruption2.genruntimeconfig.cache
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\LinqEruption2\obj\Debug\net6.0\ref\LinqEruption2.dll
