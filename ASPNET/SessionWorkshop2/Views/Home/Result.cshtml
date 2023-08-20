@@ -1,0 +1,42 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+@* Welcome Div *@
+<h1>Welcome @Context.Session.GetString("UserName")</h1>
+
+@* Result Div *@
+<div>
+    <h1>@Context.Session.GetInt32("ResultValue")</h1>
+</div>
+
+@* Calculator Buttons *@
+
+<div>
+    <div>
+        <button class="bg-warning" onclick=""> +1 </button>
+    </div>
+    <div>
+        <button class="bg-primary"> -1 </button>
+    </div>
+</div>
+
+<div>
+    <div>
+        <button class="bg-danger"> x2 </button>
+    </div>
+    <div>
+        <button class="bg-success"> +Random </button>
+    </div>
+</div>
+
+<br>
+<br>
+
+
+<a href="/">Back To Front Page</a>
