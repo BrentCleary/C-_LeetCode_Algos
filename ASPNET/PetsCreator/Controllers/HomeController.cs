@@ -19,8 +19,17 @@ public class HomeController : Controller
     public IActionResult Index()
     {
 
-
         return View();
+    }
+
+
+    [HttpGet("/pet/all")]
+    public IActionResult AllPets()
+    {
+        List<Pet> AllPets = _context.Pets.ToList();
+
+        return View(AllPets);
+
     }
 
 

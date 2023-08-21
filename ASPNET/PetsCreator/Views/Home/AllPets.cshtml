@@ -1,0 +1,11 @@
+@model List<Pet>
+
+
+@foreach(Pet friend in @Model)
+{
+  <h1>@friend.Name</h1>
+  <h1>@friend.Species</h1>
+}
+
+
+<a href="/">Go Back to Index</a>
