@@ -1,0 +1,22 @@
+@model Pet
+
+<form asp-action="SubmitEdit" asp-route-id= "@Model.PetId" asp-controller="Home" method="post" class="text-center">
+    <div>
+        <label asp-for="Name"></label>
+        <input asp-for="Name">
+        <span asp-validation-for="Name"></span>
+    </div>
+    <div>
+        <label asp-for="Species"></label>
+        <input asp-for="Species">
+        <span asp-validation-for="Species"></span>
+    </div>
+    <div>
+        <label asp-for="Description"></label>
+        <input asp-for="Description">
+        <span asp-validation-for="Description"></span>
+    </div>
+    <input type="submit" value="Submit Edit">
+</form>
+
+<a href="/pet/all">See all Pets</a>
