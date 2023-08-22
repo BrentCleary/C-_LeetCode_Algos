@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using Microsoft.AspNetCore.Http.Features;
 using Microsoft.AspNetCore.Mvc;
 using PetsCreator.Models;
 
@@ -28,8 +29,20 @@ public class HomeController : Controller
     {
         List<Pet> AllPets = _context.Pets.ToList();
 
+        
+
         return View(AllPets);
 
+    }
+
+    // Get one Pet Query for OnePet View
+    [HttpGet("pet/{id}")]
+    public IActionResult OnePet(int id)
+    {
+
+        Pet? OnePet = _context.Pets.FirstOrDefault(p => p.PetId == id);
+
+        return View(OnePet);
     }
 
 
@@ -62,12 +75,35 @@ public class HomeController : Controller
     }
 
 
+    [HttpGet("/pet/edit/{id}")]
+    public IActionResult EditPet(int id)
+    {
+        Pet? OnePet = _context.Pets.FirstOrDefault(p => p.PetId == id);
 
 
+        return View(OnePet);
+    }
 
+    [HttpPost("/pet/submitedit/{id}")]
+    public IActionResult SubmitEdit(int id, Pet NewVersion)
+    {
 
+        Pet? OldPet = _context.Pets.FirstOrDefault(p => p.PetId == id);
+        if(ModelState.IsValid)
+        {
+            OldPet.Name = NewVersion.Name;
+            OldPet.Species = NewVersion.Species;
+            OldPet.Description = NewVersion.Description;
+            OldPet.UpdatedAt = DateTime.Now;
+            _context.SaveChanges();
 
-
+            return RedirectToAction("OnePet", new {id = OldPet.PetId});
+        }
+        else
+        {
+            return View("EditPet", OldPet);
+        }
+    }
 
     public IActionResult Privacy()
     {

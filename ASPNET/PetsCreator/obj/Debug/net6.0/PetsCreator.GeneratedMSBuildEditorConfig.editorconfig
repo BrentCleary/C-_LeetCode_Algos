@@ -19,12 +19,20 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBbGxQZXRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[c:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/PetsCreator/Views/Home/EditPet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFZGl0UGV0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [c:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/PetsCreator/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [c:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/PetsCreator/Views/Home/NewPet.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxOZXdQZXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/PetsCreator/Views/Home/OnePet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxPbmVQZXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [c:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/PetsCreator/Views/Home/Privacy.cshtml]

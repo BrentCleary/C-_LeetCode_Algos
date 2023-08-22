@@ -3,8 +3,12 @@
 
 @foreach(Pet friend in @Model)
 {
-  <h1>@friend.Name</h1>
-  <h1>@friend.Species</h1>
+  <div>
+    <h1>@friend.Name</h1>
+    <h1>@friend.Species</h1>
+    <h1><a href="/pet/@friend.PetId">View Pet</a></h1>
+    <h1><a href="/pet/edit/@friend.PetId">Edit Pet</a></h1>
+  </div>
 }
 
 
