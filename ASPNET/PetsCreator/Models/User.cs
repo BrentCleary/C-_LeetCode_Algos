@@ -49,7 +49,7 @@ public class UniqueEmailAttribute : ValidationAttribute
 
     if(_context.Users.Any(e => e.Email == value.ToString()))
     {
-      return new ValidationResult("Email already in use!")
+      return new ValidationResult("Email already in use")
     }
     else
     {

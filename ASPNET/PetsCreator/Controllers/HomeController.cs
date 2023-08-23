@@ -1,6 +1,8 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Http.Features;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Filters;
+using Microsoft.AspNetCore.Identity;
 using PetsCreator.Models;
 
 namespace PetsCreator.Controllers;
@@ -27,10 +29,10 @@ public class HomeController : Controller
     }
 
 
-// =============== VIEW ROUTES ===============
+// =============== VIEW PET ROUTES ===============
 
 
-    // ---------- View All Page----------
+    // ---------- View All Pets Page----------
 
     [HttpGet("/pet/all")]
     public IActionResult AllPets()
@@ -40,7 +42,7 @@ public class HomeController : Controller
         return View(AllPets);
     }
 
-    // ---------- View One Page ----------
+    // ---------- View One Pet Page ----------
 
     // Get one Pet Query for OnePet View
     [HttpGet("pet/{id}")]
@@ -53,10 +55,10 @@ public class HomeController : Controller
 
 
 
-// =============== CREATE ROUTES ===============
+// =============== CREATE PET ROUTES ===============
 
 
-    // ---------- Create One (Form) ----------
+    // ---------- Create One Pet (Form) ----------
 
     [HttpGet("/pet/new")]
     public IActionResult NewPet(Pet pet)
@@ -66,7 +68,7 @@ public class HomeController : Controller
     }
 
 
-    // ---------- Create One (Post) ----------
+    // ---------- Create One Pet (Post) ----------
 
     [HttpPost("/pet/create")]
     public IActionResult CreatePet(Pet newPet)
@@ -90,10 +92,10 @@ public class HomeController : Controller
     }
 
 
-// =============== EDIT ROUTES ===============
+// =============== EDIT PET ROUTES ===============
 
 
-    // ---------- Edit One (Form) ----------
+    // ---------- Edit One Pet (Form) ----------
 
     [HttpGet("/pet/edit/{id}")]
     public IActionResult EditPet(int id)
@@ -103,7 +105,7 @@ public class HomeController : Controller
         return View(OnePet);
     }
 
-    // ---------- Edit One (Post) ----------
+    // ---------- Edit One Pet (Post) ----------
 
     [HttpPost("/pet/submitedit/{id}")]
     public IActionResult SubmitEdit(int id, Pet NewVersion)
@@ -127,7 +129,9 @@ public class HomeController : Controller
     }
 
 
-// =============== DELETE ROUTE ===============
+// =============== DELETE PET ROUTE ===============
+
+    // ---------- Delete One Pet (Post) ----------
 
     [HttpPost("/pet/delete/{id}")]
     public IActionResult DeletePet(int id)
@@ -142,6 +146,65 @@ public class HomeController : Controller
         return RedirectToAction("AllPets");
     }
 
+
+
+
+
+
+// =============== CREATE USER ROUTE ===============
+
+    // ---------- Create One User (Post) ----------
+
+    [HttpPost("/user/create")]
+    public IActionResult CreateUser(User newUser)
+    {
+        if(ModelState.IsValid)
+        {
+            PasswordHasher<User> Hasher = new PasswordHasher<User>();
+            newUser.Password = Hasher.HashPassword(newUser, newUser.Password);
+            _context.Add(newUser);
+            _context.SaveChanges();
+            HttpContext.Session.SetInt32("UserId", newUser.UserId);
+            return RedirectToAction("Index");
+        }
+        else
+        {
+            return View("Index");
+        }
+    }
+
+    // ---------- Login One User (Post) ----------
+    [HttpPost("/user/login")]
+    public IActionResult LoginUser(LogUser loginUser)
+    {
+        if(ModelState.IsValid)
+        {
+            User? userInDb = _context.Users.FirstOrDefault(u => u.Email == LoginUser.LEmail);
+            if(userInDb == null)
+            {
+                ModelState.AddModelError("LEmail", "Invalid Email/Password");
+                return View("Index");
+            }
+            PasswordHasher<LogUser> hasher = new PasswordHasher<LogUser>();
+            var result = hasher.VerifyHashedPassword(loginUser, userInDb.Password, loginUser.LPassword);
+            if(result == 0)
+            {
+                ModelState.AddModelError("LEmail", "Invalid Email/Password");
+                return View("Index");
+            }
+            else
+            {
+                HttpContext.Session.SetInt32("UserId", userInDb.UserId);
+                return RedirectToAction("Index");
+            }
+        }
+        else
+        {
+            return View("Index");
+        }
+
+
+    }
 
 
 
