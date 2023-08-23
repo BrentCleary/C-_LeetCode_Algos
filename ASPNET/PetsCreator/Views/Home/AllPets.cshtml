@@ -4,12 +4,21 @@
 @foreach(Pet friend in @Model)
 {
   <div>
-    <h1>@friend.Name</h1>
-    <h1>@friend.Species</h1>
-    <h1><a href="/pet/@friend.PetId">View Pet</a></h1>
-    <h1><a href="/pet/edit/@friend.PetId">Edit Pet</a></h1>
+    <h1>Name: @friend.Name</h1>
+    <h1>Species: @friend.Species</h1>
+    <h1>Description: @friend.Description</h1>
+    <h1><a href="/pet/@friend.PetId" class="btn btn-success">View Pet</a></h1>
+    <h1><a href="/pet/edit/@friend.PetId" class="btn btn-primary">Edit Pet</a></h1>
+    <form asp-action="DeletePet" asp-route-id="@friend.PetId" asp-controller="Home" method="post">
+      <input type="submit" value="Delete Pet" class="btn btn-danger">
+    </form>
   </div>
+  <br>
+  <br>
 }
 
+<br>
+<br>
+<br>
 
 <a href="/">Go Back to Index</a>

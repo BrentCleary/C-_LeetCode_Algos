@@ -16,6 +16,9 @@ public class HomeController : Controller
         _context = context;
     }
 
+
+// =============== HOMEPAGE (INDEX) ===============
+
     [HttpGet("/")]
     public IActionResult Index()
     {
@@ -24,27 +27,46 @@ public class HomeController : Controller
     }
 
 
+// =============== VIEW ROUTES ===============
+
+
+    // ---------- View All Page----------
+
     [HttpGet("/pet/all")]
     public IActionResult AllPets()
     {
         List<Pet> AllPets = _context.Pets.ToList();
 
-        
-
         return View(AllPets);
-
     }
+
+    // ---------- View One Page ----------
 
     // Get one Pet Query for OnePet View
     [HttpGet("pet/{id}")]
     public IActionResult OnePet(int id)
     {
-
         Pet? OnePet = _context.Pets.FirstOrDefault(p => p.PetId == id);
 
         return View(OnePet);
     }
 
+
+
+// =============== CREATE ROUTES ===============
+
+
+    // ---------- Create One (Form) ----------
+
+    [HttpGet("/pet/new")]
+    public IActionResult NewPet(Pet pet)
+    {
+
+        return View("NewPet", pet);
+    }
+
+
+    // ---------- Create One (Post) ----------
 
     [HttpPost("/pet/create")]
     public IActionResult CreatePet(Pet newPet)
@@ -67,22 +89,21 @@ public class HomeController : Controller
         }
     }
 
-    [HttpGet("/pet/new")]
-    public IActionResult NewPet(Pet pet)
-    {
 
-        return View("NewPet", pet);
-    }
+// =============== EDIT ROUTES ===============
 
+
+    // ---------- Edit One (Form) ----------
 
     [HttpGet("/pet/edit/{id}")]
     public IActionResult EditPet(int id)
     {
         Pet? OnePet = _context.Pets.FirstOrDefault(p => p.PetId == id);
 
-
         return View(OnePet);
     }
+
+    // ---------- Edit One (Post) ----------
 
     [HttpPost("/pet/submitedit/{id}")]
     public IActionResult SubmitEdit(int id, Pet NewVersion)
@@ -104,6 +125,26 @@ public class HomeController : Controller
             return View("EditPet", OldPet);
         }
     }
+
+
+// =============== DELETE ROUTE ===============
+
+    [HttpPost("/pet/delete/{id}")]
+    public IActionResult DeletePet(int id)
+    {
+
+        System.Console.WriteLine("----------------Deleting pet with id: " + id + "-------------");
+
+        Pet? petToDelete = _context.Pets.SingleOrDefault(p => p.PetId == id );
+        _context.Pets.Remove(petToDelete);
+        _context.SaveChanges();
+
+        return RedirectToAction("AllPets");
+    }
+
+
+
+
 
     public IActionResult Privacy()
     {
