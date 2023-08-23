@@ -33,7 +33,7 @@ public class HomeController : Controller
 
 
     // ---------- View All Pets Page----------
-
+    [SessionCheck]
     [HttpGet("/pet/all")]
     public IActionResult AllPets()
     {
@@ -174,6 +174,7 @@ public class HomeController : Controller
     }
 
     // ---------- Login One User (Post) ----------
+
     [HttpPost("/user/login")]
     public IActionResult LoginUser(LogUser loginUser)
     {
@@ -218,5 +219,23 @@ public class HomeController : Controller
     public IActionResult Error()
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+    }
+}
+
+
+
+// Session Check for logged in User
+
+// Apply [SessionCheck] to all routes user must be logged in to view
+
+public class SessionCheckAttribute : ActionFilterAttribute
+{
+    public override void OnActionExecuting(ActionExecutingContext context)
+    {
+        int? userId = context.HttpContext.Session.GetInt32("UserId");
+        if(userId == null)
+        {
+            context.Result = new RedirectToActionResult("Index", "Home", null);
+        }
     }
 }
