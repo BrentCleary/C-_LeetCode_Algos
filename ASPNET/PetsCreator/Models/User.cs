@@ -42,14 +42,14 @@ public class UniqueEmailAttribute : ValidationAttribute
   {
     if(value == null)
     {
-      return new ValidationResult("Email is required")
+      return new ValidationResult("Email is required");
     }
 
     MyContext _context = (MyContext)validationContext.GetService(typeof(MyContext));
 
     if(_context.Users.Any(e => e.Email == value.ToString()))
     {
-      return new ValidationResult("Email already in use")
+      return new ValidationResult("Email already in use");
     }
     else
     {
