@@ -1,6 +1,6 @@
 #pragma warning disable CS8618
 using System.ComponentModel.DataAnnotations;
-namespace PetsCreator.Models;
+namespace LoginAndRegistration2.Models;
 
 public class LogUser
 {

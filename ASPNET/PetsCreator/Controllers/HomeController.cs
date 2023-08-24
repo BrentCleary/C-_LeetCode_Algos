@@ -180,7 +180,7 @@ public class HomeController : Controller
     {
         if(ModelState.IsValid)
         {
-            User? userInDb = _context.Users.FirstOrDefault(u => u.Email == LoginUser.LEmail);
+            User? userInDb = _context.Users.FirstOrDefault(u => u.Email == loginUser.LEmail);
             if(userInDb == null)
             {
                 ModelState.AddModelError("LEmail", "Invalid Email/Password");
