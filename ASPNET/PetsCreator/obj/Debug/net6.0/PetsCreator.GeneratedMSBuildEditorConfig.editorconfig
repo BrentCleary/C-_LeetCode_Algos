@@ -8,57 +8,69 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PetsCreator
 build_property.RootNamespace = PetsCreator
-build_property.ProjectDir = c:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\PetsCreator\
+build_property.ProjectDir = C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\PetsCreator\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = c:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\PetsCreator
+build_property.MSBuildProjectDirectory = C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\PetsCreator
 build_property._RazorSourceGeneratorDebug = 
 
-[c:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/PetsCreator/Views/Home/AllPets.cshtml]
+[C:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/PetsCreator/Views/Home/AllPets.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBbGxQZXRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/PetsCreator/Views/Home/EditPet.cshtml]
+[C:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/PetsCreator/Views/Home/EditPet.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFZGl0UGV0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/PetsCreator/Views/Home/Index.cshtml]
+[C:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/PetsCreator/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/PetsCreator/Views/Home/NewPet.cshtml]
+[C:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/PetsCreator/Views/Home/NewPet.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxOZXdQZXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/PetsCreator/Views/Home/OnePet.cshtml]
+[C:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/PetsCreator/Views/Home/OnePet.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxPbmVQZXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/PetsCreator/Views/Home/Privacy.cshtml]
+[C:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/PetsCreator/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/PetsCreator/Views/Home/_BannerPartial.cshtml]
+[C:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/PetsCreator/Views/Home/_BannerPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfQmFubmVyUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/PetsCreator/Views/Shared/Error.cshtml]
+[C:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/PetsCreator/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/PetsCreator/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/PetsCreator/Views/Shared/_PetCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QZXRDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/PetsCreator/Views/Shared/_UserCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Vc2VyQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/PetsCreator/Views/Shared/_UserLogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Vc2VyTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/PetsCreator/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/PetsCreator/Views/_ViewImports.cshtml]
+[C:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/PetsCreator/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/PetsCreator/Views/_ViewStart.cshtml]
+[C:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/PetsCreator/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/PetsCreator/Views/Shared/_Layout.cshtml]
+[C:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/PetsCreator/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-kqbkqwyzqf

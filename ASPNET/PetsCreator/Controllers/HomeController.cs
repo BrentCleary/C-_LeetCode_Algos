@@ -39,6 +39,9 @@ public class HomeController : Controller
     {
         List<Pet> AllPets = _context.Pets.ToList();
 
+
+        // View Pets by User Query
+
         return View(AllPets);
     }
 
@@ -75,6 +78,8 @@ public class HomeController : Controller
     {
         if(ModelState.IsValid)
         {
+            // User? MyUser = _context.Users.FirstOrDefault(i => i.UserId == id);
+
 
             _context.Add(newPet);
             _context.SaveChanges();
@@ -83,7 +88,7 @@ public class HomeController : Controller
             Console.WriteLine(newPet.Species);
             Console.WriteLine(newPet.Description);
 
-            return RedirectToAction("NewPet", newPet);        
+            return RedirectToAction("OnePet", newPet);        
         }
         else
         {
@@ -104,6 +109,8 @@ public class HomeController : Controller
 
         return View(OnePet);
     }
+
+
 
     // ---------- Edit One Pet (Post) ----------
 
@@ -169,12 +176,11 @@ public class HomeController : Controller
         }
         else
         {
-            return View("Index");
+            return View("");
         }
     }
 
     // ---------- Login One User (Post) ----------
-
     [HttpPost("/user/login")]
     public IActionResult LoginUser(LogUser loginUser)
     {
@@ -196,14 +202,13 @@ public class HomeController : Controller
             else
             {
                 HttpContext.Session.SetInt32("UserId", userInDb.UserId);
-                return RedirectToAction("Index");
+                return RedirectToAction("AllPets");
             }
         }
         else
         {
             return View("Index");
         }
-
 
     }
 

@@ -17,4 +17,9 @@ public class Pet
 
     public DateTime CreatedAt { get; set; } = DateTime.Now;
     public DateTime UpdatedAt { get; set; } = DateTime.Now;
+
+    // One Owner per Pet
+    public int UserId {get;set;}
+    // Navigation Property
+    public User? Owner {get;set;}
 }

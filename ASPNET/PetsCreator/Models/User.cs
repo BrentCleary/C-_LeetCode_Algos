@@ -32,7 +32,12 @@ public class User
   public DateTime CreatedAt {get;set;} = DateTime.Now;
   public DateTime UpdatedAt {get;set;} = DateTime.Now;
 
+  // Many relationship
+  public List<Pet> AllPets {get;set;} = new List<Pet>();
+
 }
+
+
 
 // Below is a check in our database (_context) for any objects holding the entered email in their email field
 
