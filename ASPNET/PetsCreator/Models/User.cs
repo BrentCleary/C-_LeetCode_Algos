@@ -33,7 +33,7 @@ public class User
   public DateTime UpdatedAt {get;set;} = DateTime.Now;
 
   // Many relationship
-  public List<Pet> AllPets {get;set;} = new List<Pet>();
+  public List<Pet> AllPets { get;set; } = new List<Pet>();
 
 }
 

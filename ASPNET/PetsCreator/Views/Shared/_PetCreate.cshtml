@@ -1,11 +1,6 @@
 @model Pet
 
-<div class="text-center">
-    @await Html.PartialAsync("_BannerPartial")
-</div>
-
-
-<form asp-action="CreatePet" asp-controller="Home" method="post" class="text-center">
+<form asp-action="CreatePet" asp-controller="Home" method="post" class="text-center" asp>
     <div>
         <label asp-for="Name"></label>
         <input asp-for="Name">
@@ -22,7 +17,11 @@
         <span asp-validation-for="Description"></span>
     </div>
     <div>
-        
+        <label asp-for="UserId"></label>
+        <input asp-for="UserId" value="@ViewBag.currentUserID">
     </div>
     <input type="submit" value="Create Your Pet">
 </form>
+
+<h1>UserId in Session is @ViewBag.currentUserID</h1>
+

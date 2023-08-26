@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http.Features;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using PetsCreator.Models;
 
 namespace PetsCreator.Controllers;
@@ -33,16 +34,17 @@ public class HomeController : Controller
 
 
     // ---------- View All Pets Page----------
-    [SessionCheck]
+
     [HttpGet("/pet/all")]
     public IActionResult AllPets()
     {
-        List<Pet> AllPets = _context.Pets.ToList();
 
+        int? currentUserID = HttpContext.Session.GetInt32("UserId");
+        ViewBag.UserId = currentUserID;
 
         // View Pets by User Query
 
-        return View(AllPets);
+        return View("AllPets");
     }
 
     // ---------- View One Pet Page ----------
@@ -76,9 +78,10 @@ public class HomeController : Controller
     [HttpPost("/pet/create")]
     public IActionResult CreatePet(Pet newPet)
     {
+
+
         if(ModelState.IsValid)
         {
-            // User? MyUser = _context.Users.FirstOrDefault(i => i.UserId == id);
 
 
             _context.Add(newPet);
@@ -172,6 +175,11 @@ public class HomeController : Controller
             _context.Add(newUser);
             _context.SaveChanges();
             HttpContext.Session.SetInt32("UserId", newUser.UserId);
+
+            // Session Check to see if saving
+            int? currentUserID = HttpContext.Session.GetInt32("UserId");
+                System.Console.WriteLine("---------------" + currentUserID + "---------------");
+
             return RedirectToAction("Index");
         }
         else
@@ -202,7 +210,11 @@ public class HomeController : Controller
             else
             {
                 HttpContext.Session.SetInt32("UserId", userInDb.UserId);
+                int? currentUserID = HttpContext.Session.GetInt32("UserId");
+                System.Console.WriteLine("---------------" + currentUserID + "---------------");
+                
                 return RedirectToAction("AllPets");
+
             }
         }
         else
