@@ -1,0 +1,15 @@
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\IsSubSequenceAlgo\obj\Debug\net6.0\IsSubSequenceAlgo.csproj.AssemblyReference.cache
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\IsSubSequenceAlgo\obj\Debug\net6.0\IsSubSequenceAlgo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\IsSubSequenceAlgo\obj\Debug\net6.0\IsSubSequenceAlgo.AssemblyInfoInputs.cache
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\IsSubSequenceAlgo\obj\Debug\net6.0\IsSubSequenceAlgo.AssemblyInfo.cs
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\IsSubSequenceAlgo\obj\Debug\net6.0\IsSubSequenceAlgo.csproj.CoreCompileInputs.cache
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\IsSubSequenceAlgo\bin\Debug\net6.0\IsSubSequenceAlgo.exe
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\IsSubSequenceAlgo\bin\Debug\net6.0\IsSubSequenceAlgo.deps.json
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\IsSubSequenceAlgo\bin\Debug\net6.0\IsSubSequenceAlgo.runtimeconfig.json
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\IsSubSequenceAlgo\bin\Debug\net6.0\IsSubSequenceAlgo.dll
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\IsSubSequenceAlgo\bin\Debug\net6.0\IsSubSequenceAlgo.pdb
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\IsSubSequenceAlgo\obj\Debug\net6.0\IsSubSequenceAlgo.dll
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\IsSubSequenceAlgo\obj\Debug\net6.0\refint\IsSubSequenceAlgo.dll
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\IsSubSequenceAlgo\obj\Debug\net6.0\IsSubSequenceAlgo.pdb
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\IsSubSequenceAlgo\obj\Debug\net6.0\IsSubSequenceAlgo.genruntimeconfig.cache
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\IsSubSequenceAlgo\obj\Debug\net6.0\ref\IsSubSequenceAlgo.dll
