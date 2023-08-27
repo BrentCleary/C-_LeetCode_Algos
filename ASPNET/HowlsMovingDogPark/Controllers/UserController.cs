@@ -53,12 +53,13 @@ public class UserController : Controller
     }
   }
 
-  // ----- Display All Users
+  // ----- All Users (VIEW)
 
   [SessionCheck]
   [HttpGet("/users")]
   public IActionResult UserIndex()
   {
+
     List<User> AllUsers = _context.Users.ToList();
     return View("AllUsers", AllUsers);
   }

@@ -1,0 +1,46 @@
+@model Dog
+
+<style>
+  .hidden-element
+  {
+    display: none;
+  }
+</style>
+
+<div>
+  <form asp-action="CreateDog" asp-controller="Dog" method="post">
+    <div>
+      <label asp-for="Name"></label>
+      <input asp-for="Name">
+      <span asp-validation-for="Name"></span>
+    </div>
+    <div>
+      <label asp-for="Breed"></label>
+      <input asp-for="Breed">
+      <span asp-validation-for="Breed"></span>
+    </div>
+    <div>
+      <label asp-for="Weight"></label>
+      <input asp-for="Weight">
+      <span asp-validation-for="Weight"></span>
+    </div>
+    <div>
+      <label asp-for="Age"></label>
+      <input asp-for="Age">
+      <span asp-validation-for="Age"></span>
+    </div>
+    <div>
+      <label asp-for="Notes"></label>
+      <input asp-for="Notes">
+      <span asp-validation-for="Notes"></span>
+    </div>
+    <div>
+      <label asp-for="UserId"></label>
+      <input asp-for="UserId">
+      <span asp-validation-for="UserId"></span>
+    </div>
+    <div>
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>

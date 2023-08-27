@@ -4,34 +4,28 @@ public class Solution
 {
   public double FindMaxAverage(int[] nums, int k)
   {
-    double windowSum;
+    double windowSum = double.MinValue;
 
     for(int i = 0; i <= nums.Length - k; i++)
-
-      System.Console.WriteLine("window: " + i);
+    {
       double newSum = 0;
-      
 
       for(int j = i; j < i+k; j++)
       {
-        System.Console.WriteLine("newSum: " + newSum + " + nums[j] " + nums[j]);
         newSum += nums[j];
       }
 
-      System.Console.WriteLine("newSum is " + newSum);
       double result = newSum / k;
-      System.Console.WriteLine("newSum / k is " + result);
 
-      if(result >= windowSum && windowSum != null)
+      if(result >= windowSum)
       {
         windowSum = result;
         System.Console.WriteLine("windowSum is " + windowSum);
       }
-      
     }
 
     return windowSum;
-
+  }
 }
 
 
