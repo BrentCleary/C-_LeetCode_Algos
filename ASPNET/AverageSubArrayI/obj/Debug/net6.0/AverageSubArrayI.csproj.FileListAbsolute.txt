@@ -1,0 +1,15 @@
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\AverageSubArrayI\bin\Debug\net6.0\AverageSubArrayI.exe
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\AverageSubArrayI\bin\Debug\net6.0\AverageSubArrayI.deps.json
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\AverageSubArrayI\bin\Debug\net6.0\AverageSubArrayI.runtimeconfig.json
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\AverageSubArrayI\bin\Debug\net6.0\AverageSubArrayI.dll
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\AverageSubArrayI\bin\Debug\net6.0\AverageSubArrayI.pdb
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\AverageSubArrayI\obj\Debug\net6.0\AverageSubArrayI.csproj.AssemblyReference.cache
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\AverageSubArrayI\obj\Debug\net6.0\AverageSubArrayI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\AverageSubArrayI\obj\Debug\net6.0\AverageSubArrayI.AssemblyInfoInputs.cache
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\AverageSubArrayI\obj\Debug\net6.0\AverageSubArrayI.AssemblyInfo.cs
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\AverageSubArrayI\obj\Debug\net6.0\AverageSubArrayI.csproj.CoreCompileInputs.cache
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\AverageSubArrayI\obj\Debug\net6.0\AverageSubArrayI.dll
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\AverageSubArrayI\obj\Debug\net6.0\refint\AverageSubArrayI.dll
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\AverageSubArrayI\obj\Debug\net6.0\AverageSubArrayI.pdb
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\AverageSubArrayI\obj\Debug\net6.0\AverageSubArrayI.genruntimeconfig.cache
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\AverageSubArrayI\obj\Debug\net6.0\ref\AverageSubArrayI.dll
