@@ -23754,6 +23754,11 @@
       "FilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsMovingDogPark\\Views\\Dog\\AllDogs.cshtml",
       "TargetPath": "Views\\Dog\\AllDogs.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsMovingDogPark\\Views\\Shared\\_BannerImage.cshtml",
+      "TargetPath": "Views\\Shared\\_BannerImage.cshtml",
+      "FileKind": "mvc"
     }
   ]
 }

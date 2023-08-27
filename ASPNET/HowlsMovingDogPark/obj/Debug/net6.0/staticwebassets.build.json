@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "sQiDy5mGg5yrhFaGAbPiPtbNZx+YV7hN2G59u7cyySM=",
+  "Hash": "K5k8euKuCgabIIop+wGqM5E0tcyvCnjiXAJ1B/+w2y4=",
   "Source": "HowlsMovingDogPark",
   "BasePath": "_content/HowlsMovingDogPark",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsMovingDogPark\\wwwroot\\images\\howl-s-moving-castle-background-12gwdrp2u08poynf.webp",
+      "SourceId": "HowlsMovingDogPark",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsMovingDogPark\\wwwroot\\",
+      "BasePath": "_content/HowlsMovingDogPark",
+      "RelativePath": "images/howl-s-moving-castle-background-12gwdrp2u08poynf.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\howl-s-moving-castle-background-12gwdrp2u08poynf.webp"
     },
     {
       "Identity": "C:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsMovingDogPark\\wwwroot\\js\\site.js",
