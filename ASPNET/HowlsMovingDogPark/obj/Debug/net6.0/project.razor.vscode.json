@@ -23739,6 +23739,11 @@
       "FilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsMovingDogPark\\Views\\User\\AllUsers.cshtml",
       "TargetPath": "Views\\User\\AllUsers.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsMovingDogPark\\Views\\Shared\\_UserLogin.cshtml",
+      "TargetPath": "Views\\Shared\\_UserLogin.cshtml",
+      "FileKind": "mvc"
     }
   ]
 }

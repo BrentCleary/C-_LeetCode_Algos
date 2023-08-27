@@ -19,15 +19,21 @@ public class UserController : Controller
     _context = context;
   }
 
-  // ------------ USER CREATE ROUTES -----------
+  // ------- USER ROUTES -----------
+  // ----- Create User (FORM)
 
   [HttpGet("/users/new")]
   public IActionResult NewUser()
   {
 
+            // Test this
+    ViewBag.SessionKey = HttpContext.Session.GetInt32("UserId");
+    ViewBag.Test = "Just a test";
+
     return View("~/Views/User/UserCreateLogin.cshtml");
   }
 
+  // ----- Create User (POST)
 
   [HttpPost("/users/create")]
   public IActionResult CreateUser(User newUser)
@@ -45,9 +51,11 @@ public class UserController : Controller
     {
       return View("UserCreateLogin");
     }
-
   }
 
+  // ----- Display All Users
+
+  [SessionCheck]
   [HttpGet("/users")]
   public IActionResult UserIndex()
   {
@@ -56,6 +64,40 @@ public class UserController : Controller
   }
 
 
+  // ----- User Login (POST)
+
+  [HttpPost("/users/login")]
+  public IActionResult LoginUser(LogUser loginUser)
+  {
+    if(ModelState.IsValid)
+    {
+      User? userInDb = _context.Users.FirstOrDefault(u => u.Email == loginUser.LEmail);
+      if(userInDb == null)
+      {
+        ModelState.AddModelError("LEmail", "Invalid Email/Password");
+        return View("UserCreateLogin");
+      }
+      PasswordHasher<LogUser> hasher = new PasswordHasher<LogUser>();
+      var result = hasher.VerifyHashedPassword(loginUser, userInDb.Password, loginUser.LPassword);
+      if(result == 0)
+      {
+        ModelState.AddModelError("LEmail", "Invalid Email/Password");
+        return View("UserCreateLogin");
+      }
+      else
+      {
+        HttpContext.Session.SetInt32("UserId", userInDb.UserId);
+        System.Console.WriteLine("------------" + HttpContext.Session.GetInt32("UserId") + "------------");
+
+        
+        return RedirectToAction("UserIndex");
+      }
+    }
+    else
+    {
+      return View("UserCreateLogin");
+    }
+  }
 
 
 
@@ -65,4 +107,20 @@ public class UserController : Controller
   }
 
 }
+
+    // Session Check for logged in User
+
+    // Apply [SessionCheck] to all routes user must be logged in to view
+
+    public class SessionCheckAttribute : ActionFilterAttribute
+    {
+        public override void OnActionExecuting(ActionExecutingContext context)
+        {
+            int? userId = context.HttpContext.Session.GetInt32("UserId");
+            if(userId == null)
+            {
+                context.Result = new RedirectToActionResult("NewUser", "User", null);
+            }
+        }
+    }
 
