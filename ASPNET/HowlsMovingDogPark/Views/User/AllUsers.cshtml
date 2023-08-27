@@ -1,3 +1,16 @@
 @model List<User>
 
-  
+<h1>
+  List of Users Below
+</h1>
+
+@foreach(User person in Model)
+{
+  <div>
+    <h1>User #@person.UserId</h1>
+    <h1>First Name: @person.FirstName</h1>
+    <h1>Last Name: @person.LastName</h1>
+  </div>
+}
+
+<a href="/">Back to Index</a>
