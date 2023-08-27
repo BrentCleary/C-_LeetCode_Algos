@@ -6,6 +6,7 @@ public class Dog
 {
     [Key]
     public int DogId{ get; set; }
+    [Required]
     public string Name { get; set; } 
     public string Breed { get; set; }
     public int Weight { get; set; }
@@ -14,6 +15,7 @@ public class Dog
     public DateTime CreatedAt { get; set; } = DateTime.Now;
     public DateTime UpdatedAt { get; set; } = DateTime.Now;
 
+    [Required]
     public int UserId { get; set; }
     public User? Owner { get; set; }
 

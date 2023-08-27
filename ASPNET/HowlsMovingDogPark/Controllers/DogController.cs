@@ -39,7 +39,7 @@ public class DogController : Controller
     {
       _context.Add(newDog);
       _context.SaveChanges();
-      return RedirectToAction("Index");
+      return RedirectToAction("DogIndex");
     }
     else
     {
