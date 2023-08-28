@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "K5k8euKuCgabIIop+wGqM5E0tcyvCnjiXAJ1B/+w2y4=",
+  "Hash": "7a646QTsdxWoGY5gJeJeHXmy8hJPDTrNv8A5Ii9gJ4Q=",
   "Source": "HowlsMovingDogPark",
   "BasePath": "_content/HowlsMovingDogPark",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsMovingDogPark\\wwwroot\\images\\Cute-Corgi-Dog-PNG-Photos.png",
+      "SourceId": "HowlsMovingDogPark",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsMovingDogPark\\wwwroot\\",
+      "BasePath": "_content/HowlsMovingDogPark",
+      "RelativePath": "images/Cute-Corgi-Dog-PNG-Photos.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Cute-Corgi-Dog-PNG-Photos.png"
     },
     {
       "Identity": "C:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsMovingDogPark\\wwwroot\\images\\howl-s-moving-castle-background-12gwdrp2u08poynf.webp",

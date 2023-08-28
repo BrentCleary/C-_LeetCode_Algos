@@ -1,3 +1,4 @@
+using System.Net;
 using System.Diagnostics;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
@@ -21,9 +22,15 @@ public class DogController : Controller
   // ------- DOG ROUTES -----------
   // ----- Create Dog (FORM)
 
+  [SessionCheck]
   [HttpGet("/dogs/new")]
   public IActionResult NewDog()
   {
+
+    
+    int? currentUserId = HttpContext.Session.GetInt32("UserId");
+    ViewBag.currentUserId = currentUserId.Value;
+    
 
     return View("~/Views/Dog/DogCreate.cshtml");
   }
@@ -37,6 +44,7 @@ public class DogController : Controller
 
     if(ModelState.IsValid)
     {
+
       _context.Add(newDog);
       _context.SaveChanges();
       return RedirectToAction("DogIndex");

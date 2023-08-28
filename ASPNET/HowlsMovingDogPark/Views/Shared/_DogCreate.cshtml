@@ -34,13 +34,21 @@
       <input asp-for="Notes">
       <span asp-validation-for="Notes"></span>
     </div>
-    <div>
-      <label asp-for="UserId"></label>
-      <input asp-for="UserId">
-      <span asp-validation-for="UserId"></span>
+
+    <div class="hidden-element">
+      <input type="text" value="@ViewBag.currentUserId">
     </div>
+
     <div>
       <input type="submit" value="Submit">
     </div>
   </form>
+
+<h1>Test</h1>
+
+  <h1>@ViewBag.currentUserId</h1>
+
+  <h1>Test</h1>
+
 </div>
+
