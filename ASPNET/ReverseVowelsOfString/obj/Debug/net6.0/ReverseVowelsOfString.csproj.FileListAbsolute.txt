@@ -1,0 +1,15 @@
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\ReverseVowelsOfString\bin\Debug\net6.0\ReverseVowelsOfString.exe
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\ReverseVowelsOfString\bin\Debug\net6.0\ReverseVowelsOfString.deps.json
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\ReverseVowelsOfString\bin\Debug\net6.0\ReverseVowelsOfString.runtimeconfig.json
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\ReverseVowelsOfString\bin\Debug\net6.0\ReverseVowelsOfString.dll
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\ReverseVowelsOfString\bin\Debug\net6.0\ReverseVowelsOfString.pdb
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\ReverseVowelsOfString\obj\Debug\net6.0\ReverseVowelsOfString.csproj.AssemblyReference.cache
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\ReverseVowelsOfString\obj\Debug\net6.0\ReverseVowelsOfString.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\ReverseVowelsOfString\obj\Debug\net6.0\ReverseVowelsOfString.AssemblyInfoInputs.cache
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\ReverseVowelsOfString\obj\Debug\net6.0\ReverseVowelsOfString.AssemblyInfo.cs
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\ReverseVowelsOfString\obj\Debug\net6.0\ReverseVowelsOfString.csproj.CoreCompileInputs.cache
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\ReverseVowelsOfString\obj\Debug\net6.0\ReverseVowelsOfString.dll
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\ReverseVowelsOfString\obj\Debug\net6.0\refint\ReverseVowelsOfString.dll
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\ReverseVowelsOfString\obj\Debug\net6.0\ReverseVowelsOfString.pdb
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\ReverseVowelsOfString\obj\Debug\net6.0\ReverseVowelsOfString.genruntimeconfig.cache
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\ReverseVowelsOfString\obj\Debug\net6.0\ref\ReverseVowelsOfString.dll

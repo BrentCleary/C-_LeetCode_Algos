@@ -1,0 +1,15 @@
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\FindPivotIndex\bin\Debug\net6.0\FindPivotIndex.exe
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\FindPivotIndex\bin\Debug\net6.0\FindPivotIndex.deps.json
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\FindPivotIndex\bin\Debug\net6.0\FindPivotIndex.runtimeconfig.json
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\FindPivotIndex\bin\Debug\net6.0\FindPivotIndex.dll
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\FindPivotIndex\bin\Debug\net6.0\FindPivotIndex.pdb
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\FindPivotIndex\obj\Debug\net6.0\FindPivotIndex.csproj.AssemblyReference.cache
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\FindPivotIndex\obj\Debug\net6.0\FindPivotIndex.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\FindPivotIndex\obj\Debug\net6.0\FindPivotIndex.AssemblyInfoInputs.cache
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\FindPivotIndex\obj\Debug\net6.0\FindPivotIndex.AssemblyInfo.cs
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\FindPivotIndex\obj\Debug\net6.0\FindPivotIndex.csproj.CoreCompileInputs.cache
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\FindPivotIndex\obj\Debug\net6.0\FindPivotIndex.dll
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\FindPivotIndex\obj\Debug\net6.0\refint\FindPivotIndex.dll
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\FindPivotIndex\obj\Debug\net6.0\FindPivotIndex.pdb
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\FindPivotIndex\obj\Debug\net6.0\FindPivotIndex.genruntimeconfig.cache
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\FindPivotIndex\obj\Debug\net6.0\ref\FindPivotIndex.dll
