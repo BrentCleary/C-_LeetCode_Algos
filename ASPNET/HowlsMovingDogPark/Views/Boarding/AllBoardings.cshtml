@@ -2,4 +2,10 @@
 
 <h1>This is a list of all Boarding Dates</h1>
 
+@foreach(Boarding board in @Model)
+{
+  <h1>@board.Date</h1>
+  <h1>@board.Notes</h1>
+}
+
 <a href="/">Return to HomePage</a>
