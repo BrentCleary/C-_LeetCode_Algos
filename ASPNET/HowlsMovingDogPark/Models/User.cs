@@ -26,13 +26,17 @@ public class User
   public string Password {get;set;}
 
   [NotMapped]
+  [DataType(DataType.Password)]
   [Compare("Password")]
   public string PasswordConfirm {get;set;}
 
   public DateTime CreatedAt {get;set;} = DateTime.Now;
   public DateTime UpdatedAt {get;set;} = DateTime.Now;
 
+  // List of Owned Dogs
   public List<Dog> AllDogs {get;set;} = new List<Dog>();
+  // List of Reserved Boarding Dates
+  public List<UserBoardingReservation> BoardingReservations {get;set;} = new List<UserBoardingReservation>();
 
 }
 

@@ -3,6 +3,7 @@ using System;
 using HowlsMovingDogPark.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace HowlsMovingDogPark.Migrations
 {
     [DbContext(typeof(MyContext))]
-    partial class MyContextModelSnapshot : ModelSnapshot
+    [Migration("20230831012945_FifthMigration")]
+    partial class FifthMigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -40,7 +42,7 @@ namespace HowlsMovingDogPark.Migrations
 
                     b.HasKey("BoardingId");
 
-                    b.ToTable("Boardings");
+                    b.ToTable("Boarding");
                 });
 
             modelBuilder.Entity("HowlsMovingDogPark.Models.Dog", b =>
@@ -83,6 +85,27 @@ namespace HowlsMovingDogPark.Migrations
                     b.ToTable("Dogs");
                 });
 
+            modelBuilder.Entity("HowlsMovingDogPark.Models.Reservation", b =>
+                {
+                    b.Property<int>("ReservationId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<int>("BoardingId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("ReservationId");
+
+                    b.HasIndex("BoardingId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Reservation");
+                });
+
             modelBuilder.Entity("HowlsMovingDogPark.Models.User", b =>
                 {
                     b.Property<int>("UserId")
@@ -113,34 +136,7 @@ namespace HowlsMovingDogPark.Migrations
 
                     b.HasKey("UserId");
 
-                    b.ToTable("Users");
-                });
-
-            modelBuilder.Entity("HowlsMovingDogPark.Models.UserBoardingReservation", b =>
-                {
-                    b.Property<int>("UserBoardingReservationId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    b.Property<int>("BoardingId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<DateTime>("UpdatedAt")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
-
-                    b.HasKey("UserBoardingReservationId");
-
-                    b.HasIndex("BoardingId");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("UserBoardingReservations");
+                    b.ToTable("User");
                 });
 
             modelBuilder.Entity("HowlsMovingDogPark.Models.Dog", b =>
@@ -154,28 +150,28 @@ namespace HowlsMovingDogPark.Migrations
                     b.Navigation("Owner");
                 });
 
-            modelBuilder.Entity("HowlsMovingDogPark.Models.UserBoardingReservation", b =>
+            modelBuilder.Entity("HowlsMovingDogPark.Models.Reservation", b =>
                 {
-                    b.HasOne("HowlsMovingDogPark.Models.Boarding", "ReservedBoarding")
-                        .WithMany("UserReservations")
+                    b.HasOne("HowlsMovingDogPark.Models.Boarding", "Boarding")
+                        .WithMany("ReservedUsers")
                         .HasForeignKey("BoardingId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("HowlsMovingDogPark.Models.User", "ReservedUser")
+                    b.HasOne("HowlsMovingDogPark.Models.User", "User")
                         .WithMany("BoardingReservations")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("ReservedBoarding");
+                    b.Navigation("Boarding");
 
-                    b.Navigation("ReservedUser");
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("HowlsMovingDogPark.Models.Boarding", b =>
                 {
-                    b.Navigation("UserReservations");
+                    b.Navigation("ReservedUsers");
                 });
 
             modelBuilder.Entity("HowlsMovingDogPark.Models.User", b =>

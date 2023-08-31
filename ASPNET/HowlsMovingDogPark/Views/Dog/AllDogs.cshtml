@@ -1,14 +1,14 @@
 @model List<Dog>
 
-@foreach(Dog woofer in @Model)
+@foreach(Dog onePet in @Model)
 {
-  <h1>Name: @woofer.Name</h1>
-  <h1>Breed: @woofer.Breed</h1>
-  <h1>Weight: @woofer.Weight</h1>
-  <h1>Age: @woofer.Age</h1>
-  <h1>Notes: @woofer.Notes</h1>
-  <h1>DogId: @woofer.DogId</h1>
-  <h1>Owner ID is: @woofer.UserId</h1>
+  <h1>Name: @onePet.Name</h1>
+  <h1>Breed: @onePet.Breed</h1>
+  <h1>Weight: @onePet.Weight</h1>
+  <h1>Age: @onePet.Age</h1>
+  <h1>Notes: @onePet.Notes</h1>
+  <h1>DogId: @onePet.DogId</h1>
+  <h1>Owner ID is: @onePet.UserId</h1>
 }
 
 <a href="/">Back to Index</a>

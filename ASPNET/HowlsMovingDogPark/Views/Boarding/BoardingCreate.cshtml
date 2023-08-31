@@ -1,0 +1,39 @@
+@model Boarding
+
+<h1>This is the Boarding Page</h1>
+
+
+<style>
+  .hidden-element
+  {
+    display: none;
+  }
+</style>
+
+<div>
+  <form asp-action="CreateBoarding" asp-controller="Boarding" method="post">
+    <div>
+      <label asp-for="Date"></label>
+      <input asp-for="Date">
+      <span asp-validation-for="Date"></span>
+    </div>
+    <div>
+      <label asp-for="Notes"></label>
+      <input asp-for="Notes">
+      <span asp-validation-for="Notes"></span>
+    </div>
+    <div>
+      <input type="submit" value="submit">
+    </div>
+  </form>
+
+<h1>Test</h1>
+
+  <h1>Current UserID is @ViewBag.currentUserId</h1>
+
+  <h1>Test</h1>
+
+</div>
+
+
+<a href="/">Back to Index</a>
