@@ -32,7 +32,7 @@ public class DogController : Controller
     ViewBag.currentUserId = currentUserId.Value;
     
 
-    return View("~/Views/Dog/DogCreate.cshtml");
+    return View("~/Views/Dog/CreateDog.cshtml");
   }
 
   // ----- Create Dog (POST)
@@ -69,12 +69,44 @@ public class DogController : Controller
   // ---- Edit Dog (VIEW)
 
   [HttpGet("/dogs/{id}/edit")]
-  public IActionResult EditDog()
+  public IActionResult EditDog(int id)
   {
+    Dog? oneDog = _context.Dogs.FirstOrDefault(d => d.DogId == id);
 
-    return View();
+    return View(oneDog);
   }
 
+    // ---- Edit Dog (POST)
+  [HttpPost("/dogs/{id}/update")]
+  public IActionResult UpdateDog(int id, Dog newDog)
+  {
+    Dog oldDog = _context.Dogs.FirstOrDefault(d => d.DogId == id);
+    if(ModelState.IsValid)
+    {
+      oldDog.Name = newDog.Name;
+      oldDog.Breed = newDog.Breed;
+      oldDog.Weight = newDog.Weight;
+      oldDog.Age = newDog.Age;
+      oldDog.Notes = oldDog.Notes;
+      _context.SaveChanges();
+      return RedirectToAction("DogIndex");
+    }
+    else
+    {
+      return View("EditDog", oldDog);
+    }
+  }
+
+    // ---- Delete Dog (POST)
+    [HttpPost("/dogs/{id}/delete")]
+    public IActionResult DeleteDog(int id)
+    {
+      Dog? DogToDelete = _context.Dogs.SingleOrDefault(d => d.DogId == id);
+      _context.Dogs.Remove(DogToDelete);
+      _context.SaveChanges();
+
+      return RedirectToAction("DogIndex");
+    }
 
   public IActionResult Privacy()
   {

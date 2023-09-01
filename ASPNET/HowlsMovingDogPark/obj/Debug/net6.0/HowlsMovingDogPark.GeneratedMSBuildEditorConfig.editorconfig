@@ -27,12 +27,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9nXEFsbERvZ3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/HowlsMovingDogPark/Views/Dog/DogCreate.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9nXERvZ0NyZWF0ZS5jc2h0bWw=
+[c:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/HowlsMovingDogPark/Views/Dog/CreateDog.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9nXENyZWF0ZURvZy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/HowlsMovingDogPark/Views/Dog/DogEdit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9nXERvZ0VkaXQuY3NodG1s
+[c:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/HowlsMovingDogPark/Views/Dog/EditDog.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9nXEVkaXREb2cuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [c:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/HowlsMovingDogPark/Views/Home/Index.cshtml]

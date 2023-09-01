@@ -26,10 +26,6 @@ public class UserController : Controller
   public IActionResult NewUser()
   {
 
-            // Test this
-    ViewBag.SessionKey = HttpContext.Session.GetInt32("UserId");
-    ViewBag.Test = "Just a test";
-
     return View("~/Views/User/UserCreateLogin.cshtml");
   }
 
@@ -61,6 +57,10 @@ public class UserController : Controller
   {
 
     List<User> AllUsers = _context.Users.ToList();
+    // Session Check in Console
+    System.Console.WriteLine("------------" + HttpContext.Session.GetInt32("UserId") + "------------");
+
+
     return View("AllUsers", AllUsers);
   }
 
@@ -88,6 +88,7 @@ public class UserController : Controller
       else
       {
         HttpContext.Session.SetInt32("UserId", userInDb.UserId);
+        // Session Check in Console
         System.Console.WriteLine("------------" + HttpContext.Session.GetInt32("UserId") + "------------");
 
         

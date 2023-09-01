@@ -1,5 +1,11 @@
 @model List<Boarding>
 
+<div>
+  @await Html.PartialAsync("_NavigationBar")
+</div>
+
+<br>
+
 <h1 class="display-4 text-center">All Boardings</h1>
 
 <div class="container text-center">
@@ -22,6 +28,3 @@
 
 
 
-<div>
-  @await Html.PartialAsync("_NavigationBar")
-</div>

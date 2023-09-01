@@ -1,7 +1,12 @@
 @model Dog
 
-<h1>Dog Creation Page</h1>
+<div>
+  @await Html.PartialAsync("_NavigationBar")
+</div>
 
+<br>
+
+<h1>Dog Creation Page</h1>
 
 <style>
   .hidden-element
@@ -38,6 +43,7 @@
       <span asp-validation-for="Notes"></span>
     </div>
 
+    @* Input is Hidden - Always set to Session UserId *@
     <div class="hidden-element">
       <input type="text" name="UserId" value="@ViewBag.currentUserId">
     </div>
@@ -47,14 +53,6 @@
     </div>
   </form>
 
-<h1>Test</h1>
-
-  <h1>@ViewBag.currentUserId</h1>
-
-  <h1>Test</h1>
+  <h1>Current UserId is @ViewBag.currentUserId</h1>
 
 </div>
-
-
-
-<a href="/">Back to Index</a>

@@ -1,16 +1,13 @@
 @model Boarding
 
-<h1>This is the Boarding Page</h1>
-
-
-<style>
-  .hidden-element
-  {
-    display: none;
-  }
-</style>
-
 <div>
+  @await Html.PartialAsync("_NavigationBar")
+</div>
+
+<br>
+
+<div class="text-center">
+  <h1>This is the Boarding Page</h1>
   <form asp-action="CreateBoarding" asp-controller="Boarding" method="post">
     <div>
       <label asp-for="Date"></label>
@@ -28,6 +25,3 @@
   </form>
 
 </div>
-
-
-<a href="/">Back to Index</a>

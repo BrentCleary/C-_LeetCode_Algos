@@ -23701,11 +23701,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsMovingDogPark\\Views\\Dog\\DogCreate.cshtml",
-      "TargetPath": "Views\\Dog\\DogCreate.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsMovingDogPark\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
@@ -23771,13 +23766,18 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsMovingDogPark\\Views\\Dog\\DogEdit.cshtml",
-      "TargetPath": "Views\\Dog\\DogEdit.cshtml",
+      "FilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsMovingDogPark\\Views\\Shared\\_NavigationBar.cshtml",
+      "TargetPath": "Views\\Shared\\_NavigationBar.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsMovingDogPark\\Views\\Shared\\_NavigationBar.cshtml",
-      "TargetPath": "Views\\Shared\\_NavigationBar.cshtml",
+      "FilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsMovingDogPark\\Views\\Dog\\CreateDog.cshtml",
+      "TargetPath": "Views\\Dog\\CreateDog.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsMovingDogPark\\Views\\Dog\\EditDog.cshtml",
+      "TargetPath": "Views\\Dog\\EditDog.cshtml",
       "FileKind": "mvc"
     }
   ]
