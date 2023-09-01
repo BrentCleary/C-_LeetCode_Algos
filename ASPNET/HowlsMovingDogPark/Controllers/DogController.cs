@@ -66,8 +66,14 @@ public class DogController : Controller
     return View("AllDogs", AllDogs);
   }
 
+  // ---- Edit Dog (VIEW)
 
+  [HttpGet("/dogs/{id}/edit")]
+  public IActionResult EditDog()
+  {
 
+    return View();
+  }
 
 
   public IActionResult Privacy()
