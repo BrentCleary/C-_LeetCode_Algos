@@ -62,7 +62,8 @@ public class BoardingController : Controller
   public IActionResult BoardingIndex()
   {
 
-    List<Boarding> AllBoardings = _context.Boardings.ToList();
+    List<Boarding> AllBoardings = _context.Boardings
+    .Include(b => b.UserReservations).ToList();
 
     return View("AllBoardings", AllBoardings);
   }

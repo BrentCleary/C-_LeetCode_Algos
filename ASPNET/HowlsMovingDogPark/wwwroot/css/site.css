@@ -16,3 +16,9 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.list-col-spacing > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

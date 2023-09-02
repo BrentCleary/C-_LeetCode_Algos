@@ -15,10 +15,12 @@ public class HomeController : Controller
         _context = context;
     }
 
+    [HttpGet("/")]
     public IActionResult Index()
     {
         return View();
     }
+
 
     public IActionResult Privacy()
     {
