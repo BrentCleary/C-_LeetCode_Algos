@@ -37,7 +37,7 @@ public class DogController : Controller
 
   // ----- Create Dog (POST)
 
-
+  [SessionCheck]
   [HttpPost("/dogs/create")]
   public IActionResult CreateDog(Dog newDog)
   {
@@ -57,6 +57,7 @@ public class DogController : Controller
 
     // ----- All Dogs (VIEW)
 
+  [SessionCheck]
   [HttpGet("/dogs")]
   public IActionResult DogIndex()
   {

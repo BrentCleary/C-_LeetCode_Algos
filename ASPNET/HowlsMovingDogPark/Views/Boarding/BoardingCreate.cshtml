@@ -7,21 +7,23 @@
 <br>
 
 <div class="text-center">
-  <h1>This is the Boarding Page</h1>
-  <form asp-action="CreateBoarding" asp-controller="Boarding" method="post">
-    <div>
-      <label asp-for="Date"></label>
-      <input asp-for="Date">
-      <span asp-validation-for="Date"></span>
-    </div>
-    <div>
-      <label asp-for="Notes"></label>
-      <input asp-for="Notes">
-      <span asp-validation-for="Notes"></span>
-    </div>
-    <div>
-      <input type="submit" value="submit">
-    </div>
-  </form>
+  <h1 class="display-4">Create a Boarding Date</h1>
+  <div>
+    <form asp-action="CreateBoarding" asp-controller="Boarding" method="post">
+      <div>
+        <label asp-for="Date"></label>
+        <input asp-for="Date">
+        <span asp-validation-for="Date"></span>
+      </div>
+      <div>
+        <label asp-for="Notes"></label>
+        <input asp-for="Notes">
+        <span asp-validation-for="Notes"></span>
+      </div>
+      <div>
+        <input type="submit" value="submit">
+      </div>
+    </form>
+  </div>
 
 </div>
