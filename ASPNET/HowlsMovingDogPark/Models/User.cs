@@ -38,7 +38,12 @@ public class User
   // List of Reserved Boarding Dates
   public List<UserBoardingReservation> BoardingReservations {get;set;} = new List<UserBoardingReservation>();
 
+
+
 }
+
+
+
 
 // Below is a check in our database (_context) for any objects holding the entered email in their email field
 

@@ -15,6 +15,7 @@ public class UserBoardingReservation
   public int UserId {get;set;}
   public int BoardingId {get;set;}
   
+  // Navigation Properties
   public User? ReservedUser {get;set;}
   public Boarding? ReservedBoarding {get;set;}
 }

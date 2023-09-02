@@ -30,10 +30,13 @@
       <h1 class="col">@onePet.Notes</h1>
       <h1 class="col">@onePet.DogId</h1>
       <h1 class="col">@onePet.UserId</h1>
-      <a href="/dogs/@onePet.DogId/edit" ><button class="btn btn-warning text-white">Edit Dog</button></a>
-      <form asp-action="DeleteDog" asp-route-id="@onePet.DogId" method="post">
-        <button class="btn btn-danger" onclick="DeleteCheck()">DELETE</button>
-      </form>
+      @if(onePet.UserId == Context.Session.GetInt32("UserId"))
+      {
+        <a href="/dogs/@onePet.DogId/edit" ><button class="btn btn-warning text-white">Edit Dog</button></a>
+        <form asp-action="DeleteDog" asp-route-id="@onePet.DogId" method="post">
+          <button class="btn btn-danger" onclick="DeleteCheck()">DELETE</button>
+        </form>
+      }
     </div>
   }
 </div>
