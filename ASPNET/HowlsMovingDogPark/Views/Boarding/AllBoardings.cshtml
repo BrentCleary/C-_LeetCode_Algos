@@ -23,13 +23,69 @@
     <h1 class="col">@board.Date</h1>
     <h1 class="col">@board.Notes</h1>
     <form class="col" asp-controller="Boarding" asp-action="ReserveBoarding" asp-route-boardingId="@board.BoardingId" method="post">
-      <button>
-        <span>Join</span>
-      </button>
+      
+      @foreach(UserBoardingReservation reservation in board.UserReservations)
+      {
+        bool alreadyJoined = reservation.UserId == Context.Session.GetInt32("UserId");
+        
+        <h1>@alreadyJoined</h1>
+
+        @if(alreadyJoined)
+        {
+          <button> <span>Leave</span> </button>
+        }
+        else
+        {
+          <button> <span>Join</span> </button>
+        }
+      }
+    
     </form>
   </div>
-  
   }
+
+
+  @foreach(Boarding board in @Model)
+  {
+    <h1>Tejjst</h1>
+
+    @foreach(UserBoardingReservation reservation in board.UserReservations)
+    {
+      <h1>
+        @reservation.UserBoardingReservationId
+      </h1>
+    }
+  }
+
+  //Chat GPT Test
+  @foreach (Boarding board in Model)
+{
+    <div class="row border border-5 border-secondary-color">
+        <h1 class="col">@board.BoardingId</h1>
+        <h1 class="col">@board.Date</h1>
+        <h1 class="col">@board.Notes</h1>
+
+        @foreach (UserBoardingReservation reservation in board.UserReservations)
+        {
+            bool alreadyJoined = reservation.UserId == Context.Session.GetInt32("UserId");
+
+            <form class="col" asp-controller="Boarding" asp-action="ReserveBoarding" asp-route-boardingId="@board.BoardingId" method="post">
+                <input type="hidden" name="reservationId" value="@reservation.UserBoardingReservationId" />
+
+                @if (alreadyJoined)
+                {
+                    <button type="submit">Leave</button>
+                }
+                else
+                {
+                    <button type="submit">Join</button>
+                }
+            </form>
+        }
+    </div>
+}
+
+
 
 
 </div>

@@ -76,22 +76,33 @@ public class BoardingController : Controller
       return RedirectToAction("NewUser");
     }
 
-    UserBoardingReservation newReservation = new UserBoardingReservation()
+
+    UserBoardingReservation? existingReservation = _context.UserBoardingReservations.FirstOrDefault(ubr => ubr.UserId == userId && ubr.BoardingId == boardingId);
+
+    if(existingReservation != null)
     {
-      UserId = (int)userId,
-      BoardingId = boardingId
-    };
+      _context.Remove(existingReservation);
+    }
+    else
+    {
+      UserBoardingReservation newReservation = new UserBoardingReservation()
+      {
+        UserId = (int)userId,
+        BoardingId = boardingId
+      };
+      
+      // Console Debug Check
+      System.Console.WriteLine("------ UserId ------" + newReservation.UserId + "------------");
+      System.Console.WriteLine("------ BoardingId ------" + newReservation.BoardingId + "------------");
 
-    // Console Debug Check
-    System.Console.WriteLine("------UserId------" + newReservation.UserId + "------------");
-    System.Console.WriteLine("------BoardingId------" + newReservation.BoardingId + "------------");
+      _context.UserBoardingReservations.Add(newReservation);
+    } 
 
+    
 
-
-    _context.UserBoardingReservations.Add(newReservation);
     _context.SaveChanges();
 
-    return RedirectToAction("NewBoarding");
+    return RedirectToAction("BoardingIndex");
   }
 
 
