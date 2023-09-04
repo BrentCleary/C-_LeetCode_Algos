@@ -47,3 +47,10 @@ button.accept-policy[b-hjesx8wnpr] {
   white-space: nowrap;
   line-height: 60px;
 }
+
+body[b-hjesx8wnpr] {
+  background-image: url('~/images/Howls_Moving_Background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}

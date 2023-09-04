@@ -1,49 +1,44 @@
-@{
-    Layout = null; // This partial doesn't use a layout
-}
 
-<html>
-<head>
-    <title>Partial Example</title>
-    <!-- Include Bootstrap CSS (Assuming you have Bootstrap installed) -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
 
 <style>
   .logo{
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 50%;
+    max-height: 50%;
   }
 
 </style>
 
-  
-<div class="container" style="max-width: 1322px;">
-    <div class="row">
-        <div class="col-md-3">
+
+<div class="container text-center" style="max-width: 1322px;">
+    <div class="row align-items-center justify-content-center">
+        <div class="col-md-2">
+            <div class="row bg-primary">Test</div>
+            <div class="row bg-success">Test</div>
+        </div>
+        <div class="col-md-8">
             <img class="logo" src="~/images/Small_Logo.jpg" alt="logo">
+            <img class="logo" src="~/images/Howls_Moving_Background.jpg" alt="Background">
         </div>
-        <div class="col-md-3">
-            <!-- Content for Column 2 -->
-            <h4 style="color: #28a745;">Column 2</h4>
-            <p>This is the content for the second column.</p>
-        </div>
-        <div class="col-md-3">
-            <!-- Content for Column 3 -->
-            <h4 style="color: #dc3545;">Column 3</h4>
-            <p>This is the content for the third column.</p>
-        </div>
-        <div class="col-md-3">
-            <!-- Content for Column 4 -->
-            <h4 style="color: #ffc107;">Column 4</h4>
-            <p>This is the content for the fourth column.</p>
+        <div class="col-md-2">
+            <div class="row bg-warning align-self-start top">Test</div>
+            <div class="row bg-danger align-self-end bottom">Test</div>
         </div>
     </div>
 </div>
 
-<!-- Include Bootstrap JS and jQuery (if needed) -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-</html>
+<style>
+    .custom-row{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    .top{
+        margin-top: auto;
+    }
+
+    .bottom{
+        margin-bottom: auto;
+    }
+</style>
