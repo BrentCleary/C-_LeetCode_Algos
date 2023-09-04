@@ -47,9 +47,3 @@ button.accept-policy {
   line-height: 60px;
 }
 
-body {
-  background-image: url('~/images/Howls_Moving_Background.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "w+Uno90/IbOi8KzG5Ki+5O86hwSW+LKFcPn4ETmLeKc=",
+  "Hash": "vRyA9gX+vgBqNAT2ZYT6RWhp7W0Ja8Md8HoXQuX+w30=",
   "Source": "HowlsMovingDogPark",
   "BasePath": "_content/HowlsMovingDogPark",
   "Mode": "Default",
@@ -119,23 +119,6 @@
       "OriginalItemSpec": "wwwroot\\images\\Cute-Corgi-Dog-PNG-Photos.png"
     },
     {
-      "Identity": "C:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsMovingDogPark\\wwwroot\\images\\howl-s-moving-castle-background-12gwdrp2u08poynf.webp",
-      "SourceId": "HowlsMovingDogPark",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsMovingDogPark\\wwwroot\\",
-      "BasePath": "_content/HowlsMovingDogPark",
-      "RelativePath": "images/howl-s-moving-castle-background-12gwdrp2u08poynf.webp",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\howl-s-moving-castle-background-12gwdrp2u08poynf.webp"
-    },
-    {
       "Identity": "C:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsMovingDogPark\\wwwroot\\images\\Howls_Logo.jpg",
       "SourceId": "HowlsMovingDogPark",
       "SourceType": "Discovered",
@@ -151,6 +134,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\Howls_Logo.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsMovingDogPark\\wwwroot\\images\\Howls_Moving_Background.jpg",
+      "SourceId": "HowlsMovingDogPark",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsMovingDogPark\\wwwroot\\",
+      "BasePath": "_content/HowlsMovingDogPark",
+      "RelativePath": "images/Howls_Moving_Background.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Howls_Moving_Background.jpg"
     },
     {
       "Identity": "C:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsMovingDogPark\\wwwroot\\images\\Small_Logo.jpg",
