@@ -20,57 +20,29 @@
   
     <h2>Navigation</h2>
   <ul>
-    <li><a href="#section1">Go to Section 1</a></li>
-    <li><a href="#section2">Go to Section 2</a></li>
-    <li><a href="#section3">Go to Section 3</a></li>
+    <li><a href="#section1">Who we Are - Go to Section 1</a></li>
+    <li><a href="#section2">Opening Hours - Go to Section 2</a></li>
+    <li><a href="#section3">Services - Go to Section 3</a></li>
   </ul>
 
   <div id="section1">
-    <h2>Section 1</h2>
-    <p>This is the content of section 1.</p>
-    <h3 class="display-6">
-        Unwind at Howls Moving Dog Park in Old Town Parkland, a dog lover's paradise. Your pup enjoys playtime while you savor delicious food and craft beer. It's where dog lovers unite for unforgettable moments!
-    </h3>
 
-    <p>This is the content of section 1.</p>
-    <p>This is the content of section 1.</p>
-    <p>This is the content of section 1.</p>
-    <p>This is the content of section 1.</p>
-    <p>This is the content of section 1.</p>
-    <p>This is the content of section 1.</p>
-    <p>This is the content of section 1.</p>
-    <p>This is the content of section 1.</p>
-    <p>This is the content of section 1.</p>
-    <p>This is the content of section 1.</p>
-    <p>This is the content of section 1.</p>
-    <p>This is the content of section 1.</p>
-    <p>This is the content of section 1.</p>
-    <p>This is the content of section 1.</p>
-    <p>This is the content of section 1.</p>
-    <p>This is the content of section 1.</p>
-    <p>This is the content of section 1.</p>
-    <p>This is the content of section 1.</p>
-    <p>This is the content of section 1.</p>
-    <p>This is the content of section 1.</p>
-    <p>This is the content of section 1.</p>
-    <p>This is the content of section 1.</p>
-    <p>This is the content of section 1.</p>
-    <p>This is the content of section 1.</p>
-    <p>This is the content of section 1.</p>
-    <p>This is the content of section 1.</p>
-    <p>This is the content of section 1.</p>
-    <p>This is the content of section 1.</p>
-    <p>This is the content of section 1.</p>
-    <p>This is the content of section 1.</p>
-    <p>This is the content of section 1.</p>
-    <p>This is the content of section 1.</p>
-    <p>This is the content of section 1.</p>
-    <p>This is the content of section 1.</p>
-    <p>This is the content of section 1.</p>
-    <p>This is the content of section 1.</p>
-    <p>This is the content of section 1.</p>
-    <p>This is the content of section 1.</p>
-    <p>This is the content of section 1.</p>
+    <h2>Section 1</h2>
+    
+    @* Welcome Description *@
+    <div class="row">
+      <div class="col-md-1"></div>
+      <h3 class="display-6 col-md-10">
+        Unwind at Howls Moving Dog Park in Old Town Parkland, a dog lover's paradise. Your pup enjoys playtime while you savor delicious food and craft beer. It's where dog lovers unite for unforgettable moments!
+      </h3>
+      <div class="col-md-1"></div>
+    </div>
+
+    @* Carousel *@
+    <div>
+      @await Html.PartialAsync("_Carousel")
+    </div>
+
   </div>
 
 <br>
@@ -80,33 +52,46 @@
 
 
   <div id="section2">
-    <div>
+  
+  <div class="row">
+    <div class="col-md-1"></div>
+    
+    <div class="col-md-10">
+      <div>
+        <div>
+          <h2 class="display-4 m-4">OPENING HOURS</h2>
+        </div>
+        <div class="row">
+            <div class="row m-2">
+                <div class="display-6 col">MONDAY-FRIDAY</div>
+                <div class="display-6 col">1PM-9PM</div>
+            </div>
+            <div class="row m-2">
+                <div class="display-6 col">SATURDAY</div>
+                <div class="display-6 col">11AM-10PM</div>
+            </div>
+            <div class="row m-2">
+                <div class="display-6 col">SUNDAY</div>
+                <div class="display-6 col">11AM-9PM</div>
+            </div>
+        </div>
+      </div>
 
-    <h2 class="display-4 m-4">OPENING HOURS</h2>
-    </div>
-    <div class="row">
-        <div class="row m-2">
-            <div class="display-6 col">MONDAY-FRIDAY</div>
-            <div class="display-6 col">1PM-9PM</div>
-        </div>
-        <div class="row m-2">
-            <div class="display-6 col">SATURDAY</div>
-            <div class="display-6 col">11AM-10PM</div>
-        </div>
-        <div class="row m-2">
-            <div class="display-6 col">SUNDAY</div>
-            <div class="display-6 col">11AM-9PM</div>
-        </div>
+      <h2 class="display-5 m-3 bg bg-warning">BOARDING DROP-OFF HOURS</h2>
+        
+      <div class="row">
+          <div class="row m-1">
+              <div class="display-6 col">MONDAY-FRIDAY</div>
+              <div class="display-6 col">1PM-9PM</div>
+          </div>
+      </div>
     </div>
     
-    <h2 class="display-5 m-3 bg bg-warning">BOARDING DROP-OFF HOURS</h2>
-    </div>
-    <div class="row">
-        <div class="row m-1">
-            <div class="display-6 col">MONDAY-FRIDAY</div>
-            <div class="display-6 col">1PM-9PM</div>
-        </div>
-    </div>
+    <div class="col-md-1"></div>
+
+  </div>
+
+
 
 <br>
 <br>
