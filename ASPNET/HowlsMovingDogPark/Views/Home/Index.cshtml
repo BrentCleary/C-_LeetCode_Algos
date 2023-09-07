@@ -26,8 +26,11 @@
   </ul>
 
   <div id="section1">
+    <div class="container drop-shadow">
 
-    <h2>Section 1</h2>
+
+
+    <h2 class="display-3 text-center p-3">Dogs. Drinks. Food. And Friends</h2>
     
     @* Welcome Description *@
     <div class="row">
@@ -39,11 +42,15 @@
     </div>
 
     @* Carousel *@
-    <div>
+    <div class="p-5">
       @await Html.PartialAsync("_Carousel")
     </div>
 
+    </div>
+
+
   </div>
+
 
 <br>
 <br>
@@ -52,46 +59,48 @@
 
 
   <div id="section2">
-  
-    <div class="row">
-      <div class="col-md-1"></div>
-      
-      <div class="col-md-10">
-        <div>
-          <div>
-            <h2 class="display-4 m-4">OPENING HOURS</h2>
-          </div>
+    <div class="container drop-shadow m-5 p-5">
+      <div class="row">
+        <div class="col-md-1"></div>
+        
+        <div class="col-md-10">
+            <div>
+              <h2 class="display-4 m-4">OPENING HOURS</h2>
+            </div>
+            <div class="row">
+                <div class="row m-2">
+                    <div class="display-6 col">MONDAY-FRIDAY</div>
+                    <div class="display-6 col">1PM-9PM</div>
+                </div>
+                <div class="row m-2">
+                    <div class="display-6 col">SATURDAY</div>
+                    <div class="display-6 col">11AM-10PM</div>
+                </div>
+                <div class="row m-2">
+                    <div class="display-6 col">SUNDAY</div>
+                    <div class="display-6 col">11AM-9PM</div>
+                </div>
+            </div>
+
+
+
           <div class="row">
-              <div class="row m-2">
-                  <div class="display-6 col">MONDAY-FRIDAY</div>
-                  <div class="display-6 col">1PM-9PM</div>
-              </div>
-              <div class="row m-2">
-                  <div class="display-6 col">SATURDAY</div>
-                  <div class="display-6 col">11AM-10PM</div>
-              </div>
-              <div class="row m-2">
-                  <div class="display-6 col">SUNDAY</div>
-                  <div class="display-6 col">11AM-9PM</div>
-              </div>
-          </div>
-        </div>
-
-        <h2 class="display-5 m-3 bg bg-warning">BOARDING DROP-OFF HOURS</h2>
-
-        <div class="row">
+            <h2 class="display-5 m-3 bg bg-warning">BOARDING DROP-OFF HOURS</h2>
             <div class="row m-1">
                 <div class="display-6 col">MONDAY-FRIDAY</div>
                 <div class="display-6 col">1PM-9PM</div>
             </div>
+          </div>
         </div>
+        
+        <div class="col-md-1"></div>
+
       </div>
-      
-      <div class="col-md-1"></div>
 
     </div>
 
   </div>
+
 
 
 <br>
@@ -124,31 +133,7 @@
     <p>This is the content of section 3.</p>
     <p>This is the content of section 3.</p>
     <p>This is the content of section 3.</p>
-    <p>This is the content of section 3.</p>
-    <p>This is the content of section 3.</p>
-    <p>This is the content of section 3.</p>
-    <p>This is the content of section 3.</p>
-    <p>This is the content of section 3.</p>
-    <p>This is the content of section 3.</p>
-    <p>This is the content of section 3.</p>
-    <p>This is the content of section 3.</p>
-    <p>This is the content of section 3.</p>
-    <p>This is the content of section 3.</p>
-    <p>This is the content of section 3.</p>
-    <p>This is the content of section 3.</p>
-    <p>This is the content of section 3.</p>
-    <p>This is the content of section 3.</p>
-    <p>This is the content of section 3.</p>
-    <p>This is the content of section 3.</p>
-    <p>This is the content of section 3.</p>
-    <p>This is the content of section 3.</p>
-    <p>This is the content of section 3.</p>
-    <p>This is the content of section 3.</p>
-    <p>This is the content of section 3.</p>
-    <p>This is the content of section 3.</p>
-    <p>This is the content of section 3.</p>
-    <p>This is the content of section 3.</p>
-    <p>This is the content of section 3.</p>
+
   </div>
 
 
@@ -156,10 +141,17 @@
 </html>
 
 <style>
+
 .body {
   background-image: url('~/images/Howls_Moving_Background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
+.drop-shadow {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adjust the values as needed */
+}
+
+
 </style>
