@@ -1,4 +1,6 @@
-﻿@{
+﻿<div id="navbar"></div>
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -16,35 +18,31 @@
 
 
 <body>
-  <h1>Page Content</h1>
   
-    <h2>Navigation</h2>
   <ul>
-    <li><a href="#section1">Who we Are - Go to Section 1</a></li>
-    <li><a href="#section2">Opening Hours - Go to Section 2</a></li>
-    <li><a href="#section3">Services - Go to Section 3</a></li>
+    <li><a href="#our-park"></a></li>
   </ul>
 
-  <div id="section1">
+  <div id="our-park">
     <div class="container drop-shadow">
 
+      @* Welcome Description *@
+      <h2 class="display-3 text-center p-3">Dogs. Drinks. Food. And Friends</h2>
+      <div class="row">
+        
+        <div class="col-md-1"></div>
+        
+        <h3 class="display-6 col-md-10">
+          Unwind at Howls Moving Dog Park in Old Town, a dog lover's paradise. Your pup enjoys playtime while you savor delicious food and craft beer. It's where dog lovers unite for unforgettable moments!
+        </h3>
 
+        <div class="col-md-1"></div>
+      </div>
 
-    <h2 class="display-3 text-center p-3">Dogs. Drinks. Food. And Friends</h2>
-    
-    @* Welcome Description *@
-    <div class="row">
-      <div class="col-md-1"></div>
-      <h3 class="display-6 col-md-10">
-        Unwind at Howls Moving Dog Park in Old Town Parkland, a dog lover's paradise. Your pup enjoys playtime while you savor delicious food and craft beer. It's where dog lovers unite for unforgettable moments!
-      </h3>
-      <div class="col-md-1"></div>
-    </div>
-
-    @* Carousel *@
-    <div class="p-5">
-      @await Html.PartialAsync("_Carousel")
-    </div>
+      @* Carousel *@
+      <div class="p-5">
+        @await Html.PartialAsync("_Carousel")
+      </div>
 
     </div>
 
@@ -58,31 +56,30 @@
 
 
 
-  <div id="section2">
-    <div class="container drop-shadow m-5 p-5">
+  <div id="open-hours">
+    <div class="container drop-shadow p-5">
       <div class="row">
         <div class="col-md-1"></div>
         
         <div class="col-md-10">
-            <div>
-              <h2 class="display-4 m-4">OPENING HOURS</h2>
-            </div>
-            <div class="row">
-                <div class="row m-2">
-                    <div class="display-6 col">MONDAY-FRIDAY</div>
-                    <div class="display-6 col">1PM-9PM</div>
-                </div>
-                <div class="row m-2">
-                    <div class="display-6 col">SATURDAY</div>
-                    <div class="display-6 col">11AM-10PM</div>
-                </div>
-                <div class="row m-2">
-                    <div class="display-6 col">SUNDAY</div>
-                    <div class="display-6 col">11AM-9PM</div>
-                </div>
-            </div>
-
-
+          <div>
+            <h2 class="display-4 m-4">OPENING HOURS</h2>
+          </div>
+          <div class="row">
+              <div class="row m-2">
+                  <div class="display-6 col">MONDAY-FRIDAY</div>
+                  <div class="display-6 col">1PM-9PM</div>
+              </div>
+              <div class="row m-2">
+                  <div class="display-6 col">SATURDAY</div>
+                  <div class="display-6 col">11AM-10PM</div>
+              </div>
+              <div class="row m-2">
+                  <div class="display-6 col">SUNDAY</div>
+                  <div class="display-6 col">11AM-9PM</div>
+              </div>
+          </div>
+          <br>
 
           <div class="row">
             <h2 class="display-5 m-3 bg bg-warning">BOARDING DROP-OFF HOURS</h2>
@@ -96,9 +93,7 @@
         <div class="col-md-1"></div>
 
       </div>
-
     </div>
-
   </div>
 
 
@@ -107,38 +102,53 @@
 <br>
 
 
-  <div id="section3">
-    <h2>Section 3</h2>
-    <p>This is the content of section 3.</p>
-    <p>This is the content of section 3.</p>
-    <p>This is the content of section 3.</p>
-    <p>This is the content of section 3.</p>
-    <p>This is the content of section 3.</p>
-    <p>This is the content of section 3.</p>
-    <p>This is the content of section 3.</p>
-    <p>This is the content of section 3.</p>
-    <p>This is the content of section 3.</p>
-    <p>This is the content of section 3.</p>
-    <p>This is the content of section 3.</p>
-    <p>This is the content of section 3.</p>
-    <p>This is the content of section 3.</p>
-    <p>This is the content of section 3.</p>
-    <p>This is the content of section 3.</p>
-    <p>This is the content of section 3.</p>
-    <p>This is the content of section 3.</p>
-    <p>This is the content of section 3.</p>
-    <p>This is the content of section 3.</p>
-    <p>This is the content of section 3.</p>
-    <p>This is the content of section 3.</p>
-    <p>This is the content of section 3.</p>
-    <p>This is the content of section 3.</p>
-    <p>This is the content of section 3.</p>
+  <div id="contact-us">
+      <div class="container drop-shadow p-5">
+        <div class="row">
+          <div class="col-md-1"></div>
+          
+          <div class="col-md-10">
+              <div>
+                <h2 class="display-4 m-4">Contact Us</h2>
+              </div>
+              <div class="row">
+                  <div class="row m-2">
+                    <div class="display-6 col">HowlsDogPark@network.com</div>
+                  </div>
+                  <div class="row m-2">
+                    <div class="display-6 col">555-555-6789</div>
+                  </div>
+                  <div class="row m-2">
+                      <div class="display-6 col">1234 Old Town Avenue, West City, Seattle, 98765</div>
+                  </div>
+              </div>
 
+            <div class="row">
+              <div class="row m-1">
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-1"></div>
+
+        </div>
+    </div>
   </div>
-
 
 </body>
 </html>
+
+
+    <div class="floating-bar">
+        <a href="#navbar"><button class="return-button bg bg-info display-4 d-flex justify-content-center align-items-center">^</button></a>
+    </div>
+    <script src="script.js"></script>
+
+
+
+
+
+
 
 <style>
 
@@ -153,5 +163,31 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adjust the values as needed */
 }
 
+.floating-bar {
+    position: fixed;
+    bottom: -50px; /* Off-screen initially */
+    left: 0;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0); /* Transparent background */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    transition: bottom 0.3s ease-in-out; /* Add smooth transition */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.return-button{
+  border-color: transparent;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+
+.no-decoration{
+    text-decoration: none;
+}
 
 </style>
+
