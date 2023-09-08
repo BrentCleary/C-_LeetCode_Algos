@@ -102,6 +102,11 @@ public class UserController : Controller
   }
 
 
+  
+
+
+
+
 
   public IActionResult Privacy()
   {
