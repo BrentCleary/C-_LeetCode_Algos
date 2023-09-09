@@ -8,7 +8,7 @@ public class LogUser
   [EmailAddress]
   [Display(Name = "Email")]
   public string LEmail {get;set;}
-jn
+
   [Required(ErrorMessage = "Password is Required")]
   [DataType(DataType.Password)]
   [Display(Name = "Password")]

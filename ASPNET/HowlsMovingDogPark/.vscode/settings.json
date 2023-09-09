@@ -1,3 +1,4 @@
 {
-  "oneDarkPro.vivid": false
+  "oneDarkPro.vivid": false,
+  "csharp.semanticHighlighting.enabled": false
 }

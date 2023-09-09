@@ -19,6 +19,7 @@ public class BoardingController : Controller
     }
   }
 
+
   private readonly ILogger<UserController> _logger;
   private MyContext _context;
 
