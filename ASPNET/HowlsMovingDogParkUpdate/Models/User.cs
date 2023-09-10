@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 // Adding DataAnnotations.Schema below allows for [NotMapped]
 using System.ComponentModel.DataAnnotations.Schema;
-namespace HowlsMovingDogPark.Models;
+namespace HowlsMovingDogParkUpdate.Models;
 
 public class User
 {

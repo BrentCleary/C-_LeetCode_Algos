@@ -1,7 +1,7 @@
 #pragma warning disable CS8618
 using System.Reflection.Metadata;
 using System.ComponentModel.DataAnnotations;
-namespace HowlsMovingDogPark.Models;
+namespace HowlsMovingDogParkUpdate.Models;
 
 // Joining Table
 public class UserBoardingReservation

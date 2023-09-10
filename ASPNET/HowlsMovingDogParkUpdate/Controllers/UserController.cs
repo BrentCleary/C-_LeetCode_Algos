@@ -3,10 +3,10 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.AspNetCore.Identity;
-using HowlsMovingDogPark.Models;
+using HowlsMovingDogParkUpdate.Models;
 
 
-namespace HowlsMovingDogPark.Controllers;
+namespace HowlsMovingDogParkUpdate.Controllers;
 
 public class UserController : Controller
 {

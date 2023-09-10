@@ -1,8 +1,8 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using HowlsMovingDogPark.Models;
+using HowlsMovingDogParkUpdate.Models;
 
-namespace HowlsMovingDogPark.Controllers;
+namespace HowlsMovingDogParkUpdate.Controllers;
 
 public class HomeController : Controller
 {

@@ -2,10 +2,10 @@ using System.Net;
 using System.Diagnostics;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
-using HowlsMovingDogPark.Models;
+using HowlsMovingDogParkUpdate.Models;
 
 
-namespace HowlsMovingDogPark.Controllers;
+namespace HowlsMovingDogParkUpdate.Controllers;
 
 public class DogController : Controller
 {

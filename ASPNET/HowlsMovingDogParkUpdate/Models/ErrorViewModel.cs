@@ -1,4 +1,4 @@
-namespace HowlsMovingDogPark.Models;
+namespace HowlsMovingDogParkUpdate.Models;
 
 public class ErrorViewModel
 {
