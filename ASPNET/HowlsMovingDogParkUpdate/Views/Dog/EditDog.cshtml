@@ -1,0 +1,48 @@
+@model Dog
+
+<div>
+  @await Html.PartialAsync("_NavigationBar")
+</div>
+
+<h1 class="display-4">Edit Dog Page</h1>
+
+<div class="container text-center">
+    <div class="row  bg-primary">
+      <h1 class="col">Name</h1>
+      <h1 class="col">Breed</h1>
+      <h1 class="col">Weight</h1>
+      <h1 class="col">Age</h1>
+      <h1 class="col">Notes</h1>
+    </div>
+
+    <div class="row border border-5 border-secondary-color text-center">
+      <form asp-action="UpdateDog" asp-route-id="@Model.DogId" method="post" class="row">
+        
+        <div class="col">
+          <input asp-for="Name">
+        </div>
+        
+        <div class="col">
+          <input asp-for="Breed">
+        </div>
+        
+        <div class="col">
+          <input asp-for="Weight">
+        </div>
+        
+        <div class="col">
+          <input asp-for="Age">
+        </div>
+        
+        <div class="col">
+          <input asp-for="Notes">
+        </div>
+        
+        <div>
+          <input type="submit" value="Update">
+        </div>
+      
+      </form>
+    </div>
+
+</div>

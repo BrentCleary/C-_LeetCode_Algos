@@ -1,0 +1,61 @@
+@model Dog
+
+<div>
+  @await Html.PartialAsync("_NavigationBar")
+</div>
+
+<br>
+
+<div class="text-center list-col-spacing">
+
+  <h1 class="display-4">Create a Dog</h1>
+
+  <style>
+    .hidden-element
+    {
+      display: none;
+    }
+  </style>
+
+  <div>
+    <form asp-action="CreateDog" asp-controller="Dog" method="post">
+      <div>
+        <label asp-for="Name"></label>
+        <input asp-for="Name">
+        <span asp-validation-for="Name"></span>
+      </div>
+      <div>
+        <label asp-for="Breed"></label>
+        <input asp-for="Breed">
+        <span asp-validation-for="Breed"></span>
+      </div>
+      <div>
+        <label asp-for="Weight"></label>
+        <input asp-for="Weight">
+        <span asp-validation-for="Weight"></span>
+      </div>
+      <div>
+        <label asp-for="Age"></label>
+        <input asp-for="Age">
+        <span asp-validation-for="Age"></span>
+      </div>
+      <div>
+        <label asp-for="Notes"></label>
+        <input asp-for="Notes">
+        <span asp-validation-for="Notes"></span>
+      </div>
+
+      @* Input is Hidden - Always set to Session UserId *@
+      <div class="hidden-element">
+        <input type="text" name="UserId" value="@ViewBag.currentUserId">
+      </div>
+
+      <div>
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+
+
+  </div>
+  <h1>Current UserId is @ViewBag.currentUserId</h1>
+</div>

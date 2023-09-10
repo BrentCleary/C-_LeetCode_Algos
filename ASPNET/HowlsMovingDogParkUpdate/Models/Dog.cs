@@ -12,7 +12,6 @@ public class Dog
     public int Weight { get; set; }
     public int Age { get; set; }
     public string Notes { get; set; }
-
     public DateTime CreatedAt { get; set; } = DateTime.Now;
     public DateTime UpdatedAt { get; set; } = DateTime.Now;
 
