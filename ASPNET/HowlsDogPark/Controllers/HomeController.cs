@@ -17,6 +17,14 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        int? uid = HttpContext.Session.GetInt32("UserId"); 
+        User? currentUser = _context.Users.FirstOrDefault(u => u.UserId == uid);
+
+        if(uid != null)
+        {
+            ViewBag.UserName = currentUser.FirstName;
+        }
+
         return View();
     }
 

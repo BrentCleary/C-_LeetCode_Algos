@@ -1,4 +1,4 @@
-
+@model User
 
 <style>
   .logo{
@@ -34,10 +34,20 @@
             </div>
         </div>
         @* Login *@
-        <div class="col-md-3 d-flex align-items-center">
-            <div class="col-md-4 mb-3 d-flex align-items-center">
-                    <a href="/users/new" class="d-block m-2"><button class="btn btn-info">Register</button></a>
-                    <a href="/users/new" class="d-block text-black no-decoration"><h3>LOGIN</h3></a>
+            <div class="col-md-3 d-flex align-items-center">
+                <div class="col-md-4 mb-3 d-flex align-items-center">
+                    @{
+                        if(Context.Session.GetInt32("UserId") == null)
+                        {
+                        <a href="/users/new" class="d-block text-black no-decoration"><h3>REGISTER</h3></a>
+                        <a href="/users/new" class="d-block m-2"><button class="btn btn-info">LOGIN</button></a>
+                        }
+                        else
+                        {
+                        <a href="/users/new" class="d-block text-black no-decoration"><h3>Hi @ViewBag.UserName</h3></a>
+                        <a href="/users/logout" class="d-block m-2"><button class="btn btn-info">LOGOUT</button></a>
+                        }
+                    }
                 </div>
             </div>
         </div>

@@ -41,7 +41,7 @@ public class UserController : Controller
       _context.Add(newUser);
       _context.SaveChanges();
       HttpContext.Session.SetInt32("UserId", newUser.UserId);
-      return RedirectToAction("UserIndex");
+      return RedirectToAction("Index", newUser);
     }
     else
     {
@@ -50,13 +50,15 @@ public class UserController : Controller
   }
 
 
-  
+
   [HttpGet("/users/{id}")]
   public IActionResult ShowUser(int id)
   {
+    User? currentUser = _context.Users.FirstOrDefault(u => u.UserId == id);
 
 
-    return View("UserProfile");
+    return View("UserProfile", currentUser);
+    
   }
 
 
@@ -109,8 +111,8 @@ public class UserController : Controller
         // Session Check in Console
         System.Console.WriteLine("------------" + HttpContext.Session.GetInt32("UserId") + "------------");
 
-        
-        return RedirectToAction("UserIndex");
+
+        return RedirectToAction("Index", "Home");
       }
     }
     else
@@ -120,9 +122,13 @@ public class UserController : Controller
   }
 
 
-  
+  [HttpGet("/users/logout")]
+  public IActionResult LogoutUser()
+  {
+    HttpContext.Session.Remove("UserId");
 
-
+    return RedirectToAction("Index", "Home");
+  }
 
 
 

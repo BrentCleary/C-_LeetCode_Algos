@@ -18414,13 +18414,13 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsDogPark\\Views\\Shared\\_UserLogin.cshtml",
-      "TargetPath": "Views\\Shared\\_UserLogin.cshtml",
+      "FilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsDogPark\\Views\\User\\UserProfile.cshtml",
+      "TargetPath": "Views\\User\\UserProfile.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsDogPark\\Views\\User\\User_Profile.cshtml",
-      "TargetPath": "Views\\User\\User_Profile.cshtml",
+      "FilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsDogPark\\Views\\Shared\\_UserLogin.cshtml",
+      "TargetPath": "Views\\Shared\\_UserLogin.cshtml",
       "FileKind": "mvc"
     },
     {
