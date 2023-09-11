@@ -1,5 +1,4 @@
-
-
+@model User
 
 
 <style>
@@ -16,40 +15,90 @@
 
 
 
-<div class="container text-center" style="max-width: 1322px;">
-    <div class="row align-items-center justify-content-between">
-        @* logo *@
-        <div class="col-md-3">
-            <img class="logo" src="~/images/Small_Logo.jpg" alt="logo">
-        </div>
-        @* Contact Us *@
-        <div class="col-md-2">
-            <div class="display-6">
-                <a href="#contact-us" class="no-decoration">Contact Us</a>
+  <div id="your-dogs">
+    <div class="container drop-shadow p-5">
+      <div class="row">
+        <div class="col-md-1"></div>
+        
+        <div class="col-md-10">
+          <div>
+            <h2 class="display-4 m-4">Hello User @Model.FirstName @Model.LastName</h2>
+          </div>
+          <div class="row">
+              <div class="row m-2">
+                  <div class="display-6 col">MONDAY-FRIDAY</div>
+
+              </div>
+              <div class="row m-2">
+                  <div class="display-6 col">SATURDAY</div>
+
+              </div>
+              <div class="row m-2">
+                  <div class="display-6 col">SUNDAY</div>
+
+              </div>
+          </div>
+          <br>
+
+          <div class="row">
+            <h2 class="display-5 m-3 bg bg-warning">BOARDING DROP-OFF HOURS</h2>
+            <div class="row m-1">
+                <div class="display-6 col">MONDAY-FRIDAY</div>
+                <div class="display-6 col">1PM-9PM</div>
             </div>
+          </div>
         </div>
-        @* Open Hours *@
-        <div class="col-md-2">
-            <div class="display-6">
-                <a href="#open-hours" class="no-decoration">Open Hours</a>
+        
+        <div class="col-md-1"></div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+<br>
+<br>
+
+
+  <div id="boardings">
+      <div class="container drop-shadow p-5">
+        <div class="row">
+          <div class="col-md-1"></div>
+          
+          <div class="col-md-10">
+              <div>
+                <h2 class="display-4 m-4">Boardings</h2>
+              </div>
+              <div class="row">
+                  <div class="row m-2">
+                    <div class="display-6 col">HowlsDogPark@network.com</div>
+                  </div>
+                  <div class="row m-2">
+                    <div class="display-6 col">555-555-6789</div>
+                  </div>
+                  <div class="row m-2">
+                      <div class="display-6 col">1234 Old Town Avenue, West City, Seattle, 98765</div>
+                  </div>
+              </div>
+
+            <div class="row">
+              <div class="row m-1">
+              </div>
             </div>
-        </div>
-        @* Boarding *@
-        <div class="col-md-2">
-            <div class="display-6">
-                <a href="#our-park" class="no-decoration">Our Park</a>
-            </div>
-        </div>
-        @* Login *@
-        <div class="col-md-3 d-flex align-items-center">
-            <div class="col-md-4 mb-3 d-flex align-items-center">
-                    <a href="/users/new" class="d-block m-2"><button class="btn btn-info">Register</button></a>
-                    <a href="/users/new" class="d-block text-black no-decoration"><h3>LOGIN</h3></a>
-                </div>
-            </div>
+          </div>
+          
+          <div class="col-md-1"></div>
+
         </div>
     </div>
+  </div>
+
+
+<div class="floating-bar">
+<a href="#navbar"><button class="return-button bg bg-info display-4 d-flex justify-content-center align-items-center">^</button></a>
 </div>
+<script src="script.js"></script>
 
 
 

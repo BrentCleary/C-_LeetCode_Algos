@@ -51,11 +51,25 @@ public class UserController : Controller
 
 
 
-  [HttpGet("/users/{id}")]
+  // ----- View One User (VIEW)
+
+  [HttpGet("/users/{id}/show")]
   public IActionResult ShowUser(int id)
   {
+    System.Console.WriteLine("+_+_+_+_+_+_+_+_" + id + " +_+_+_+_+_+_+_+_");
+
     User? currentUser = _context.Users.FirstOrDefault(u => u.UserId == id);
 
+    System.Console.WriteLine("------------" + HttpContext.Session.GetInt32("UserId") + "------------");
+
+    if(currentUser != null)
+    {
+      System.Console.WriteLine("+_+_+_+_+_+_+_+_" + currentUser.FirstName + "+_+_+_+_+_+_+_+_");
+    }
+    else
+    {
+      System.Console.WriteLine("+_+_+_+_+_+_+_+_" + "UserId not found for value" +  "+_+_+_+_+_+_+_+_");
+    }
 
     return View("UserProfile", currentUser);
     
@@ -73,14 +87,12 @@ public class UserController : Controller
 
     List<User> AllUsers = _context.Users.ToList();
     // Session Check in Console
+
     System.Console.WriteLine("------------" + HttpContext.Session.GetInt32("UserId") + "------------");
 
 
     return View("AllUsers", AllUsers);
   }
-
-
-
 
 
 
@@ -121,6 +133,8 @@ public class UserController : Controller
     }
   }
 
+
+  // ----- User LogOut (VIEW)
 
   [HttpGet("/users/logout")]
   public IActionResult LogoutUser()

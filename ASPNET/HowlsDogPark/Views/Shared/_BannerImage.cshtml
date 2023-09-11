@@ -39,13 +39,19 @@
                     @{
                         if(Context.Session.GetInt32("UserId") == null)
                         {
-                        <a href="/users/new" class="d-block text-black no-decoration"><h3>REGISTER</h3></a>
-                        <a href="/users/new" class="d-block m-2"><button class="btn btn-info">LOGIN</button></a>
+                            <a href="/users/new" class="d-block text-black no-decoration"><h3>REGISTER</h3></a>
+                            <a href="/users/new" class="d-block m-2"><button class="btn btn-info">LOGIN</button></a>
                         }
                         else
                         {
-                        <a href="/users/new" class="d-block text-black no-decoration"><h3>Hi @ViewBag.UserName</h3></a>
-                        <a href="/users/logout" class="d-block m-2"><button class="btn btn-info">LOGOUT</button></a>
+                            int? currentUserId = Context.Session.GetInt32("UserId");
+
+                            <h1>@currentUserId</h1>
+
+                            <a href="/users/new" class="d-block text-black no-decoration"><h3>Hi @ViewBag.UserName</h3></a>
+
+                            <a href="/users/@currentUserId/show" class="d-block text-black no-decoration"><h3>View Profile</h3></a>
+                            <a href="/users/logout" class="d-block m-2"><button class="btn btn-info">LOGOUT</button></a>
                         }
                     }
                 </div>
