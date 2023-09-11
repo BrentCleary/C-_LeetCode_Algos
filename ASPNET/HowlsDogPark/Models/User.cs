@@ -33,7 +33,8 @@ public class User
   public DateTime CreatedAt {get;set;} = DateTime.Now;
   public DateTime UpdatedAt {get;set;} = DateTime.Now;
 
-
+  // List of Owned Dogs
+  public List<Dog> AllDogs {get;set;} = new List<Dog>();
 }
 
 

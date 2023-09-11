@@ -1,0 +1,78 @@
+
+
+
+
+<style>
+  .logo{
+    max-width: 50%;
+    max-height: 50%;
+  }
+
+</style>
+
+<div class="row text-center">
+  @await Html.PartialAsync("_NavigationBar")
+</div>
+
+
+
+<div class="container text-center" style="max-width: 1322px;">
+    <div class="row align-items-center justify-content-between">
+        @* logo *@
+        <div class="col-md-3">
+            <img class="logo" src="~/images/Small_Logo.jpg" alt="logo">
+        </div>
+        @* Contact Us *@
+        <div class="col-md-2">
+            <div class="display-6">
+                <a href="#contact-us" class="no-decoration">Contact Us</a>
+            </div>
+        </div>
+        @* Open Hours *@
+        <div class="col-md-2">
+            <div class="display-6">
+                <a href="#open-hours" class="no-decoration">Open Hours</a>
+            </div>
+        </div>
+        @* Boarding *@
+        <div class="col-md-2">
+            <div class="display-6">
+                <a href="#our-park" class="no-decoration">Our Park</a>
+            </div>
+        </div>
+        @* Login *@
+        <div class="col-md-3 d-flex align-items-center">
+            <div class="col-md-4 mb-3 d-flex align-items-center">
+                    <a href="/users/new" class="d-block m-2"><button class="btn btn-info">Register</button></a>
+                    <a href="/users/new" class="d-block text-black no-decoration"><h3>LOGIN</h3></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<style>
+    .custom-row{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    .top{
+        margin-top: auto;
+    }
+
+    .bottom{
+        margin-bottom: auto;
+    }
+
+    .no-decoration{
+        text-decoration: none;
+    }
+</style>

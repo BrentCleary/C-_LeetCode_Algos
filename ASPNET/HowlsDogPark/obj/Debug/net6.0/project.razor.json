@@ -18374,6 +18374,16 @@
   "RootNamespace": "HowlsDogPark",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsDogPark\\Views\\Shared\\_DogCreate.cshtml",
+      "TargetPath": "Views\\Shared\\_DogCreate.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsDogPark\\Views\\Shared\\_NavigationBar.cshtml",
+      "TargetPath": "Views\\Shared\\_NavigationBar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsDogPark\\Views\\Shared\\_BannerImage.cshtml",
       "TargetPath": "Views\\Shared\\_BannerImage.cshtml",
       "FileKind": "mvc"
@@ -18389,6 +18399,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsDogPark\\Views\\User\\UserCreateLogin.cshtml",
+      "TargetPath": "Views\\User\\UserCreateLogin.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsDogPark\\Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
@@ -18396,6 +18411,16 @@
     {
       "FilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsDogPark\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsDogPark\\Views\\Shared\\_UserLogin.cshtml",
+      "TargetPath": "Views\\Shared\\_UserLogin.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsDogPark\\Views\\User\\User_Profile.cshtml",
+      "TargetPath": "Views\\User\\User_Profile.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -18416,6 +18441,11 @@
     {
       "FilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsDogPark\\Views\\Home\\Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsDogPark\\Views\\Shared\\_UserCreate.cshtml",
+      "TargetPath": "Views\\Shared\\_UserCreate.cshtml",
       "FileKind": "mvc"
     }
   ],
