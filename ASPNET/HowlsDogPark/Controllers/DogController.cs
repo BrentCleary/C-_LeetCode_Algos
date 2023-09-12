@@ -44,14 +44,13 @@ public class DogController : Controller
 
     if(ModelState.IsValid)
     {
-
       _context.Add(newDog);
       _context.SaveChanges();
-      return RedirectToAction("DogIndex");
+      return RedirectToAction("ShowUser", "User", new {id = newDog.UserId });
     }
     else
     {
-      return View("DogCreate");
+      return View("CreateDog");
     }
   }
 

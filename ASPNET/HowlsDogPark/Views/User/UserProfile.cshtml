@@ -13,38 +13,24 @@
   @await Html.PartialAsync("_NavigationBar")
 </div>
 
+<div>
+<h2 class="display-4 m-4">Hello User @Model.FirstName @Model.LastName</h2>
+</div>
 
-
-  <div id="your-dogs">
+  <div id="membership">
     <div class="container drop-shadow p-5">
       <div class="row">
         <div class="col-md-1"></div>
         
         <div class="col-md-10">
-          <div>
-            <h2 class="display-4 m-4">Hello User @Model.FirstName @Model.LastName</h2>
-          </div>
-          <div class="row">
-              <div class="row m-2">
-                  <div class="display-6 col">MONDAY-FRIDAY</div>
 
-              </div>
-              <div class="row m-2">
-                  <div class="display-6 col">SATURDAY</div>
-
-              </div>
-              <div class="row m-2">
-                  <div class="display-6 col">SUNDAY</div>
-
-              </div>
           </div>
           <br>
 
           <div class="row">
-            <h2 class="display-5 m-3 bg bg-warning">BOARDING DROP-OFF HOURS</h2>
+            <h2 class="display-5 m-3 bg bg-warning col">CURRENT MEMBERSHIP</h2>
             <div class="row m-1">
-                <div class="display-6 col">MONDAY-FRIDAY</div>
-                <div class="display-6 col">1PM-9PM</div>
+                <div class="display-6 col">NONE</div>
             </div>
           </div>
         </div>
@@ -60,39 +46,72 @@
 <br>
 <br>
 
+  <div id="your-dogs">
+    <div class="container drop-shadow p-5">
+      <div class="row">
+        <div class="col-md-1"></div>
+        
+        <div class="col-md-10">
 
-  <div id="boardings">
-      <div class="container drop-shadow p-5">
-        <div class="row">
-          <div class="col-md-1"></div>
-          
-          <div class="col-md-10">
-              <div>
-                <h2 class="display-4 m-4">Boardings</h2>
-              </div>
-              <div class="row">
-                  <div class="row m-2">
-                    <div class="display-6 col">HowlsDogPark@network.com</div>
-                  </div>
-                  <div class="row m-2">
-                    <div class="display-6 col">555-555-6789</div>
-                  </div>
-                  <div class="row m-2">
-                      <div class="display-6 col">1234 Old Town Avenue, West City, Seattle, 98765</div>
-                  </div>
-              </div>
+          </div>
+          <br>
 
-            <div class="row">
-              <div class="row m-1">
-              </div>
+          @* Displays Your Dogs *@
+          <div class="row">
+            <h2 class="display-5 m-3 bg bg-warning col">YOUR DOGS</h2>
+            <div class="row m-1">
+                <div class="display-6 col">
+                  @foreach (Dog pup in @Model.AllDogs)
+                  {
+                    <h1>@pup.Name</h1>
+                  }
+                </div>
+            </div>
+            @* Create / See Your Dogs *@
+            <div class="row m-1">
+                <div class="display-6 col">
+                  <a href="/dogs/new" class="text-black d-block">Add A Dog</a>
+                  <a href="/dogs" class="text-black d-block">See All Dogs</a>
+                </div>
             </div>
           </div>
-          
-          <div class="col-md-1"></div>
-
         </div>
+        
+        <div class="col-md-1"></div>
+
+      </div>
     </div>
   </div>
+
+
+
+  <br>
+<br>
+
+  <div id="your-dogs">
+    <div class="container drop-shadow p-5">
+      <div class="row">
+        <div class="col-md-1"></div>
+        
+        <div class="col-md-10">
+
+          </div>
+          <br>
+
+          <div class="row">
+            <h2 class="display-5 m-3 bg bg-warning col">YOUR BOARDINGS</h2>
+            <div class="row m-1">
+                <div class="display-6 col">NONE</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-1"></div>
+
+      </div>
+    </div>
+  </div>
+
 
 
 <div class="floating-bar">

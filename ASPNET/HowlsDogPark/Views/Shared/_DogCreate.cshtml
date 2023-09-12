@@ -30,13 +30,28 @@
       <span asp-validation-for="Age"></span>
     </div>
     <div>
+      <label asp-for="Temperament"></label>
+      <input asp-for="Temperament">
+      <span asp-validation-for="Temperament"></span>
+    </div>
+    <div>
+      <label asp-for="Vaccinated"></label>
+      <input asp-for="Vaccinated">
+      <span asp-validation-for="Vaccinated"></span>
+    </div>
+    <div>
+      <label asp-for="Diet"></label>
+      <input asp-for="Diet">
+      <span asp-validation-for="Diet"></span>
+    </div>
+    <div>
       <label asp-for="Notes"></label>
       <input asp-for="Notes">
       <span asp-validation-for="Notes"></span>
     </div>
 
     <div class="hidden-element">
-      <input type="text" value="@ViewBag.currentUserId">
+      <input asp-for="UserId" value="@ViewBag.currentUserId">
     </div>
 
     <div>
