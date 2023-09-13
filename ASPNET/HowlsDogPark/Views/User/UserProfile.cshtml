@@ -13,8 +13,12 @@
   @await Html.PartialAsync("_NavigationBar")
 </div>
 
+<div class="row text-center">
+  @await Html.PartialAsync("_ProfileNavBar")
+</div>
+
 <div>
-<h2 class="display-4 m-4">Hello User @Model.FirstName @Model.LastName</h2>
+<h2 class="display-4 m-4 text-center">Hello User @Model.FirstName @Model.LastName</h2>
 </div>
 
   <div id="membership">
@@ -63,14 +67,68 @@
                 <div class="display-6 col">
                   @foreach (Dog pup in @Model.AllDogs)
                   {
-                    <h1>@pup.Name</h1>
+                  <div class="container">
+                      <table class="table">
+                        <h1 class="display-4">@pup.Name</h1>
+                          <tbody>
+                              <tr>
+                                  <th>Breed</th>
+                                  <td>@pup.Breed</td>
+                              </tr>
+                              <tr>
+                                  <th>Weight</th>
+                                  <td>@pup.Weight lbs</td>
+                              </tr>
+                              <tr>
+                                  <th>Age</th>
+                                  <td>@pup.Age Years</td>
+                              </tr>
+                              <tr>
+                                  <th>Temperament</th>
+                                  <td>@pup.Temperament</td>
+                              </tr>
+                              <tr>
+                                  <th>Vaccinated</th>
+                                    @if(@pup.Vaccinated == true)
+                                    {
+                                    <td>Yes</td>
+                                    }
+                                    else
+                                    {
+                                    <td>No</td>
+                                    }
+                              </tr>
+                              <tr>
+                                  <th>Diet</th>
+                                  <td>@pup.Diet</td>
+                              </tr>
+                              <tr>
+                                  <th>Notes</th>
+                                  <td>@pup.Notes</td>
+                              </tr>
+                              <tr>
+                                  <th><a href="/dogs/@pup.DogId/edit"><button class="btn btn-warning text-white">UPDATE INFO</button></a></th>
+
+                                  <th>
+                                    <form asp-action="DeleteDog" asp-controller="Dog" asp-route-id="@pup.DogId" method="post"><button class="btn btn-danger">REMOVE</button>
+                                    </form>
+                                  </th>
+                              </tr>
+                          </tbody>
+                      </table>
+
+                  </div>
                   }
+                  <a href="/dogs/new" class="text-white d-block"><button class="btn btn-primary text-white">ADD A DOG</button></a>
                 </div>
             </div>
             @* Create / See Your Dogs *@
+            <br>
+            <br>
+            <br>
+            <br>
             <div class="row m-1">
                 <div class="display-6 col">
-                  <a href="/dogs/new" class="text-black d-block">Add A Dog</a>
                   <a href="/dogs" class="text-black d-block">See All Dogs</a>
                 </div>
             </div>

@@ -25,3 +25,10 @@ document.addEventListener("DOMContentLoaded", function () {
   // Initial check on page load
   showFloatingBar();
 });
+
+
+
+function DeleteCheck()
+{
+    confirm("Do you want to delete this dog?");
+}

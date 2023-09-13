@@ -18434,6 +18434,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsDogPark\\Views\\Shared\\_ProfileNavBar.cshtml",
+      "TargetPath": "Views\\Shared\\_ProfileNavBar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsDogPark\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"

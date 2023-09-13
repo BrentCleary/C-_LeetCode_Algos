@@ -9,6 +9,15 @@ namespace HowlsDogPark.Controllers;
 
 public class DogController : Controller
 {
+
+  private int? userId
+  {
+    get
+    {
+      return HttpContext.Session.GetInt32("UserId");
+    }
+  }
+
   private readonly ILogger<DogController> _logger;
   private MyContext _context;
 
@@ -81,6 +90,7 @@ public class DogController : Controller
   public IActionResult UpdateDog(int id, Dog newDog)
   {
     Dog oldDog = _context.Dogs.FirstOrDefault(d => d.DogId == id);
+
     if(ModelState.IsValid)
     {
       oldDog.Name = newDog.Name;
@@ -89,7 +99,8 @@ public class DogController : Controller
       oldDog.Age = newDog.Age;
       oldDog.Notes = oldDog.Notes;
       _context.SaveChanges();
-      return RedirectToAction("DogIndex");
+
+      return RedirectToAction("ShowUser", "User", new {id = userId });
     }
     else
     {
@@ -105,7 +116,7 @@ public class DogController : Controller
       _context.Dogs.Remove(DogToDelete);
       _context.SaveChanges();
 
-      return RedirectToAction("DogIndex");
+      return RedirectToAction("ShowUser", "User", new {id = userId });
     }
 
   public IActionResult Privacy()
