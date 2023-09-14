@@ -1,6 +1,6 @@
 {
-  "SerializedFilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsMovingDogPark\\obj\\Debug\\net6.0\\project.razor.json",
-  "FilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsMovingDogPark\\HowlsMovingDogPark.csproj",
+  "SerializedFilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\DojoSurvey2\\obj\\Debug\\net6.0\\project.razor.json",
+  "FilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\DojoSurvey2\\DojoSurvey2.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "6.0",
@@ -18371,111 +18371,16 @@
     ],
     "CSharpLanguageVersion": 1000
   },
-  "RootNamespace": "HowlsMovingDogPark",
+  "RootNamespace": "DojoSurvey2",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsMovingDogPark\\Views\\Shared\\_NavigationBar.cshtml",
-      "TargetPath": "Views\\Shared\\_NavigationBar.cshtml",
+      "FilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\DojoSurvey2\\Views\\Survey\\Form.cshtml",
+      "TargetPath": "Views\\Survey\\Form.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsMovingDogPark\\Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsMovingDogPark\\Views\\Shared\\_DogCreate.cshtml",
-      "TargetPath": "Views\\Shared\\_DogCreate.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsMovingDogPark\\Views\\User\\AllUsers.cshtml",
-      "TargetPath": "Views\\User\\AllUsers.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsMovingDogPark\\Views\\_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsMovingDogPark\\Views\\Shared\\Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsMovingDogPark\\Views\\Dog\\EditDog.cshtml",
-      "TargetPath": "Views\\Dog\\EditDog.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsMovingDogPark\\Views\\Boarding\\AllBoardings.cshtml",
-      "TargetPath": "Views\\Boarding\\AllBoardings.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsMovingDogPark\\Views\\Shared\\_BannerImage.cshtml",
-      "TargetPath": "Views\\Shared\\_BannerImage.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsMovingDogPark\\Views\\Dog\\CreateDog.cshtml",
-      "TargetPath": "Views\\Dog\\CreateDog.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsMovingDogPark\\Views\\Shared\\_Carousel.cshtml",
-      "TargetPath": "Views\\Shared\\_Carousel.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsMovingDogPark\\Views\\Shared\\_UserLogin.cshtml",
-      "TargetPath": "Views\\Shared\\_UserLogin.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsMovingDogPark\\Views\\Home\\Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsMovingDogPark\\Views\\Dog\\AllDogs.cshtml",
-      "TargetPath": "Views\\Dog\\AllDogs.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsMovingDogPark\\Views\\Boarding\\BoardingCreate.cshtml",
-      "TargetPath": "Views\\Boarding\\BoardingCreate.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsMovingDogPark\\Views\\User\\UserCreateLogin.cshtml",
-      "TargetPath": "Views\\User\\UserCreateLogin.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsMovingDogPark\\Views\\_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsMovingDogPark\\Views\\User\\UserViewOne.cshtml",
-      "TargetPath": "Views\\User\\UserViewOne.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsMovingDogPark\\Views\\Shared\\_UserCreate.cshtml",
-      "TargetPath": "Views\\Shared\\_UserCreate.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsMovingDogPark\\Views\\Shared\\_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsMovingDogPark\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\DojoSurvey2\\Views\\Survey\\Results.cshtml",
+      "TargetPath": "Views\\Survey\\Results.cshtml",
       "FileKind": "mvc"
     }
   ],
