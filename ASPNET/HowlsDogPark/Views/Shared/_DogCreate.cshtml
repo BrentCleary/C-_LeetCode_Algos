@@ -8,62 +8,56 @@
 </style>
 
 <div>
-  <form asp-action="CreateDog" asp-controller="Dog" method="post">
-    <div>
-      <label asp-for="Name"></label>
-      <input asp-for="Name">
-      <span asp-validation-for="Name"></span>
-    </div>
-    <div>
-      <label asp-for="Breed"></label>
-      <input asp-for="Breed">
-      <span asp-validation-for="Breed"></span>
-    </div>
-    <div>
-      <label asp-for="Weight"></label>
-      <input asp-for="Weight">
-      <span asp-validation-for="Weight"></span>
-    </div>
-    <div>
-      <label asp-for="Age"></label>
-      <input asp-for="Age">
-      <span asp-validation-for="Age"></span>
-    </div>
-    <div>
-      <label asp-for="Temperament"></label>
-      <input asp-for="Temperament">
-      <span asp-validation-for="Temperament"></span>
-    </div>
-    <div>
-      <label asp-for="Vaccinated"></label>
-      <input asp-for="Vaccinated">
-      <span asp-validation-for="Vaccinated"></span>
-    </div>
-    <div>
-      <label asp-for="Diet"></label>
-      <input asp-for="Diet">
-      <span asp-validation-for="Diet"></span>
-    </div>
-    <div>
-      <label asp-for="Notes"></label>
-      <input asp-for="Notes">
-      <span asp-validation-for="Notes"></span>
+
+  <h1 class="display-4">Edit Dog Page</h1>
+
+      <div class="container">
+        <h1>Dog Information</h1>
+        <form asp-action="CreateDog" asp-controller="Dog" method="post">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input asp-for="Name" type="text" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="breed" class="form-label">Breed</label>
+                <input asp-for="Breed" type="text" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="weight" class="form-label">Weight (in pounds)</label>
+                <input asp-for="Weight" type="number" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="age" class="form-label">Age</label>
+                <input asp-for="Age" type="number" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="temperament" class="form-label">Temperament</label>
+                <input asp-for="Temperament" type="number" class="form-control">
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input">
+                <label asp-for="Vaccinated" class="form-check-label" for="vaccinated">Vaccinated</label>
+            </div>
+            <div class="mb-3">
+                <label for="diet" class="form-label">Diet</label>
+                <input asp-for="Diet" type="text" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="notes" class="form-label">Notes</label>
+                <textarea asp-for="Notes" class="form-control" rows="4"></textarea>
+            </div>
+                <div class="hidden-element">
+                <input asp-for="UserId" value="@ViewBag.currentUserId">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
     </div>
 
-    <div class="hidden-element">
-      <input asp-for="UserId" value="@ViewBag.currentUserId">
-    </div>
+</div>
 
-    <div>
-      <input type="submit" value="Submit">
-    </div>
-  </form>
-
-<h1>Test</h1>
+  <h1>Test</h1>
 
   <h1>@ViewBag.currentUserId</h1>
 
   <h1>Test</h1>
-
-</div>
-
