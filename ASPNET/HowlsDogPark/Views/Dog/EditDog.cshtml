@@ -4,45 +4,42 @@
   @await Html.PartialAsync("_NavigationBar")
 </div>
 
-<h1 class="display-4">Edit Dog Page</h1>
 
-      <div class="container">
-        <h1>Dog Information</h1>
-        <form asp-action="UpdateDog" asp-route-id="@Model.DogId" method="post">
-            <div class="mb-3">
-                <label for="name" class="form-label">Name</label>
-                <input asp-for="Name" type="text" class="form-control" id="name" name="Name">
-            </div>
-            <div class="mb-3">
-                <label for="breed" class="form-label">Breed</label>
-                <input asp-for="Breed" type="text" class="form-control" id="breed" name="Breed">
-            </div>
-            <div class="mb-3">
-                <label for="weight" class="form-label">Weight (in pounds)</label>
-                <input asp-for="Weight" type="number" class="form-control" id="weight" name="Weight">
-            </div>
-            <div class="mb-3">
-                <label for="age" class="form-label">Age</label>
-                <input asp-for="Age" type="number" class="form-control" id="age" name="Age">
-            </div>
-            <div class="mb-3">
-                <label for="temperament" class="form-label">Temperament</label>
-                <input asp-for="Temperament" type="number" class="form-control" id="temperament" name="Temperament">
-            </div>
-            <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="vaccinated" name="Vaccinated">
-                <label asp-for="Vaccinated" class="form-check-label" for="vaccinated">Vaccinated</label>
-            </div>
-            <div class="mb-3">
-                <label for="diet" class="form-label">Diet</label>
-                <input asp-for="Diet" type="text" class="form-control" id="diet" name="Diet">
-            </div>
-            <div class="mb-3">
-                <label for="notes" class="form-label">Notes</label>
-                <textarea asp-for="Notes" class="form-control" id="notes" name="Notes" rows="4"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-    </div>
-
+<div class="container">
+    <h1>Update Your Dog's Information</h1>
+    <form asp-action="UpdateDog" asp-route-id="@Model.DogId" method="post">
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input asp-for="Name" type="text" class="form-control" id="name" name="Name">
+        </div>
+        <div class="mb-3">
+            <label for="breed" class="form-label">Breed</label>
+            <input asp-for="Breed" type="text" class="form-control" id="breed" name="Breed">
+        </div>
+        <div class="mb-3">
+            <label for="weight" class="form-label">Weight (in pounds)</label>
+            <input asp-for="Weight" type="number" class="form-control" id="weight" name="Weight">
+        </div>
+        <div class="mb-3">
+            <label for="age" class="form-label">Age</label>
+            <input asp-for="Age" type="number" class="form-control" id="age" name="Age">
+        </div>
+        <div class="mb-3">
+            <label for="temperament" class="form-label">Temperament</label>
+            <input asp-for="Temperament" type="number" class="form-control" id="temperament" name="Temperament">
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="vaccinated" name="Vaccinated">
+            <label asp-for="Vaccinated" class="form-check-label" for="vaccinated">Vaccinated</label>
+        </div>
+        <div class="mb-3">
+            <label for="diet" class="form-label">Diet</label>
+            <input asp-for="Diet" type="text" class="form-control" id="diet" name="Diet">
+        </div>
+        <div class="mb-3">
+            <label for="notes" class="form-label">Notes</label>
+            <textarea asp-for="Notes" class="form-control" id="notes" name="Notes" rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
 </div>

@@ -82,6 +82,8 @@ public class DogController : Controller
   {
     Dog? oneDog = _context.Dogs.FirstOrDefault(d => d.DogId == id);
 
+    
+
     return View(oneDog);
   }
 
