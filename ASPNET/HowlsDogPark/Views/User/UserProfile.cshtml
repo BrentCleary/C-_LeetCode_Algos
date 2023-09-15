@@ -10,10 +10,6 @@
 </style>
 
 <div class="row text-center">
-  @await Html.PartialAsync("_NavigationBar")
-</div>
-
-<div class="row text-center">
   @await Html.PartialAsync("_ProfileNavBar")
 </div>
 
@@ -170,6 +166,10 @@
     </div>
   </div>
 
+
+<div class="row text-center">
+  @await Html.PartialAsync("_NavigationBar")
+</div>
 
 
 <div class="floating-bar">

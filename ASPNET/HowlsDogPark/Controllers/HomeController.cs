@@ -19,12 +19,14 @@ public class HomeController : Controller
     {
         int? uid = HttpContext.Session.GetInt32("UserId"); 
 
+        User? currentUser = _context.Users.FirstOrDefault(u => u.UserId == uid);
+
         if(uid != null)
         {
             ViewBag.UserName = uid;
         }
 
-        return View();
+        return View(currentUser);
     }
 
     public IActionResult Privacy()

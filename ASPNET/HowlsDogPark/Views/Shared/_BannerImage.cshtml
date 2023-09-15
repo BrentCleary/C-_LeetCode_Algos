@@ -13,7 +13,7 @@
     <div class="row align-items-center justify-content-between">
         @* logo *@
         <div class="col-md-3">
-            <img class="logo" src="~/images/Small_Logo.jpg" alt="logo">
+            <a href="/"><img class="logo" src="~/images/Small_Logo.jpg" alt="logo"></a>
         </div>
         @* Contact Us *@
         <div class="col-md-2">
@@ -29,7 +29,7 @@
         </div>
         @* Boarding *@
         <div class="col-md-2">
-            <div class="display-6">
+            <div class="display-6">dot
                 <a href="#our-park" class="no-decoration">Our Park</a>
             </div>
         </div>
@@ -46,7 +46,7 @@
                         {
                             int? currentUserId = Context.Session.GetInt32("UserId");
 
-                            <h1>@currentUserId</h1>
+                            <h1>@Model.FirstName</h1>
 
                             <a href="/users/new" class="d-block text-black no-decoration"><h3></h3></a>
 
