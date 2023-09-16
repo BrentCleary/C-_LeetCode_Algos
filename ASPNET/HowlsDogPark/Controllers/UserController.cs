@@ -40,8 +40,11 @@ public class UserController : Controller
       newUser.Password = Hasher.HashPassword(newUser, newUser.Password);
       _context.Add(newUser);
       _context.SaveChanges();
+
       HttpContext.Session.SetInt32("UserId", newUser.UserId);
-      return RedirectToAction("Index", newUser);
+      
+      return RedirectToAction("Index", "Home");
+    
     }
     else
     {
@@ -152,6 +155,10 @@ public class UserController : Controller
   }
 
 }
+
+
+
+
 
     // Session Check for logged in User
 
