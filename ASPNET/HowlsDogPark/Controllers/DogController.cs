@@ -36,10 +36,9 @@ public class DogController : Controller
   public IActionResult NewDog()
   {
 
-    
-    int? currentUserId = HttpContext.Session.GetInt32("UserId");
-    ViewBag.currentUserId = currentUserId.Value;
-    
+    int? uid = HttpContext.Session.GetInt32("UserId"); 
+
+    User? currentUser = _context.Users.FirstOrDefault(u => u.UserId == uid);
 
     return View("~/Views/Dog/CreateDog.cshtml");
   }
@@ -82,8 +81,6 @@ public class DogController : Controller
   {
     Dog? oneDog = _context.Dogs.FirstOrDefault(d => d.DogId == id);
 
-    
-
     return View(oneDog);
   }
 
@@ -99,7 +96,10 @@ public class DogController : Controller
       oldDog.Breed = newDog.Breed;
       oldDog.Weight = newDog.Weight;
       oldDog.Age = newDog.Age;
-      oldDog.Notes = oldDog.Notes;
+      oldDog.Temperament = newDog.Temperament;
+      oldDog.Vaccinated = newDog.Vaccinated;
+      oldDog.Diet = newDog.Diet;
+      oldDog.Notes = newDog.Notes;
       _context.SaveChanges();
 
       return RedirectToAction("ShowUser", "User", new {id = userId });

@@ -32,3 +32,24 @@ function DeleteCheck()
 {
     confirm("Do you want to delete this dog?");
 }
+
+
+
+
+
+var slider = document.getElementById("slider");
+var sliderValue = document.getElementById("slider-value");
+var temperamentInput = document.getElementById("temperament-input");
+
+// Initial value
+sliderValue.textContent = "Calm";
+
+// Update the input value when the slider changes
+slider.oninput = function () {
+    // Update the slider value display
+    var sliderText = ["Fearful/Aggressive", "Shy/Timid", "Calm", "Friendly", "Happy/Playful"];
+    sliderValue.textContent = sliderText[slider.value - 1];
+
+    // Update the input value
+    temperamentInput.value = slider.value;
+};

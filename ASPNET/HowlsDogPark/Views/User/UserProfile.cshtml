@@ -61,7 +61,7 @@
 
 
 <div>
-<h2 class="display-4 m-4 text-center">Hello User @Model.FirstName @Model.LastName</h2>
+<h2 class="display-4 m-4 text-center">Hello @Model.FirstName @Model.LastName</h2>
 </div>
 
   <div id="membership">
@@ -110,69 +110,63 @@
                 <div class="display-6 col">
                   @foreach (Dog pup in @Model.AllDogs)
                   {
-                  <div class="container">
+                  <div class="container drop-shadow p-5">
                       <table class="table">
-                        <h1 class="display-4">@pup.Name</h1>
+                        <h1 class="display-1 mb-5 ml-4"> @pup.Name</h1>
                           <tbody>
                               <tr>
-                                  <th>Breed</th>
-                                  <td>@pup.Breed</td>
+                                  <th class="col-2 display-6">Breed</th>
+                                  <td class="col-6 display-6">@pup.Breed</td>
                               </tr>
                               <tr>
-                                  <th>Weight</th>
-                                  <td>@pup.Weight lbs</td>
+                                  <th class="display-6">Weight</th>
+                                  <td class="display-6">@pup.Weight lbs</td>
                               </tr>
                               <tr>
-                                  <th>Age</th>
-                                  <td>@pup.Age Years</td>
+                                  <th class="display-6">Age</th>
+                                  <td class="display-6">@pup.Age Years</td>
                               </tr>
                               <tr>
-                                  <th>Temperament</th>
-                                  <td>@pup.Temperament</td>
+                                  <th class="display-6">Temperament</th>
+                                  <td class="display-6">
+                                    @pup.Temperament
+                                  </td>
                               </tr>
                               <tr>
-                                  <th>Vaccinated</th>
+                                  <th class="display-6">Vaccinated</th>
                                     @if(@pup.Vaccinated == true)
                                     {
-                                    <td>Yes</td>
+                                    <td class="display-6">Yes</td>
                                     }
                                     else
                                     {
-                                    <td>No</td>
+                                    <td class="display-6">No</td>
                                     }
                               </tr>
                               <tr>
-                                  <th>Diet</th>
-                                  <td>@pup.Diet</td>
+                                  <th class="display-6">Diet</th>
+                                  <td class="display-6">@pup.Diet</td>
                               </tr>
-                              <tr>
-                                  <th>Notes</th>
-                                  <td>@pup.Notes</td>
-                              </tr>
-                              <tr>
-                                  <th><a href="/dogs/@pup.DogId/edit"><button class="btn btn-warning text-white">UPDATE INFO</button></a></th>
-
-                                  <th>
-                                    <form asp-action="DeleteDog" asp-controller="Dog" asp-route-id="@pup.DogId" method="post"><button class="btn btn-danger">REMOVE</button>
-                                    </form>
-                                  </th>
+                              <tr >
+                                  <th class="display-6">Notes</th>
+                                  <td class="display-6">@pup.Notes</td>
                               </tr>
                           </tbody>
                       </table>
-
+                      <div class="row">
+                        <div class="col">
+                          <th><a href="/dogs/@pup.DogId/edit"><button class="btn btn-warning text-white">UPDATE INFO</button></a></th>
+                        </div>
+                      </div>
                   </div>
+                  <br>
+                  <br>
                   }
-                  <a href="/dogs/new" class="text-white d-block"><button class="btn btn-primary text-white">ADD A DOG</button></a>
-                </div>
-            </div>
-            @* Create / See Your Dogs *@
-            <br>
-            <br>
-            <br>
-            <br>
-            <div class="row m-1">
-                <div class="display-6 col">
-                  <a href="/dogs" class="text-black d-block">See All Dogs</a>
+                  <div class="row">
+                    <div class="col">
+                      <th><a href="/dogs/new" class="text-white d-block"><button class="btn btn-primary text-white">ADD A DOG</button></a></th>
+                    </div>
+                  </div>
                 </div>
             </div>
           </div>

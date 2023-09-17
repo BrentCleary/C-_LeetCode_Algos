@@ -47,6 +47,52 @@
   }
 </div>
 
+
+
+
+  <div class="row">
+    <div class="d-flex">
+      <div>
+        <p id="slider-value" class="col display-6">Calm</p>
+      </div>
+      <div class="slider-container col">
+          <label class="slider-label">1</label>
+          <input type="range" min="1" max="5" step="1" value="3" id="slider">
+          <label class="slider-label">5</label>
+      </div>
+    </div>
+  </div>
+
+<script>
+    var slider = document.getElementById("slider");
+    var output = document.getElementById("slider-value");
+
+    // Update the value as the slider is moved
+    slider.oninput = function () {
+        // Get the slider value
+        var sliderValue = parseInt(this.value);
+
+        // Define an object to map slider values to text descriptions
+        var valueDescriptions = {
+            1: "Fearful/Aggressive",
+            2: "Shy/Timid",
+            3: "Calm",
+            4: "Friendly",
+            5: "Happy/Playful"
+        };
+
+        // Check if the slider value exists in the mapping object
+        if (sliderValue in valueDescriptions) {
+            // Update the output text based on the slider value
+            output.textContent = valueDescriptions[sliderValue];
+        } else {
+            // Handle the case when the slider value is not in the mapping object
+            output.textContent = "Invalid value";
+        }
+    };
+</script>
+
+
 <script>
   function DeleteCheck()
   {
@@ -57,3 +103,15 @@
 <br>
 <br>
 
+    <style>
+        .slider-container {
+            width: 300px;
+            margin: 20px auto;
+        }
+
+        .slider-label {
+            display: inline-block;
+            width: 60px;
+            text-align: center;
+        }
+    </style>

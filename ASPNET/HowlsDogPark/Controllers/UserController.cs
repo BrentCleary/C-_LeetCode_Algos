@@ -65,19 +65,9 @@ public class UserController : Controller
 
     System.Console.WriteLine("------------" + HttpContext.Session.GetInt32("UserId") + "------------");
 
-    if(currentUser != null)
-    {
-      System.Console.WriteLine("+_+_+_+_+_+_+_+_" + currentUser.FirstName + "+_+_+_+_+_+_+_+_");
-    }
-    else
-    {
-      System.Console.WriteLine("+_+_+_+_+_+_+_+_" + "UserId not found for value" +  "+_+_+_+_+_+_+_+_");
-    }
-
     return View("UserProfile", currentUser);
     
   }
-
 
 
 

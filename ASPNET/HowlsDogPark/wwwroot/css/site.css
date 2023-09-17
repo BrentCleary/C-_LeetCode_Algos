@@ -22,3 +22,89 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+.custom-row{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.top{
+  margin-top: auto;
+}
+
+.bottom{
+  margin-bottom: auto;
+}
+
+.no-decoration{
+  text-decoration: none;
+}
+
+.logo{
+max-width: 50%;
+max-height: 50%;
+}
+
+.checkbox-size
+{
+  width: 30px;
+  height: 30px;
+}
+
+
+.body {
+  background-image: url('~/images/Howls_Moving_Background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.drop-shadow {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adjust the values as needed */
+}
+
+.floating-bar {
+    position: fixed;
+    bottom: -50px; /* Off-screen initially */
+    left: 0;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0); /* Transparent background */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    transition: bottom 0.3s ease-in-out; /* Add smooth transition */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.return-button{
+  border-color: transparent;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+
+.hidden-element{
+  display: none;
+}
+
+.slider-style{
+  width: 80%;
+  height: 30px;
+}
+
+/* Dog Info Container */
+
+.info-container {
+
+  display: flex;
+  flex-direction: column;
+}
+
+.notes-textbox {
+  /* Set a specific width or a percentage of the container */
+  width: 100%;
+}

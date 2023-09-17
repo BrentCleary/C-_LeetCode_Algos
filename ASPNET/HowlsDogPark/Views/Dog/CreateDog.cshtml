@@ -1,6 +1,53 @@
-<div>
-  @await Html.PartialAsync("_BannerImage")
+
+<div class="container text-center" style="max-width: 1322px;">
+    <div class="row align-items-center justify-content-between">
+        @* logo *@
+        <div class="col-md-3">
+            <a href="/"><img class="logo" src="~/images/Small_Logo.jpg" alt="logo"></a>
+        </div>
+        @* Contact Us *@
+        <div class="col-md-2">
+            <div class="display-6">
+                <a href="#contact-us" class="no-decoration">Contact Us</a>
+            </div>
+        </div>
+        @* Open Hours *@
+        <div class="col-md-2">
+            <div class="display-6">
+                <a href="#open-hours" class="no-decoration">Open Hours</a>
+            </div>
+        </div>
+        @* Boarding *@
+        <div class="col-md-2">
+            <div class="display-6">
+                <a href="#our-park" class="no-decoration">Our Park</a>
+            </div>
+        </div>
+        @* Login *@
+            <div class="col-md-3 d-flex align-items-center">
+                <div class="col-md-4 mb-3 d-flex align-items-center">
+                    @{
+                        if(Context.Session.GetInt32("UserId") == null)
+                        {
+                            <a href="/users/new" class="d-block text-black no-decoration"><h3>REGISTER</h3></a>
+                            <a href="/users/new" class="d-block m-2"><button class="btn btn-info">LOGIN</button></a>
+                        }
+                        else
+                        {
+                            int? currentUserId = Context.Session.GetInt32("UserId");
+
+                            <a href="/users/new" class="d-block text-black no-decoration"><h3></h3></a>
+
+                            <a href="/users/@currentUserId/show" class="d-block text-black no-decoration"><h3>View Profile</h3></a>
+                            <a href="/users/logout" class="d-block m-2"><button class="btn btn-info">LOGOUT</button></a>
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
 
 <div>
   @await Html.PartialAsync("_DogCreate")
