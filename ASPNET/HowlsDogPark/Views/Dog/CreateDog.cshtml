@@ -1,26 +1,34 @@
+<style>
+  .logo{
+    max-width: 50%;
+    max-height: 50%;
+  }
 
-<div class="container text-center" style="max-width: 1322px;">
+</style>
+
+<div class="container text-center m-5" style="max-width: 1322px;">
     <div class="row align-items-center justify-content-between">
         @* logo *@
         <div class="col-md-3">
             <a href="/"><img class="logo" src="~/images/Small_Logo.jpg" alt="logo"></a>
         </div>
-        @* Contact Us *@
+        @* Membership *@
         <div class="col-md-2">
             <div class="display-6">
-                <a href="#contact-us" class="no-decoration">Contact Us</a>
+                <a href="#membership" class="no-decoration">Membership</a>
             </div>
         </div>
-        @* Open Hours *@
+        @* yourdogs *@
         <div class="col-md-2">
             <div class="display-6">
-                <a href="#open-hours" class="no-decoration">Open Hours</a>
+                <a href="#your-dogs" class="no-decoration">Your Dogs</a>
             </div>
         </div>
+
         @* Boarding *@
         <div class="col-md-2">
             <div class="display-6">
-                <a href="#our-park" class="no-decoration">Our Park</a>
+                <a href="#boardings" class="no-decoration">Boardings</a>
             </div>
         </div>
         @* Login *@
@@ -36,17 +44,15 @@
                         {
                             int? currentUserId = Context.Session.GetInt32("UserId");
 
-                            <a href="/users/new" class="d-block text-black no-decoration"><h3></h3></a>
-
                             <a href="/users/@currentUserId/show" class="d-block text-black no-decoration"><h3>View Profile</h3></a>
                             <a href="/users/logout" class="d-block m-2"><button class="btn btn-info">LOGOUT</button></a>
                         }
                     }
                 </div>
-            </div>
-        </div>
+          </div>
     </div>
 </div>
+
 
 
 <div>
