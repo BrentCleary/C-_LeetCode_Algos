@@ -108,33 +108,55 @@
             <h2 class="display-5 m-3 bg bg-warning col">YOUR DOGS</h2>
             <div class="row m-1">
                 <div class="display-6 col">
-                  @foreach (Dog pup in @Model.AllDogs)
+                  @foreach (Dog currentDog in @Model.AllDogs)
                   {
                   <div class="container drop-shadow p-5">
                       <table class="table">
-                        <h1 class="display-1 mb-5 ml-4"> @pup.Name</h1>
+                        <h1 class="display-1 mb-5 ml-4"> @currentDog.Name</h1>
                           <tbody>
                               <tr>
                                   <th class="col-2 display-6">Breed</th>
-                                  <td class="col-6 display-6">@pup.Breed</td>
+                                  <td class="col-6 display-6">@currentDog.Breed</td>
                               </tr>
                               <tr>
                                   <th class="display-6">Weight</th>
-                                  <td class="display-6">@pup.Weight lbs</td>
+                                  <td class="display-6">@currentDog.Weight lbs</td>
                               </tr>
                               <tr>
                                   <th class="display-6">Age</th>
-                                  <td class="display-6">@pup.Age Years</td>
+                                  <td class="display-6">@currentDog.Age Years</td>
                               </tr>
                               <tr>
                                   <th class="display-6">Temperament</th>
+
                                   <td class="display-6">
-                                    @pup.Temperament
+                                    @currentDog.Temperament
                                   </td>
+
+                                  <tr class="m-2">
+                                      <th class="col-2 display-6"><label for="temperament" class="form-label">Temperament</label></th>
+                                      <td>
+                                          <div class="row">
+                                              <div class="d-flex">
+                                                <div class="col">
+                                                    <div class="col">
+                                                        <p id="temperamentDisplay" class="col display-6"></p>
+                                                    </div>
+                                                    <div class="slider-container col">
+                                                        <div value="@currentDog.Temperament" id="profileTemperament">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                  <div class="col"></div>
+                                              </div>
+                                          </div>
+                                      </td>
+                                  </tr>
+
                               </tr>
                               <tr>
                                   <th class="display-6">Vaccinated</th>
-                                    @if(@pup.Vaccinated == true)
+                                    @if(@currentDog.Vaccinated == true)
                                     {
                                     <td class="display-6">Yes</td>
                                     }
@@ -145,17 +167,17 @@
                               </tr>
                               <tr>
                                   <th class="display-6">Diet</th>
-                                  <td class="display-6">@pup.Diet</td>
+                                  <td class="display-6">@currentDog.Diet</td>
                               </tr>
                               <tr >
                                   <th class="display-6">Notes</th>
-                                  <td class="display-6">@pup.Notes</td>
+                                  <td class="display-6">@currentDog.Notes</td>
                               </tr>
                           </tbody>
                       </table>
                       <div class="row">
                         <div class="col">
-                          <th><a href="/dogs/@pup.DogId/edit"><button class="btn btn-warning text-white">UPDATE INFO</button></a></th>
+                          <th><a href="/dogs/@currentDog.DogId/edit"><button class="btn btn-warning text-white">UPDATE INFO</button></a></th>
                         </div>
                       </div>
                   </div>
@@ -217,8 +239,6 @@
 <a href="#navbar"><button class="return-button bg bg-info display-4 d-flex justify-content-center align-items-center">^</button></a>
 </div>
 <script src="script.js"></script>
-
-
 
 
 

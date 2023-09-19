@@ -81,9 +81,25 @@
                     <th class="col-2 display-6"><label for="age" class="form-label">Age</label></th>
                     <td><input asp-for="Age" type="number" class="form-control" id="age" name="Age"></td>
                 </tr>
-                <tr>
+                <tr class="m-2">
                     <th class="col-2 display-6"><label for="temperament" class="form-label">Temperament</label></th>
-                    <td><input asp-for="Temperament" type="number" class="form-control" id="temperament" name="Temperament"></td>
+                    <td>
+                        <div class="row">
+                            <div class="d-flex">
+                                <div class="col">
+                                    <div class="col">
+                                        <p id="slider-value" class="col display-6">Calm</p>
+                                    </div>
+                                    <div class="slider-container col">
+                                        <label class="slider-label">1</label>
+                                        <input type="range" min="1" max="5" step="1" value="@Model.Temperament" id="slider" name="Temperament" class="slider-style">
+                                        <label class="slider-label">5</label>
+                                    </div>
+                                </div>
+                                <div class="col"></div>
+                            </div>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
                     <th class="col-2 display-6">

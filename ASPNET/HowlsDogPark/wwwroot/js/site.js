@@ -40,9 +40,7 @@ function DeleteCheck()
 var slider = document.getElementById("slider");
 var sliderValue = document.getElementById("slider-value");
 var temperamentInput = document.getElementById("temperament-input");
-
-// Initial value
-sliderValue.textContent = "Calm";
+var sliderText = ["Fearful/Aggressive", "Shy/Timid", "Calm", "Friendly", "Happy/Playful"];
 
 // Update the input value when the slider changes
 slider.oninput = function () {
@@ -53,3 +51,5 @@ slider.oninput = function () {
     // Update the input value
     temperamentInput.value = slider.value;
 };
+
+
