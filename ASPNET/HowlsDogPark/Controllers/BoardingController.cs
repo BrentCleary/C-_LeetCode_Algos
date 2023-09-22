@@ -36,6 +36,7 @@ public class BoardingController : Controller
   public IActionResult NewBoarding()
   {
 
+    // VIEWBAG - Passing Logged Users Dogs as Dictionary
     User? currentUser = _context.Users.Include(d => d.AllDogs).FirstOrDefault(u => u.UserId == userId); 
 
     List<Dog> userDogList = currentUser.AllDogs;

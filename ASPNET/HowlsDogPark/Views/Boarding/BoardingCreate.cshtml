@@ -85,7 +85,7 @@
                       <label for="Time" class="form-label">Time</label>
                     </th>
                     <td class="col-6">
-                      <input type="time" id="timeInput" value="selectedTime" >
+                      <input type="time" id="timeInput" step="1800">
                     </td>
                 </tr>
                 <tr class="m-2">
@@ -96,20 +96,20 @@
                       <select name="DogId" id="DogId">
                       @foreach(var dog in dogDictionary)
                       {
-                        <option value="@dog.Value">@dog.Key</option>
+                        <option class="display-6 kennel-select" value="@dog.Value">@dog.Key</option>
                       }
                       </select>
                       
                     </td>
                 </tr>
-                <tr class="m-2">
+                <tr class="m-4">
                     <th class="col-2 display-6">
                       <label for="Kennel" class="form-label">Kennel</label>
                     </th>
                     <td>
                       <label for="kennel-select" class="display-6" >Available Kennels: </label>
-                      <select name="Kennel" id="kennel-select" class="display-6">
-                        <option class="display-6 select-option" value="1">1</option>
+                      <select name="Kennel" id="kennel-select" class="display-6 m-3">
+                        <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
@@ -132,15 +132,6 @@
                 <tr class="m-2">
                   <div class="hidden-element">
                     <input asp-for="UserId" value="@uid">
-                  </div>
-                </tr>
-                <tr class="m-2">
-                  <div>
-                    @foreach(var dog in dogDictionary)
-                    {
-                      <h1>@dog.Key</h1>
-                      <h1>@dog.Value</h1>
-                    }
                   </div>
                 </tr>
             </tbody>
