@@ -17,6 +17,7 @@ body {
   margin-bottom: 60px;
 }
 
+
 .list-col-spacing > div {
   display: flex;
   align-items: center;
@@ -107,4 +108,11 @@ max-height: 50%;
 .notes-textbox {
   /* Set a specific width or a percentage of the container */
   width: 100%;
+}
+
+
+/* Select Option Styling */
+.select-option{
+  height: 20px;
+  width: 40px;
 }

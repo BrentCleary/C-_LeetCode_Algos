@@ -1,14 +1,6 @@
 @model User
 
 
-<style>
-  .logo{
-    max-width: 50%;
-    max-height: 50%;
-  }
-
-</style>
-
 <div class="container text-center" style="max-width: 1322px;">
     <div class="row align-items-center justify-content-between">
         @* logo *@
@@ -217,8 +209,46 @@
 
           <div class="row">
             <h2 class="display-5 m-3 bg bg-warning col">YOUR BOARDINGS</h2>
-            <div class="row m-1">
-                <div class="display-6 col">NONE</div>
+                <div class="row m-1">
+                  <div class="display-6 col">
+                  <div>@foreach(Boarding currentBoarding in Model.AllBoardings)
+                    {
+                    <div class="container drop-shadow">
+                      <table class="table">
+                          <tbody>
+                              <tr>
+                                  <th class="col-2 display-6">Date</th>
+                                  <td class="col-6 display-6">@currentBoarding.Date</td>
+                              </tr>
+                              <tr>
+                                  <th class="display-6">Time</th>
+                                  <td class="display-6">@currentBoarding.Time</td>
+                              </tr>
+                              <tr>
+                                  <th class="display-6">Kennel #</th>
+                                  <td class="display-6">@currentBoarding.Kennel</td>
+                              </tr>
+                              <tr>
+                                  <th class="display-6">Notes</th>
+                                  <td class="display-6">@currentBoarding.Notes</td>
+                              </tr>
+                          </tbody>
+                      </table>
+                      </div>
+                      <br>
+                    }
+                    <br>
+                    <br>
+                  </div>
+                </div>
+            <br>
+            <br>
+            <br>
+            </div>
+            <div class="row">
+              <div class="col">
+                <th><a href="/boarding/new" class="text-white d-block"><button class="btn btn-primary text-white">Request a Boarding</button></a></th>
+              </div>
             </div>
           </div>
         </div>
@@ -241,25 +271,3 @@
 <script src="script.js"></script>
 
 
-
-
-<style>
-    .custom-row{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 100%;
-    }
-
-    .top{
-        margin-top: auto;
-    }
-
-    .bottom{
-        margin-bottom: auto;
-    }
-
-    .no-decoration{
-        text-decoration: none;
-    }
-</style>

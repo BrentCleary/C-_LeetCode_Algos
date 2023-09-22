@@ -15,4 +15,12 @@ public class Boarding
   public DateTime CreatedAt {get;set;}
   public DateTime UpdatedAt {get;set;}
   
+  public int UserId { get; set; }
+  public User? Requester { get; set; }
+  
+  public int DogId { get; set; }
+  public Dog? RequesterDog { get;set; }
+
+  
+
 }

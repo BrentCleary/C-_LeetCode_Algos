@@ -61,7 +61,7 @@ public class UserController : Controller
   {
     System.Console.WriteLine("+_+_+_+_+_+_+_+_" + id + " +_+_+_+_+_+_+_+_");
 
-    User? currentUser = _context.Users.Include(d => d.AllDogs).FirstOrDefault(u => u.UserId == id); 
+    User? currentUser = _context.Users.Include(d => d.AllDogs).Include(b => b.AllBoardings).FirstOrDefault(u => u.UserId == id); 
 
     System.Console.WriteLine("------------" + HttpContext.Session.GetInt32("UserId") + "------------");
 

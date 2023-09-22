@@ -3,6 +3,7 @@ using System;
 using HowlsDogPark.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace HowlsDogPark.Migrations
 {
     [DbContext(typeof(MyContext))]
-    partial class MyContextModelSnapshot : ModelSnapshot
+    [Migration("20230922060645_SeventhMigration")]
+    partial class SeventhMigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -31,15 +33,15 @@ namespace HowlsDogPark.Migrations
                     b.Property<DateTime>("Date")
                         .HasColumnType("datetime(6)");
 
-                    b.Property<int>("DogId")
-                        .HasColumnType("int");
-
                     b.Property<int>("Kennel")
                         .HasColumnType("int");
 
                     b.Property<string>("Notes")
                         .IsRequired()
                         .HasColumnType("longtext");
+
+                    b.Property<int?>("RequesterDogDogId")
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("Time")
                         .HasColumnType("datetime(6)");
@@ -52,7 +54,7 @@ namespace HowlsDogPark.Migrations
 
                     b.HasKey("BoardingId");
 
-                    b.HasIndex("DogId");
+                    b.HasIndex("RequesterDogDogId");
 
                     b.HasIndex("UserId");
 
@@ -146,9 +148,7 @@ namespace HowlsDogPark.Migrations
                 {
                     b.HasOne("HowlsDogPark.Models.Dog", "RequesterDog")
                         .WithMany()
-                        .HasForeignKey("DogId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("RequesterDogDogId");
 
                     b.HasOne("HowlsDogPark.Models.User", "Requester")
                         .WithMany("AllBoardings")

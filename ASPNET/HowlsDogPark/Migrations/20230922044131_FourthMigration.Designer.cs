@@ -3,6 +3,7 @@ using System;
 using HowlsDogPark.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace HowlsDogPark.Migrations
 {
     [DbContext(typeof(MyContext))]
-    partial class MyContextModelSnapshot : ModelSnapshot
+    [Migration("20230922044131_FourthMigration")]
+    partial class FourthMigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -31,9 +33,6 @@ namespace HowlsDogPark.Migrations
                     b.Property<DateTime>("Date")
                         .HasColumnType("datetime(6)");
 
-                    b.Property<int>("DogId")
-                        .HasColumnType("int");
-
                     b.Property<int>("Kennel")
                         .HasColumnType("int");
 
@@ -51,8 +50,6 @@ namespace HowlsDogPark.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("BoardingId");
-
-                    b.HasIndex("DogId");
 
                     b.HasIndex("UserId");
 
@@ -144,12 +141,6 @@ namespace HowlsDogPark.Migrations
 
             modelBuilder.Entity("HowlsDogPark.Models.Boarding", b =>
                 {
-                    b.HasOne("HowlsDogPark.Models.Dog", "RequesterDog")
-                        .WithMany()
-                        .HasForeignKey("DogId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("HowlsDogPark.Models.User", "Requester")
                         .WithMany("AllBoardings")
                         .HasForeignKey("UserId")
@@ -157,8 +148,6 @@ namespace HowlsDogPark.Migrations
                         .IsRequired();
 
                     b.Navigation("Requester");
-
-                    b.Navigation("RequesterDog");
                 });
 
             modelBuilder.Entity("HowlsDogPark.Models.Dog", b =>

@@ -36,6 +36,7 @@ function DeleteCheck()
 
 
 
+// TODO: Update Slider value on all Dog Inputs and Displays
 
 var slider = document.getElementById("slider");
 var sliderValue = document.getElementById("slider-value");
@@ -53,3 +54,34 @@ slider.oninput = function () {
 };
 
 
+
+// JavaScript to populate available times in 30-minute intervals
+const timeInput = document.getElementById("timeInput");
+
+// Function to create an array of time options in HH:mm format
+function createTimeOptions() {
+    const options = [];
+    for (let hour = 0; hour < 24; hour++) {
+        for (let minute = 0; minute < 60; minute += 30) {
+            const formattedHour = hour.toString().padStart(2, "0");
+            const formattedMinute = minute.toString().padStart(2, "0");
+            options.push(`${formattedHour}:${formattedMinute}`);
+        }
+    }
+    return options;
+}
+
+// Populate the select input with time options
+function populateTimeOptions() {
+    const timeOptions = createTimeOptions();
+    timeInput.innerHTML = "";
+    timeOptions.forEach(option => {
+        const timeOption = document.createElement("option");
+        timeOption.value = option;
+        timeOption.text = option;
+        timeInput.appendChild(timeOption);
+    });
+}
+
+// Call the function to populate time options
+populateTimeOptions();

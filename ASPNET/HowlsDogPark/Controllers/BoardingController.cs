@@ -36,6 +36,18 @@ public class BoardingController : Controller
   public IActionResult NewBoarding()
   {
 
+    User? currentUser = _context.Users.Include(d => d.AllDogs).FirstOrDefault(u => u.UserId == userId); 
+
+    List<Dog>? userDogList = currentUser.AllDogs;
+
+    Dictionary<string, int> dogDictionary = new Dictionary<string, int>();
+    foreach(Dog dog in userDogList)
+    {
+      dogDictionary.Add(dog.Name, dog.DogId);
+    }
+
+    ViewBag.dogDictionary = dogDictionary;
+
     return View("BoardingCreate");
   }
 
@@ -49,7 +61,7 @@ public class BoardingController : Controller
       _context.Add(newBoarding);
       _context.SaveChanges();
 
-      return RedirectToAction("BoardingIndex");
+      return RedirectToAction("ShowUser", "User", new {id = userId });
     }
     else
     {
