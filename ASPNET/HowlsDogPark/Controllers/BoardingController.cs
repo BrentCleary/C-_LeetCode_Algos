@@ -38,7 +38,7 @@ public class BoardingController : Controller
 
     User? currentUser = _context.Users.Include(d => d.AllDogs).FirstOrDefault(u => u.UserId == userId); 
 
-    List<Dog>? userDogList = currentUser.AllDogs;
+    List<Dog> userDogList = currentUser.AllDogs;
 
     Dictionary<string, int> dogDictionary = new Dictionary<string, int>();
     foreach(Dog dog in userDogList)

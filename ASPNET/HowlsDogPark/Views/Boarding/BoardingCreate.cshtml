@@ -59,6 +59,9 @@
 
   // default time is always current time
   DateTime selectedTime = DateTime.Now;
+
+  var dogDictionary = ViewBag.dogDictionary as Dictionary<string, int>;
+
 }
 
 
@@ -87,6 +90,20 @@
                 </tr>
                 <tr class="m-2">
                     <th class="col-2 display-6">
+                      <label for="Dog" class="form-label">Boarding For</label>
+                    </th>
+                    <td class="col-6">
+                      <select name="DogId" id="DogId">
+                      @foreach(var dog in dogDictionary)
+                      {
+                        <option value="@dog.Value">@dog.Key</option>
+                      }
+                      </select>
+                      
+                    </td>
+                </tr>
+                <tr class="m-2">
+                    <th class="col-2 display-6">
                       <label for="Kennel" class="form-label">Kennel</label>
                     </th>
                     <td>
@@ -106,7 +123,7 @@
                 </tr>
                 <tr class="m-2">
                     <th class="col-2 display-6">
-                      <label for="age" class="form-label">Notes</label>
+                      <label for="Notes" class="form-label">Notes</label>
                     </th>
                     <td>
                       <textarea type="text" class="form-control" id="Notes" name="Notes" cols="30" rows="5"></textarea>
@@ -117,6 +134,15 @@
                     <input asp-for="UserId" value="@uid">
                   </div>
                 </tr>
+                <tr class="m-2">
+                  <div>
+                    @foreach(var dog in dogDictionary)
+                    {
+                      <h1>@dog.Key</h1>
+                      <h1>@dog.Value</h1>
+                    }
+                  </div>
+                </tr>
             </tbody>
         </table>
       <div>
@@ -124,15 +150,11 @@
       </div>
     </form>
 
-    @{
-      var dogDictionary = ViewBag.dogDictionary as Dictionary<string, int>;
-    }
+    <div>
 
-    @foreach(var dog in dogDictionary)
-    {
-      <h1>@dog.Key</h1>
-    }
 
+
+    </div>
 
   </div>
 </div>
