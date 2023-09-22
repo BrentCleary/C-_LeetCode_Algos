@@ -71,6 +71,62 @@ public class BoardingController : Controller
   }
 
 
+  // TODO: Boarding Edit
+  // Create Boarding Edit View
+  [HttpGet("/boarding/{id}/edit")]
+  public IActionResult EditBoarding(int id)
+  {
+    // Boarding to Edit
+    Boarding? oneBoarding = _context.Boardings.FirstOrDefault(b => b.BoardingId == id);
+
+    // VIEWBAG - Passing Logged Users Dogs as Dictionary
+    User? currentUser = _context.Users.Include(d => d.AllDogs).FirstOrDefault(u => u.UserId == userId);
+
+    List<Dog> userDogList = currentUser.AllDogs;
+
+    Dictionary<string, int> dogDictionary = new Dictionary<string, int>();
+    foreach(Dog dog in userDogList)
+    {
+      dogDictionary.Add(dog.Name, dog.DogId);
+    }
+
+    ViewBag.dogDictionary = dogDictionary;
+
+    return View("BoardingEdit", oneBoarding);
+  }
+
+  // TODO: Boarding Edit Post
+  [HttpPost("/boarding/{id}/update")]
+  public IActionResult UpdateBoarding(int id, Boarding newBoarding)
+  {
+
+    Boarding? oldBoarding = _context.Boardings.FirstOrDefault(b => b.BoardingId == id);
+
+    if(ModelState.IsValid)
+    {
+      oldBoarding.Date = newBoarding.Date;
+      oldBoarding.Time = newBoarding.Time;
+      oldBoarding.Kennel = newBoarding.Kennel;
+      oldBoarding.Notes = newBoarding.Notes;
+      oldBoarding.DogId = newBoarding.DogId;
+
+      _context.Add(newBoarding);
+      _context.SaveChanges();
+    
+      return RedirectToAction("ShowUser", "User", new {id = userId}); 
+    }
+    else
+    {
+      return View("BoardingEdit", oldBoarding);
+    }
+
+  }
+
+  // TODO: Boarding Delete
+
+
+
+
 
   public IActionResult Privacy()
   {

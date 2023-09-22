@@ -18474,6 +18474,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsDogPark\\Views\\Boarding\\BoardingEdit.cshtml",
+      "TargetPath": "Views\\Boarding\\BoardingEdit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsDogPark\\Views\\User\\UserCreateLogin.cshtml",
       "TargetPath": "Views\\User\\UserCreateLogin.cshtml",
       "FileKind": "mvc"
