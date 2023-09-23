@@ -95,7 +95,7 @@ public class BoardingController : Controller
     return View("BoardingEdit", oneBoarding);
   }
 
-  // TODO: Boarding Edit Post
+  // Boarding Edit Post
   [HttpPost("/boarding/{id}/update")]
   public IActionResult UpdateBoarding(int id, Boarding newBoarding)
   {
@@ -122,8 +122,16 @@ public class BoardingController : Controller
 
   }
 
-  // TODO: Boarding Delete
+  // Boarding Delete
+  [HttpPost("boarding/{id}/delete")]
+  public IActionResult BoardingDelete(int id)
+  {
+    Boarding? boardingtoDelete = _context.Boardings.SingleOrDefault(b => b.BoardingId == id);
+    _context.Boardings.Remove(boardingtoDelete);
+    _context.SaveChanges();
 
+    return RedirectToAction("ShowUser", "User", new {id = userId});
+  }
 
 
 
