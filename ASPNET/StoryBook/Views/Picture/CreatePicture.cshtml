@@ -1,0 +1,35 @@
+@model Picture
+
+<style>
+    .form-container {
+        text-align: center;
+    }
+</style>
+
+<div class="form-container">
+    <h1>Receive Model Page</h1>
+
+    <form asp-action="SubmitPicture" method="post" enctype="multipart/form-data">
+        <div>
+            <label asp-for="Name">Name:</label>
+            <input asp-for="Name" id="Name" name="Name"/>
+            <span asp-validation-for="Name"></span>
+        </div>
+        <div>
+            <label asp-for="ImageData">Image Data:</label>
+            <input asp-for="ImageData" type="file" id="ImageData" name="ImageData" />
+            <span asp-validation-for="ImageData"></span>
+        </div>
+        <div>
+            <input type="submit" value="Submit" />
+        </div>
+    </form>
+
+  <br>
+  <br>
+
+  <div>
+    <a href="/">Go to Home</a>
+  </div>
+
+</div>

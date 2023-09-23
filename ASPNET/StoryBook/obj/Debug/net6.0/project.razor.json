@@ -18389,6 +18389,16 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\StoryBook\\Views\\Picture\\ShowPicture.cshtml",
+      "TargetPath": "Views\\Picture\\ShowPicture.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\StoryBook\\Views\\Picture\\CreatePicture.cshtml",
+      "TargetPath": "Views\\Picture\\CreatePicture.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\StoryBook\\Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
