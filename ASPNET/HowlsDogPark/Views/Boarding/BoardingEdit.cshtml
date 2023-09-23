@@ -68,8 +68,9 @@
 <div class="text-center container drop-shadow p-5">
   <h1 class="display-4 mb-5">Edit Your Boarding</h1>
 
+
   <div>
-    <form asp-action="UpdateBoarding" asp-controller="Boarding" asp-route-id="Model.BoardingId" method="post">
+    <form asp-action="UpdateBoarding" asp-controller="Boarding" asp-route-id="@Model.BoardingId" method="post">
       <table>
             <tbody>
                 <tr class="m-2">
@@ -85,7 +86,7 @@
                       <label for="Time" class="form-label">Time</label>
                     </th>
                     <td class="col-6">
-                      <input asp-for="Date" id="timeInput" step="1800">
+                      <input asp-for="Time" id="timeInput" step="1800">
                     </td>
                 </tr>
                 <tr class="m-2">
@@ -93,10 +94,13 @@
                       <label for="Dog" class="form-label">Boarding For</label>
                     </th>
                     <td class="col-6">
-                      <select name="DogId" id="DogId">
-                      @foreach(var dog in dogDictionary)
+                      <select asp-for="DogId" name="DogId" >
+                      @if(dogDictionary != null)
                       {
-                        <option class="display-6 kennel-select" value="@dog.Value">@dog.Key</option>
+                        foreach(var dog in dogDictionary)
+                        {
+                          <option class="display-6 kennel-select" value="@dog.Value">@dog.Key</option>
+                        }
                       }
                       </select>
                     </td>
