@@ -77,7 +77,7 @@
                       <label for="name" class="form-label">Date</label>
                     </th>
                     <td class="col-6">
-                      <input type="date" name="Date">
+                      <input asp-for="Date">
                     </td>
                 </tr>
                 <tr class="m-2">
@@ -85,7 +85,7 @@
                       <label for="Time" class="form-label">Time</label>
                     </th>
                     <td class="col-6">
-                      <input type="time" name="Time" id="timeInput" step="1800">
+                      <input asp-for="Date" id="timeInput" step="1800">
                     </td>
                 </tr>
                 <tr class="m-2">
@@ -93,13 +93,12 @@
                       <label for="Dog" class="form-label">Boarding For</label>
                     </th>
                     <td class="col-6">
-                      <select name="DogId" id="DogId" asp-for="DogId">
+                      <select name="DogId" id="DogId">
                       @foreach(var dog in dogDictionary)
                       {
                         <option class="display-6 kennel-select" value="@dog.Value">@dog.Key</option>
                       }
                       </select>
-                      
                     </td>
                 </tr>
                 <tr class="m-4">
