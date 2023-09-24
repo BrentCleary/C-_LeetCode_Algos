@@ -1,5 +1,6 @@
 @model User
 
+<div id="navbar"></div>
 
 <div class="container text-center" style="max-width: 1322px;">
     <div class="row align-items-center justify-content-between">
@@ -69,7 +70,16 @@
           <div class="row">
             <h2 class="display-5 m-3 bg bg-warning col">CURRENT MEMBERSHIP</h2>
             <div class="row m-1">
-                <div class="display-6 col">NONE</div>
+                <div class="display-6 col">@Model.Membership.MembershipType</div>
+            </div>
+            <div class="row m-1">
+                <div class="display-6 col">- @Model.Membership.Description</div>
+            </div>
+
+            <div class="row m-5">
+              <a class="col-2" href="/membership/join"><button>Sign-Up For A Membership</button></a>
+              <div class="col-6"></div>
+              <a class="col-2" href="/membership/new"><button>Create a Membership (Admin Only)</button></a>
             </div>
           </div>
         </div>

@@ -8,101 +8,113 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = HowlsDogPark
 build_property.RootNamespace = HowlsDogPark
-build_property.ProjectDir = c:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\HowlsDogPark\
+build_property.ProjectDir = C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\HowlsDogPark\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = c:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\HowlsDogPark
+build_property.MSBuildProjectDirectory = C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\HowlsDogPark
 build_property._RazorSourceGeneratorDebug = 
 
-[c:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/HowlsDogPark/Views/Boarding/AllBoardings.cshtml]
+[C:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/HowlsDogPark/Views/Boarding/AllBoardings.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9hcmRpbmdcQWxsQm9hcmRpbmdzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/HowlsDogPark/Views/Boarding/BoardingCreate.cshtml]
+[C:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/HowlsDogPark/Views/Boarding/BoardingCreate.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9hcmRpbmdcQm9hcmRpbmdDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/HowlsDogPark/Views/Boarding/BoardingEdit.cshtml]
+[C:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/HowlsDogPark/Views/Boarding/BoardingEdit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9hcmRpbmdcQm9hcmRpbmdFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/HowlsDogPark/Views/Dog/AllDogs.cshtml]
+[C:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/HowlsDogPark/Views/Dog/AllDogs.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9nXEFsbERvZ3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/HowlsDogPark/Views/Dog/CreateDog.cshtml]
+[C:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/HowlsDogPark/Views/Dog/CreateDog.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9nXENyZWF0ZURvZy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/HowlsDogPark/Views/Dog/EditDog.cshtml]
+[C:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/HowlsDogPark/Views/Dog/EditDog.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9nXEVkaXREb2cuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/HowlsDogPark/Views/Home/Index.cshtml]
+[C:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/HowlsDogPark/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/HowlsDogPark/Views/Home/Privacy.cshtml]
+[C:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/HowlsDogPark/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/HowlsDogPark/Views/Shared/Error.cshtml]
+[C:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/HowlsDogPark/Views/Membership/CreateMembership.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc2hpcFxDcmVhdGVNZW1iZXJzaGlwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/HowlsDogPark/Views/Membership/EditMembership.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc2hpcFxFZGl0TWVtYmVyc2hpcC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/HowlsDogPark/Views/Membership/UserJoinMembership.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc2hpcFxVc2VySm9pbk1lbWJlcnNoaXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/HowlsDogPark/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/HowlsDogPark/Views/Shared/_BannerImage.cshtml]
+[C:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/HowlsDogPark/Views/Shared/_BannerImage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9CYW5uZXJJbWFnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/HowlsDogPark/Views/Shared/_Carousel.cshtml]
+[C:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/HowlsDogPark/Views/Shared/_Carousel.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DYXJvdXNlbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/HowlsDogPark/Views/Shared/_DogCreate.cshtml]
+[C:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/HowlsDogPark/Views/Shared/_DogCreate.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Eb2dDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/HowlsDogPark/Views/Shared/_NavigationBar.cshtml]
+[C:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/HowlsDogPark/Views/Shared/_NavigationBar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OYXZpZ2F0aW9uQmFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/HowlsDogPark/Views/Shared/_ProfileNavBar.cshtml]
+[C:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/HowlsDogPark/Views/Shared/_ProfileNavBar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Qcm9maWxlTmF2QmFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/HowlsDogPark/Views/Shared/_UserCreate.cshtml]
+[C:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/HowlsDogPark/Views/Shared/_UserCreate.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Vc2VyQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/HowlsDogPark/Views/Shared/_UserLogin.cshtml]
+[C:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/HowlsDogPark/Views/Shared/_UserLogin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Vc2VyTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/HowlsDogPark/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/HowlsDogPark/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/HowlsDogPark/Views/User/AllUsers.cshtml]
+[C:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/HowlsDogPark/Views/User/AllUsers.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxBbGxVc2Vycy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/HowlsDogPark/Views/User/UserCreateLogin.cshtml]
+[C:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/HowlsDogPark/Views/User/UserCreateLogin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxVc2VyQ3JlYXRlTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/HowlsDogPark/Views/User/UserProfile.cshtml]
+[C:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/HowlsDogPark/Views/User/UserProfile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxVc2VyUHJvZmlsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/HowlsDogPark/Views/_ViewImports.cshtml]
+[C:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/HowlsDogPark/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/HowlsDogPark/Views/_ViewStart.cshtml]
+[C:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/HowlsDogPark/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/HowlsDogPark/Views/Shared/_Layout.cshtml]
+[C:/Users/Brent/Desktop/C\#_LeetCode_Algos/ASPNET/HowlsDogPark/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-m75b6pwgq5

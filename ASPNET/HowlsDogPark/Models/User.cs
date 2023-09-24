@@ -36,6 +36,9 @@ public class User
   // List of Owned Dogs
   public List<Dog> AllDogs {get;set;} = new List<Dog>();
   public List<Boarding> AllBoardings {get;set;} = new List<Boarding>();
+
+  public int? MembershipId { get; set; }
+  public Membership? Membership { get; set; }
 }
 
 

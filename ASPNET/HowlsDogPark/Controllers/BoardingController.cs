@@ -110,7 +110,6 @@ public class BoardingController : Controller
       oldBoarding.Notes = newBoarding.Notes;
       oldBoarding.DogId = newBoarding.DogId;
 
-      _context.Add(newBoarding);
       _context.SaveChanges();
     
       return RedirectToAction("ShowUser", "User", new {id = userId}); 

@@ -20,5 +20,6 @@ public class MyContext : DbContext
     public DbSet<User> Users {get;set;}
     public DbSet<Dog> Dogs {get;set;}
     public DbSet<Boarding> Boardings {get;set;}
+    public DbSet<Membership> Memberships {get;set;}
 
 }
