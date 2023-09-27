@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FpWOTXs0Um3vh46N1nUSZhEAkqhfiagCWkaDcQFySB0=",
+  "Hash": "vnMhcFwnUogIB1aXYMyZb8/6Xl5ZTGlJPolr/pVjrgg=",
   "Source": "HowlsDogPark",
   "BasePath": "_content/HowlsDogPark",
   "Mode": "Default",
@@ -136,23 +136,6 @@
       "OriginalItemSpec": "wwwroot\\images\\carousel_img\\white_dog.png"
     },
     {
-      "Identity": "C:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsDogPark\\wwwroot\\images\\cooltext441913479238368.png",
-      "SourceId": "HowlsDogPark",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsDogPark\\wwwroot\\",
-      "BasePath": "_content/HowlsDogPark",
-      "RelativePath": "images/cooltext441913479238368.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\cooltext441913479238368.png"
-    },
-    {
       "Identity": "C:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsDogPark\\wwwroot\\images\\Cute-Corgi-Dog-PNG-Photos.png",
       "SourceId": "HowlsDogPark",
       "SourceType": "Discovered",
@@ -253,6 +236,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\Small_Logo.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsDogPark\\wwwroot\\images\\Wolf_Moon_Logo.png",
+      "SourceId": "HowlsDogPark",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsDogPark\\wwwroot\\",
+      "BasePath": "_content/HowlsDogPark",
+      "RelativePath": "images/Wolf_Moon_Logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Wolf_Moon_Logo.png"
     },
     {
       "Identity": "C:\\Users\\Brent\\Desktop\\C#_LeetCode_Algos\\ASPNET\\HowlsDogPark\\wwwroot\\js\\site.js",
