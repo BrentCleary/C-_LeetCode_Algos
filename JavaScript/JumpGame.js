@@ -66,4 +66,6 @@ var canJump = function(nums)
       // continue on in the loop
 
 
+      
+
 };
