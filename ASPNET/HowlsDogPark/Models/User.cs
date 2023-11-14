@@ -38,7 +38,7 @@ public class User
   public List<Boarding> AllBoardings {get;set;} = new List<Boarding>();
 
   public int? MembershipId { get; set; }
-  public Membership? Membership { get; set; }
+  public Membership? Membership { get; set; } = null;
 }
 
 

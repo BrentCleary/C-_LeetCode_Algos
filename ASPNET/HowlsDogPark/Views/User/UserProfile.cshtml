@@ -70,11 +70,13 @@
           <div class="row">
             <h2 class="display-5 m-3 bg bg-warning col">CURRENT MEMBERSHIP</h2>
             <div class="row m-1">
-                <div class="display-6 col">@Model.Membership.MembershipType</div>
-            </div>
-            <div class="row m-1">
-                <div class="display-6 col">- @Model.Membership.Description</div>
-            </div>
+              
+              @if(@Model.Membership != null)
+              {
+                <div>
+                  <h1>@Model.Membership.MembershipType</h1>
+                </div>
+              }
 
             <div class="row m-5">
               <a class="col-2" href="/membership/join"><button>Sign-Up For A Membership</button></a>

@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace HowlsDogPark.Migrations
 {
     [DbContext(typeof(MyContext))]
-    [Migration("20230911004418_ThirdMigration")]
-    partial class ThirdMigration
+    [Migration("20231011004622_FirstMigration")]
+    partial class FirstMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -33,6 +33,9 @@ namespace HowlsDogPark.Migrations
                     b.Property<DateTime>("Date")
                         .HasColumnType("datetime(6)");
 
+                    b.Property<int>("DogId")
+                        .HasColumnType("int");
+
                     b.Property<int>("Kennel")
                         .HasColumnType("int");
 
@@ -46,7 +49,14 @@ namespace HowlsDogPark.Migrations
                     b.Property<DateTime>("UpdatedAt")
                         .HasColumnType("datetime(6)");
 
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
                     b.HasKey("BoardingId");
+
+                    b.HasIndex("DogId");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Boardings");
                 });
@@ -101,6 +111,38 @@ namespace HowlsDogPark.Migrations
                     b.ToTable("Dogs");
                 });
 
+            modelBuilder.Entity("HowlsDogPark.Models.Membership", b =>
+                {
+                    b.Property<int>("MembershipId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("MembershipType")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Notes")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<int>("Price")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("datetime(6)");
+
+                    b.HasKey("MembershipId");
+
+                    b.ToTable("Memberships");
+                });
+
             modelBuilder.Entity("HowlsDogPark.Models.User", b =>
                 {
                     b.Property<int>("UserId")
@@ -122,6 +164,9 @@ namespace HowlsDogPark.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
+                    b.Property<int?>("MembershipId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Password")
                         .IsRequired()
                         .HasColumnType("longtext");
@@ -131,7 +176,28 @@ namespace HowlsDogPark.Migrations
 
                     b.HasKey("UserId");
 
+                    b.HasIndex("MembershipId");
+
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("HowlsDogPark.Models.Boarding", b =>
+                {
+                    b.HasOne("HowlsDogPark.Models.Dog", "RequesterDog")
+                        .WithMany()
+                        .HasForeignKey("DogId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("HowlsDogPark.Models.User", "Requester")
+                        .WithMany("AllBoardings")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Requester");
+
+                    b.Navigation("RequesterDog");
                 });
 
             modelBuilder.Entity("HowlsDogPark.Models.Dog", b =>
@@ -147,6 +213,22 @@ namespace HowlsDogPark.Migrations
 
             modelBuilder.Entity("HowlsDogPark.Models.User", b =>
                 {
+                    b.HasOne("HowlsDogPark.Models.Membership", "Membership")
+                        .WithMany("Members")
+                        .HasForeignKey("MembershipId");
+
+                    b.Navigation("Membership");
+                });
+
+            modelBuilder.Entity("HowlsDogPark.Models.Membership", b =>
+                {
+                    b.Navigation("Members");
+                });
+
+            modelBuilder.Entity("HowlsDogPark.Models.User", b =>
+                {
+                    b.Navigation("AllBoardings");
+
                     b.Navigation("AllDogs");
                 });
 #pragma warning restore 612, 618

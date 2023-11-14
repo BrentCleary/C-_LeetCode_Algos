@@ -33,3 +33,9 @@ C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\HowlsDogPark\bin\Debug\net6.0\Mi
 C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\HowlsDogPark\bin\Debug\net6.0\MySqlConnector.dll
 C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\HowlsDogPark\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll
 C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\HowlsDogPark\obj\Debug\net6.0\HowlsDogPark.csproj.CopyComplete
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\HowlsDogPark\obj\Debug\net6.0\HowlsDogPark.sourcelink.json
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\HowlsDogPark\obj\Debug\net6.0\staticwebassets\msbuild.HowlsDogPark.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\HowlsDogPark\obj\Debug\net6.0\staticwebassets\msbuild.build.HowlsDogPark.props
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\HowlsDogPark\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.HowlsDogPark.props
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\HowlsDogPark\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.HowlsDogPark.props
+C:\Users\Brent\Desktop\C#_LeetCode_Algos\ASPNET\HowlsDogPark\obj\Debug\net6.0\staticwebassets.pack.json

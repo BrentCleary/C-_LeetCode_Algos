@@ -88,7 +88,7 @@ public class DogController : Controller
   [HttpPost("/dogs/{id}/update")]
   public IActionResult UpdateDog(int id, Dog newDog)
   {
-    Dog oldDog = _context.Dogs.FirstOrDefault(d => d.DogId == id);
+    Dog? oldDog = _context.Dogs.FirstOrDefault(d => d.DogId == id);
 
     if(ModelState.IsValid)
     {

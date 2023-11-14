@@ -21,6 +21,5 @@ public class Boarding
   public int DogId { get; set; }
   public Dog? RequesterDog { get;set; }
 
-  
 
 }

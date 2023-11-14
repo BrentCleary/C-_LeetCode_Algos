@@ -7,66 +7,68 @@
     <div class="row align-items-center">
 
         @* logo *@
-        <div class="col-md-3">
-            <a href="/"><img class="logo" src="~/images/Wolf_Moon_Logo.png" alt="logo"></a>
+        <div class="col-3">
+            <a href="/"><img class="logo" src="~/images/Small_Logo.jpg" alt="logo"></a>
         </div>
         @* Link Container *@
-        <div class="link-container d-flex justify-content-between">
-          @* Our Park *@
-          <div class="col-md-1">
-              <div class="display-6">
-                  <a href="#our-park" class="no-decoration">Our Park</a>
-              </div>
-          </div>
-          
-          @* Our Park *@
-          <div class="col-md-1">
-              <div class="display-6">
-                  <a href="#open-hours" class="no-decoration">Open Hours</a>
-              </div>
-          </div>
-          
-          @* Boardings *@
-          <div class="col-md-1">
-              <div class="display-6">
-                  <a href="#boarding" class="no-decoration">Boarding</a>
-              </div>
-          </div>
-          
-          @* Contact Us *@
-          <div class="col-md-1">
-              <div class="display-6">
-                  <a href="#contact-us" class="no-decoration">Contact Us</a>
-              </div>
-          </div>
+        <div class="col-6">
+            <div class="row justify-content-between">
+                @* Our Park *@
+                <div class="col">
+                    <div class="display-6">
+                        <a href="#our-park" class="no-decoration">Our Park</a>
+                    </div>
+                </div>
+
+                @* Open Hours *@
+                <div class="col">
+                    <div class="display-6">
+                        <a href="#open-hours" class="no-decoration">Open Hours</a>
+                    </div>
+                </div>
+
+                @* Boarding *@
+                <div class="col">
+                    <div class="display-6">
+                        <a href="#boarding" class="no-decoration">Boarding</a>
+                    </div>
+                </div>
+
+                @* Contact Us *@
+                <div class="col">
+                    <div class="display-6">
+                        <a href="#contact-us" class="no-decoration">Contact Us</a>
+                    </div>
+                </div>
+            </div>
         </div>
 
         @* Login *@
-          <div class="col-md-3 d-flex align-items-center justify-content-right">
-              <div class="col-md-4 mb-3 d-flex align-items-center">
-                  @{
-                      if(Context.Session.GetInt32("UserId") == null)
-                      {
-                          <a href="/users/new" class="d-block text-black no-decoration"><h3>REGISTER</h3></a>
-                          <a href="/users/new" class="d-block m-2"><button class="btn btn-info">LOGIN</button></a>
-                      }
-                      else
-                      {
-                          int? currentUserId = Context.Session.GetInt32("UserId");
+        <div class="col-3 d-flex align-items-center justify-content-end">
+            <div class="col-4 mb-3 d-flex align-items-center">
+                @{
+                    if (Context.Session.GetInt32("UserId") == null)
+                    {
+                        <a href="/users/new" class="d-block text-black no-decoration"><h3>REGISTER</h3></a>
+                        <a href="/users/new" class="d-block m-2"><button class="btn btn-info">LOGIN</button></a>
+                    }
+                    else
+                    {
+                        int? currentUserId = Context.Session.GetInt32("UserId");
 
-                          <h1>@Model.FirstName</h1>
+                        <h1>@Model.FirstName</h1>
 
-                          <a href="/users/new" class="d-block text-black no-decoration"><h3></h3></a>
+                        <a href="/users/new" class="d-block text-black no-decoration"><h3></h3></a>
 
-                          <a href="/users/@currentUserId/show" class="d-block text-black no-decoration"><h3>View Profile</h3></a>
-                          <a href="/users/logout" class="d-block m-2"><button class="btn btn-info">LOGOUT</button></a>
-                      }
-                  }
-              </div>
-          </div>
+                        <a href="/users/@currentUserId/show" class="d-block text-black no-decoration"><h3>View Profile</h3></a>
+                        <a href="/users/logout" class="d-block m-2"><button class="btn btn-info">LOGOUT</button></a>
+                    }
+                }
+            </div>
         </div>
     </div>
 </div>
+
 
 
 
@@ -242,69 +244,4 @@
 
 
 
-
-<style>
-
-.body {
-  background-image: url('~/images/Howls_Moving_Background.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-.drop-shadow {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adjust the values as needed */
-}
-
-.floating-bar {
-    position: fixed;
-    bottom: -50px; /* Off-screen initially */
-    left: 0;
-    right: 10px;
-    background-color: rgba(0, 0, 0, 0); /* Transparent background */
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    transition: bottom 0.3s ease-in-out; /* Add smooth transition */
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.return-button{
-  border-color: transparent;
-  border-radius: 50%;
-  height: 40px;
-  width: 40px;
-}
-
-.no-decoration{
-    text-decoration: none;
-}
-
-.logo{
-    max-width: 50%;
-    max-height: 50%;
-  }
-
-.custom-row{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-}
-
-.top{
-    margin-top: auto;
-}
-
-.bottom{
-    margin-bottom: auto;
-}
-
-.no-decoration{
-    text-decoration: none;
-}
-
-</style>
 
